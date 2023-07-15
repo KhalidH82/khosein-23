@@ -1,8 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { services } from "../app/constants/data";
-
-console.log(services);
  
 const TechPanel = () => {
   return (
@@ -31,16 +29,17 @@ const TechPanel = () => {
         </div>
         <div className="grid grid-cols-3 gap-16 mt-32">
           {services.map((service) => (
-            <div className="card shadow-xl rounded-[20px] border-gradient" key={service.title}>
+            <div
+              className="card w-96 bg-base-100 shadow-xl"
+              key={service.title}
+            >
               <figure className="px-10 pt-10">
-                <img
-                  src={service.icon.src}
-                  alt=""
-                  className="object-contain w-16 h-16"
-                />
+                <img src={service.icon.src} alt="" className="rounded-xl w-16 h-16" />
               </figure>
               <div className="card-body items-center text-center">
-                <h2 className="card-title">{service.title}</h2>
+                <div className="card-actions">
+                  <h2 className="card-title">{service.title}</h2>
+                </div>
               </div>
             </div>
           ))}

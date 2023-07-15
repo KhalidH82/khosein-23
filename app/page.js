@@ -1,9 +1,7 @@
-'use client'
-import React, { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import NavBar from "/components/NavBar";
 import Hero from "/components/Hero.jsx";
-import AboutPanel from "@/components/AboutPanel";
+import About from "/components/About";
 
 export default function Home() {
 
@@ -19,7 +17,7 @@ export default function Home() {
         <NavBar />
         <Hero />
         <div id="about" className="pt-[88px]">
-          <AboutPanel />
+          <About />
         </div>
       </div>
     </main>

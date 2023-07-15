@@ -200,14 +200,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/page.js": {
-      "*": {
-        "id": "(sc_client)/./app/page.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./components/Hero.jsx": {
       "*": {
         "id": "(sc_client)/./components/Hero.jsx",
@@ -541,14 +533,6 @@
     },
     "/Users/khalidhosein/Desktop/khosein-23/public/images/webdev.png": {
       "id": "(app-client)/./public/images/webdev.png",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/khalidhosein/Desktop/khosein-23/app/page.js": {
-      "id": "(app-client)/./app/page.js",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"

@@ -46,7 +46,7 @@ const Hero = () => {
                 Full Stack Web Developer
               </h2>
               <div className="animate-bounce">
-                <a href="#tech">
+                <a href="#about">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

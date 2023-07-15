@@ -2,6 +2,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { navLinks } from "../app/constants/data";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,6 @@ const NavBar = () => {
   }, []);
   
   return (
-    <div>
       <div
         className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 ${
           scrolled
@@ -49,23 +49,12 @@ const NavBar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 uppercase font-bold text-base tracking-tight"
             >
-              <li>
-                <a href="/about">About Me</a>
-              </li>
-              <li>
-                <a>Current Work</a>
-                <ul className="p-2 text-ship-cove-900">
-                  <li>
-                    <a>T2 Marketing Communications</a>
-                  </li>
-                  <li>
-                    <a>Thorium Digital</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.id}>
+                  {" "}
+                  <a href={`#${link.id}`}  className="link-underline link-underline-black border-none hover:bg-transparent">{link.title}</a>
+                </li>
+              ))}
               <li>
                 <a
                   href="/K.Hosein.pdf"
@@ -89,35 +78,14 @@ const NavBar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 uppercase font-bold text-base tracking-tight">
+            {navLinks.map((link) => (
+              <li key={link.id}>
+                {" "}
+                <a href={`#${link.id}`}  className="link-underline link-underline-black border-none hover:bg-transparent">{link.title}</a>
+              </li>
+            ))}
             <li>
               <a
-                href="/about"
-                className="link-underline link-underline-black border-none hover:bg-transparent"
-              >
-                About Me
-              </a>
-            </li>
-            <li tabIndex={0}>
-              <details>
-                <summary className="hover:bg-transparent">Current Work</summary>
-                <ul className="p-2 text-ship-cove-900">
-                  <li>
-                    <a>T2 Marketing Communications</a>
-                  </li>
-                  <li>
-                    <a>Thorium Digital</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a className="link-underline link-underline-black border-none hover:bg-transparent">
-                Contact
-              </a>
-            </li>
-            <li>
-              <a
-                className="link-underline link-underline-black border-none hover:bg-transparent"
                 href="/K.Hosein.pdf"
                 alt="Khalid Hosein resume"
                 target="_blank"
@@ -131,9 +99,7 @@ const NavBar = () => {
         <div className="navbar-end gap-3">
           <div className={`chat chat-end ${scrolled ? "hidden" : "block"}`}>
             <div className="chat-bubble">
-              <p>
-                Hello! It's nice to meet you!
-              </p>
+              <p>Hello! It's nice to meet you!</p>
             </div>
           </div>
           <div className="avatar online">
@@ -149,7 +115,6 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

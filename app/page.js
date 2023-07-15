@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import NavBar from "/components/NavBar";
 import Hero from "/components/Hero.jsx";
-import TechPanel from "@/components/TechPanel";
+import AboutPanel from "@/components/AboutPanel";
 
 export default function Home() {
 
@@ -18,8 +18,8 @@ export default function Home() {
       <div >
         <NavBar />
         <Hero />
-        <div id="tech" className="pt-[88px]">
-          <TechPanel />
+        <div id="about" className="pt-[88px]">
+          <AboutPanel />
         </div>
       </div>
     </main>

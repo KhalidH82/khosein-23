@@ -31,7 +31,7 @@ const TechPanel = () => {
         </div>
         <div className="grid grid-cols-3 gap-16 mt-32">
           {services.map((service) => (
-            <div className="card shadow-xl rounded-[20px] border-gradient">
+            <div className="card shadow-xl rounded-[20px] border-gradient" key={service.title}>
               <figure className="px-10 pt-10">
                 <img
                   src={service.icon.src}

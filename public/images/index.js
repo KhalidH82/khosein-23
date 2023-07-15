@@ -1,18 +1,21 @@
 import css from "../images/css.png";
-import figma from "./figma.png";
-import git from "./git.png";
-import github from "./github.png";
-import html from "./html.png";
-import javascript from "./javascript.png";
-import nodejs from "./nodejs.png";
-import reactjs from "./reactjs.png";
-import tailwind from "./tailwind.png";
-import webdev from "./webdev.png";
-import ecomm from "./ecomm.png";
-import microservices from "./microservices.png";
-import marketing from "./marketing.png";
-import cms from "./cms.png";
-import content from "./content.png";
+import figma from "../images/figma.png";
+import git from "../images/git.png";
+import github from "../images/github.png";
+import html from "../images/html.png";
+import javascript from "../images/javascript.png";
+import nodejs from "../images/nodejs.png";
+import reactjs from "../images/reactjs.png";
+import tailwind from "../images/tailwind.png";
+import webdev from "../images/webdev.png";
+import ecomm from "../images/ecomm.png";
+import microservices from "../images/microservices.png";
+import marketing from "../images/marketing.png";
+import cms from "../images/cms.png";
+import content from "../images/content.png";
+import next from "../images/next.png";
+import nuxt from "../images/nuxt.png";
+import vue from "../images/vue.png";
 
 export {
   github,
@@ -29,5 +32,8 @@ export {
   microservices,
   marketing,
   cms,
-  content
+  content,
+  next,
+  nuxt,
+  vue
 };

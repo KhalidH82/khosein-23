@@ -87,3 +87,7 @@ h6 {
 .calendly-badge-widget .calendly-badge-content {
     font-family: unset;
 }
+
+.card {
+  box-shadow: 0 0 50px 5px #707ec2;
+}

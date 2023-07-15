@@ -1,6 +1,20 @@
+"use client";
 import React from "react";
+import { Tilt } from "react-tilt";
 import { services } from "../app/constants/data";
- 
+
+const defaultOptions = {
+  reverse: false, // reverse the tilt direction
+  max: 35, // max tilt rotation (degrees)
+  perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000, // Speed of the enter/exit transition
+  transition: true, // Set a transition on enter/exit.
+  axis: null, // What axis should be disabled. Can be X or Y.
+  reset: true, // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+};
+
 const About = () => {
   return (
     <div className="h-screen">
@@ -28,19 +42,25 @@ const About = () => {
         </div>
         <div className="grid grid-cols-3 gap-16 mt-32">
           {services.map((service) => (
-            <div
-              className="card w-96 bg-base-100 dark:bg- shadow-xl"
-              key={service.title}
-            >
-              <figure className="px-10 pt-10">
-                <img src={service.icon.src} alt="" className="rounded-xl w-16 h-16" />
-              </figure>
-              <div className="card-body items-center text-center">
-                <div className="card-actions">
-                  <h2 className="card-title">{service.title}</h2>
+            <Tilt options={defaultOptions}>
+              <div
+                className="card w-96 bg-base-100 dark:bg- shadow-xl"
+                key={service.title}
+              >
+                <figure className="px-10 pt-10">
+                  <img
+                    src={service.icon.src}
+                    alt=""
+                    className="rounded-xl w-16 h-16"
+                  />
+                </figure>
+                <div className="card-body items-center text-center">
+                  <div className="card-actions">
+                    <h2 className="card-title">{service.title}</h2>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Tilt>
           ))}
         </div>
       </div>

@@ -200,6 +200,14 @@
         "async": false
       }
     },
+    "(app-client)/./components/About.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/About.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./components/Hero.jsx": {
       "*": {
         "id": "(sc_client)/./components/Hero.jsx",
@@ -533,6 +541,14 @@
     },
     "/Users/khalidhosein/Desktop/khosein-23/public/images/webdev.png": {
       "id": "(app-client)/./public/images/webdev.png",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/khalidhosein/Desktop/khosein-23/components/About.jsx": {
+      "id": "(app-client)/./components/About.jsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"

@@ -2048,6 +2048,10 @@ h6 {
     font-family: unset;
 }
 
+.card {
+  box-shadow: 0 0 50px 5px #707ec2;
+}
+
 .hover\:bg-ship-cove-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 136 / var(--tw-bg-opacity));
@@ -2110,4 +2114,3 @@ h6 {
     align-items: center;
   }
 }
-

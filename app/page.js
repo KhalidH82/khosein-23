@@ -21,7 +21,7 @@ export default function Home() {
         <section id="about" className="pt-[88px] h-screen">
           <About />
         </section>
-        <section id="work" className="h-full">
+        <section id="work">
           <Work />
         </section>
       </div>

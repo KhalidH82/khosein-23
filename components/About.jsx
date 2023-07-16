@@ -40,11 +40,11 @@ const About = () => {
             digital landscape.
           </p>
         </div>
-        <div className="grid grid-cols-1ß md:grid-cols-2 lg:grid-cols-3 gap-16 mt-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-32">
           {services.map((service) => (
             <Tilt options={defaultOptions} key={service.title}>
               <div
-                className="card bg-base-100 shadow-xl"
+                className="card custom-card bg-base-100 shadow-xl"
                 key={service.title}
               >
                 <figure className="px-10 pt-10">
@@ -63,7 +63,7 @@ const About = () => {
             </Tilt>
           ))}
         </div>
-        <div className="w-full h-full relative top-16 flex">
+        <div className="w-full h-full relative top-28 flex">
         <div className="avatar online">
           <div className="rounded-full hover:ring-4">
             <Image

@@ -1842,8 +1842,8 @@ html {
 .top-0 {
   top: 0px;
 }
-.top-16 {
-  top: 4rem;
+.top-28 {
+  top: 7rem;
 }
 .z-50 {
   z-index: 50;
@@ -1870,6 +1870,9 @@ html {
 }
 .mt-10 {
   margin-top: 2.5rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .mt-3 {
   margin-top: 0.75rem;
@@ -1946,6 +1949,9 @@ html {
 .animate-bounce {
   animation: bounce 1s infinite;
 }
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1997,13 +2003,13 @@ html {
 .border-none {
   border-style: none;
 }
-.border-base-300 {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--b3) / var(--tw-border-opacity));
-}
 .border-base-100 {
   --tw-border-opacity: 1;
   border-color: hsl(var(--b1) / var(--tw-border-opacity));
+}
+.border-base-300 {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--b3) / var(--tw-border-opacity));
 }
 .bg-base-100 {
   --tw-bg-opacity: 1;
@@ -2061,6 +2067,10 @@ html {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-\[88px\] {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -2069,6 +2079,30 @@ html {
 }
 .pt-\[88px\] {
   padding-top: 88px;
+}
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+.pt-\[250px\] {
+  padding-top: 250px;
+}
+.pt-\[85rem\] {
+  padding-top: 85rem;
+}
+.pt-\[10rem\] {
+  padding-top: 10rem;
+}
+.pt-\[12rem\] {
+  padding-top: 12rem;
+}
+.pt-\[18rem\] {
+  padding-top: 18rem;
+}
+.pt-\[27rem\] {
+  padding-top: 27rem;
+}
+.pt-\[30rem\] {
+  padding-top: 30rem;
 }
 .text-left {
   text-align: left;
@@ -2240,7 +2274,7 @@ h6 {
     font-family: unset;
 }
 
-.card {
+.custom-card {
   box-shadow: 0 0 50px 5px #707ec2;
 }
 
@@ -2288,6 +2322,10 @@ h6 {
   .sm\:items-start {
     align-items: flex-start;
   }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2296,8 +2334,32 @@ h6 {
     display: flex;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:pt-\[88px\] {
+    padding-top: 88px;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pt-\[5rem\] {
+    padding-top: 5rem;
+  }
+
+  .md\:pt-\[8rem\] {
+    padding-top: 8rem;
   }
 }
 
@@ -2332,5 +2394,9 @@ h6 {
 
   .xl\:items-center {
     align-items: center;
+  }
+
+  .xl\:pt-0 {
+    padding-top: 0px;
   }
 }

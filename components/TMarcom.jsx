@@ -4,8 +4,8 @@ import { tmarcom } from "../app/constants/data";
 const TMarcom = () => {
   return (
     <div>
-      <h2 className="mb-5">T2 Marketing Communications</h2>
-      <div className="grid grid-cols-2 gap-8">
+      <h2 className="my-5">T2 Marketing Communications</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {tmarcom.map((project) =>
           project.featured ? (
             <a href={project.link} key={project.link}>

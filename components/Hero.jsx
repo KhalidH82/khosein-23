@@ -52,7 +52,7 @@ const Hero = () => {
         </div>
       <div ref={modalRef}></div>
       </div>
-      <div className="fixed right-3 bottom-3 btn rounded-full bg-ship-cove-600 text-white hover:bg-ship-cove-800 z-50">
+      <div className="fixed right-3 bottom-3 btn rounded-full bg-ship-cove-600 text-white hover:bg-ship-cove-800 border-none z-50">
       <PopupButton
         url="https://calendly.com/khalid-hosein/get-to-know-me"
         rootElement={modalRef.current}

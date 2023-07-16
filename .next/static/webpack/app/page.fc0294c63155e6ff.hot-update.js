@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/page",{
+
+/***/ "(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FHero.jsx&modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FAbout.jsx&modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FNavBar.jsx&server=false!":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FHero.jsx&modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FAbout.jsx&modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FNavBar.jsx&server=false! ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./components/Hero.jsx */ \"(app-client)/./components/Hero.jsx\"));\nPromise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./components/About.jsx */ \"(app-client)/./components/About.jsx\"));\nPromise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./components/NavBar.jsx */ \"(app-client)/./components/NavBar.jsx\"))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1jbGllbnQpLy4vbm9kZV9tb2R1bGVzL25leHQvZGlzdC9idWlsZC93ZWJwYWNrL2xvYWRlcnMvbmV4dC1mbGlnaHQtY2xpZW50LWVudHJ5LWxvYWRlci5qcz9tb2R1bGVzPSUyRlVzZXJzJTJGa2hhbGlkaG9zZWluJTJGRGVza3RvcCUyRmtob3NlaW4tMjMlMkZjb21wb25lbnRzJTJGSGVyby5qc3gmbW9kdWxlcz0lMkZVc2VycyUyRmtoYWxpZGhvc2VpbiUyRkRlc2t0b3AlMkZraG9zZWluLTIzJTJGY29tcG9uZW50cyUyRkFib3V0LmpzeCZtb2R1bGVzPSUyRlVzZXJzJTJGa2hhbGlkaG9zZWluJTJGRGVza3RvcCUyRmtob3NlaW4tMjMlMkZjb21wb25lbnRzJTJGTmF2QmFyLmpzeCZzZXJ2ZXI9ZmFsc2UhIiwibWFwcGluZ3MiOiJBQUFBLDZKQUErRjtBQUMvRiwrSkFBZ0c7QUFDaEciLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLz9iYjVmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiL1VzZXJzL2toYWxpZGhvc2Vpbi9EZXNrdG9wL2tob3NlaW4tMjMvY29tcG9uZW50cy9IZXJvLmpzeFwiKTtcbmltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiL1VzZXJzL2toYWxpZGhvc2Vpbi9EZXNrdG9wL2tob3NlaW4tMjMvY29tcG9uZW50cy9BYm91dC5qc3hcIik7XG5pbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIi9Vc2Vycy9raGFsaWRob3NlaW4vRGVza3RvcC9raG9zZWluLTIzL2NvbXBvbmVudHMvTmF2QmFyLmpzeFwiKSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FHero.jsx&modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FAbout.jsx&modules=%2FUsers%2Fkhalidhosein%2FDesktop%2Fkhosein-23%2Fcomponents%2FNavBar.jsx&server=false!\n"));
+
+/***/ })
+
+});

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { Tilt } from "react-tilt";
 import { services } from "../app/constants/data";
 
@@ -21,7 +22,7 @@ const About = () => {
       <div className="container px-4 mx-auto py-16">
         <div>
           <p>Introduction</p>
-          <h2>Overview.</h2>
+          <h2>About me.</h2>
           <p className="text-xl mt-5">
             Welcome! My name is Khalid, and I am a results-oriented full-stack
             web developer specializing in creating dynamic marketing
@@ -40,11 +41,11 @@ const About = () => {
             digital landscape.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-16 mt-32">
+        <div className="grid grid-cols-1ß md:grid-cols-2 lg:grid-cols-3 gap-16 mt-32">
           {services.map((service) => (
             <Tilt options={defaultOptions}>
               <div
-                className="card w-96 bg-base-100 dark:bg- shadow-xl"
+                className="card bg-base-100 dark:bg- shadow-xl"
                 key={service.title}
               >
                 <figure className="px-10 pt-10">
@@ -62,6 +63,24 @@ const About = () => {
               </div>
             </Tilt>
           ))}
+        </div>
+        <div className="w-full h-full relative top-16 flex">
+        <div className="avatar online">
+          <div className="rounded-full hover:ring-4">
+            <Image
+              className="rounded-full"
+              src="/images/khavatar.png"
+              width={50}
+              height={200}
+              alt="Khalid Hosein"
+            />
+          </div>
+        </div>
+        <div className="chat chat-start">
+          <div className="chat-bubble">
+            <p>Scroll down to see some of my recent work.</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>

@@ -16,16 +16,16 @@ const Hero = () => {
   return (
     <section className="hero h-screen">
       <div className="container px-4 mx-auto">
-        <div className="h-full flex flex-col gap-10 md:gap-0 md:flex-row items-center">
-          <div className="h-full w-full md:w-1/2">
+        <div className="h-full flex flex-col gap-10 lg:gap-0 lg:flex-row items-center">
+          <div className="h-full w-full lg:w-1/2">
             <img src="/images/khavatar.png" alt="" />
           </div>
-          <div className="h-full w-full text-center md:text-left md:w-1/2 uppercase">
+          <div className="h-full w-full text-left lg:w-1/2 uppercase">
             <h1 className={`font-bold ${slabo.className}`}>
               Hi, I'm{" "}
               <span className="text-ship-cove-700 font-extrabold">Khalid</span>
             </h1>
-            <div className="flex flex-col xl:flex-row items-center sm:items-start xl:items-center gap-5">
+            <div className="flex flex-col lg:flex-row sm:items-start xl:items-center gap-5">
               <h2 className={`font-bold animate-character ${khula.className}`}>
                 Full Stack Web Developer
               </h2>

@@ -2,7 +2,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[3]!./app/globals.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************/
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -170,6 +170,8 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
   font-size: 100%; /* 1 */
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
@@ -304,6 +306,13 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
   padding: 0;
 }
 
@@ -1200,6 +1209,18 @@ html {
 :where(.menu li) .badge {
   justify-self: end;
 }
+.mockup-window {
+  position: relative;
+  overflow: hidden;
+  overflow-x: auto;
+  padding-top: 1.25rem;
+  border-radius: var(--rounded-box, 1rem);
+}
+.mockup-window pre[data-prefix]:before {
+  content: attr(data-prefix);
+  display: inline-block;
+  text-align: right;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -1258,42 +1279,6 @@ html {
 .stack > *:nth-child(1) {
   transform: translateY(0) scale(1);
   z-index: 3;
-  opacity: 1;
-}
-.swap {
-  position: relative;
-  display: inline-grid;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  place-content: center;
-  cursor: pointer;
-}
-.swap > * {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform, opacity;
-}
-.swap input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.swap .swap-on,
-.swap .swap-indeterminate,
-.swap input:indeterminate ~ .swap-on {
-  opacity: 0;
-}
-.swap input:checked ~ .swap-off,
-.swap.swap-active .swap-off,
-.swap input:indeterminate ~ .swap-off {
-  opacity: 0;
-}
-.swap input:checked ~ .swap-on,
-.swap-active .swap-on,
-.swap input:indeterminate ~ .swap-indeterminate {
   opacity: 1;
 }
 .avatar-group :where(.avatar) {
@@ -1585,10 +1570,15 @@ html {
   transform: rotate(225deg);
   margin-top: 0;
 }
-.mockup-phone .display {
-  overflow: hidden;
-  border-radius: 40px;
-  margin-top: -25px;
+.mockup-window:before {
+  content: "";
+  margin-bottom: 1rem;
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+  opacity: 0.3;
+  box-shadow: 1.4em 0, 2.8em 0, 4.2em 0;
 }
 @keyframes modal-pop {
 
@@ -1914,6 +1904,10 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1929,8 +1923,17 @@ html {
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+.-mt-6 {
+  margin-top: -1.5rem;
+}
+.-mt-3 {
+  margin-top: -0.75rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .block {
   display: block;
@@ -1953,23 +1956,32 @@ html {
 .h-5 {
   height: 1.25rem;
 }
+.h-\[500px\] {
+  height: 500px;
+}
 .h-full {
   height: 100%;
 }
 .h-screen {
   height: 100vh;
 }
-.h-\[650px\] {
-  height: 650px;
+.h-auto {
+  height: auto;
 }
-.h-\[550px\] {
-  height: 550px;
+.h-96 {
+  height: 24rem;
 }
-.h-\[450px\] {
-  height: 450px;
+.h-\[32rem\] {
+  height: 32rem;
 }
-.h-\[500px\] {
-  height: 500px;
+.h-\[30rem\] {
+  height: 30rem;
+}
+.h-\[27rem\] {
+  height: 27rem;
+}
+.h-\[29rem\] {
+  height: 29rem;
 }
 .w-10 {
   width: 2.5rem;
@@ -2001,6 +2013,21 @@ html {
 .animate-bounce {
   animation: bounce 1s infinite;
 }
+.snap-y {
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+}
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+.snap-center {
+  scroll-snap-align: center;
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -2031,14 +2058,27 @@ html {
 .gap-5 {
   gap: 1.25rem;
 }
+.gap-8 {
+  gap: 2rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.border {
+  border-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
+}
 .border-none {
   border-style: none;
+}
+.border-base-300 {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--b3) / var(--tw-border-opacity));
 }
 .bg-base-100 {
   --tw-bg-opacity: 1;
@@ -2066,6 +2106,14 @@ html {
 .to-ship-cove-600 {
   --tw-gradient-to: #707ec2 var(--tw-gradient-to-position);
 }
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -2092,11 +2140,22 @@ html {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
 .pt-\[88px\] {
   padding-top: 88px;
+}
+.pb-16 {
+  padding-bottom: 4rem;
 }
 .text-left {
   text-align: left;
@@ -2120,9 +2179,6 @@ html {
 }
 .uppercase {
   text-transform: uppercase;
-}
-.italic {
-  font-style: italic;
 }
 .tracking-tight {
   letter-spacing: -0.025em;
@@ -2155,6 +2211,16 @@ html {
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .transition {
@@ -2290,18 +2356,8 @@ h6 {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.hover\:from-ship-cove-600:hover {
-  --tw-gradient-from: #707ec2 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(112 126 194 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .hover\:to-ship-cove-600:hover {
   --tw-gradient-to: #707ec2 var(--tw-gradient-to-position);
-}
-
-.hover\:to-ship-cove-900:hover {
-  --tw-gradient-to: #41496e var(--tw-gradient-to-position);
 }
 
 .hover\:text-white:hover {

@@ -78,7 +78,6 @@ const NavBar = () => {
             width={50}
             height={50}
             alt="Khalid Hosein"
-            layout="fixed"
           />
         </a>
       </div>

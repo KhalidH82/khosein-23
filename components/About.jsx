@@ -18,7 +18,6 @@ const defaultOptions = {
 
 const About = () => {
   return (
-    <div className="">
       <div className="container px-4 mx-auto py-16">
         <div>
           <p>Introduction</p>
@@ -83,7 +82,6 @@ const About = () => {
         </div>
         </div>
       </div>
-    </div>
   );
 };
 

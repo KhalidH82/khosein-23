@@ -196,4 +196,142 @@ const experiences = [
   },
 ];
 
-export { navLinks, services, technologies, experiences };
+const thorium = [
+  {
+    name: "Ciroc",
+    link: "https://www.ciroc.com/en-us/",
+    image: "/images/thorium/ciroc.png",
+    featured: true,
+  },
+  {
+    name: "Don Julio",
+    link: "https://www.donjulio.com/en-us",
+    image: "/images/thorium/donjulio.png",
+    featured: true,
+  },
+  {
+    name: "Casamigos",
+    link: "https://www.casamigos.com/en-us",
+    image: "/images/thorium/casamigos.png",
+    featured: true,
+  },
+  {
+    name: "Buchanans",
+    link: "https://www.buchananswhisky.com/en-us/",
+    image: "/images/thorium/buchanans.png",
+    featured: true,
+  },
+  {
+    name: "Belsazar",
+    link: "https://www.belsazar.com/",
+    image: "/images/thorium/belsazar.png",
+    featured: false,
+  },
+  {
+    name: "Mortlach",
+    link: "https://www.mortlach.com/",
+    image: "/images/thorium/mortlach.png",
+    featured: false,
+  },
+  {
+    name: "Orphan Barrel",
+    link: "https://www.orphanbarrel.com/",
+    image: "/images/thorium/orphanbarrel.png",
+    featured: false,
+  },
+  {
+    name: "JB Scotch",
+    link: "https://www.jbscotch.com/en/",
+    image: "/images/thorium/jbscotch.png",
+    featured: false,
+  },
+  {
+    name: "Cascade Moon",
+    link: "https://www.cascademooneditions.com/",
+    image: "/images/thorium/cascademoon.png",
+    featured: false,
+  },
+  {
+    name: "Copper Dog",
+    link: "https://www.copperdogwhisky.com/en-us/",
+    image: "/images/thorium/copperdog.png",
+    featured: false,
+  },
+  {
+    name: "Deleon",
+    link: "https://www.deleontequila.com/",
+    image: "/images/thorium/deleon.png",
+    featured: false,
+  },
+  {
+    name: "Bulleit",
+    link: "https://www.bulleit.com/",
+    image: "/images/thorium/bulleit.png",
+    featured: false,
+  },
+  {
+    name: "Guinness Brewery Baltimore",
+    link: "https://www.guinnessbrewerybaltimore.com/",
+    image: "/images/thorium/guinnessopengate.png",
+    featured: false,
+  },
+  {
+    name: "Seedlip",
+    link: "https://www.seedlipdrinks.com/en-us/",
+    image: "/images/thorium/seedlip.png",
+    featured: false,
+  },
+  {
+    name: "Stitzel Weller",
+    link: "https://www.stitzelwellerdistillery.com/",
+    image: "/images/thorium/stitzelweller.png",
+    featured: false,
+  },
+];
+
+const tmarcom = [
+  {
+    name: "World Water Works",
+    link: "https://www.worldwaterworks.com/",
+    image: "/images/t2/www.png",
+    featured: true,
+  },
+  {
+    name: "HandyTube",
+    link: "https://www.handytube.com/",
+    image: "/images/t2/handytube.png",
+    featured: true,
+  },
+  {
+    name: "168 Manufacturing",
+    link: "https://168mfg.com/",
+    image: "/images/t2/168.png",
+    featured: true,
+  },
+  {
+    name: "Hunter Products",
+    link: "https://www.hunterproducts.com/",
+    image: "/images/t2/hunter.png",
+    featured: false,
+  },
+  {
+    name: "Sigmanetics",
+    link: "https://www.sigmanetics.com/",
+    image: "/images/t2/sigmanetics.png",
+    featured: false,
+  },
+  {
+    name: "Magnaplate",
+    link: "https://www.magnaplate.com",
+    image: "/images/t2/generalmagnaplate.png",
+    featured: true,
+  },
+  {
+    name: "Akribis",
+    link: "https://akribis-sys.com/",
+    image: "/images/t2/akribis.png",
+    featured: false,
+  },
+];
+
+export { navLinks, services, technologies, experiences, thorium, tmarcom };

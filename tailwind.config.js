@@ -7,6 +7,7 @@ module.exports = {
   ],
   darkMode: "media",
   theme: {
+    darkMode: "class",
     extend: {
       colors: {
         "ship-cove": {

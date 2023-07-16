@@ -76,8 +76,9 @@ const NavBar = () => {
           <Image
             src="/images/1.png"
             width={50}
-            height={200}
+            height={50}
             alt="Khalid Hosein"
+            layout="fixed"
           />
         </a>
       </div>
@@ -108,24 +109,24 @@ const NavBar = () => {
       </div>
       <div className="navbar-end gap-3">
         <div className={`${scrolled ? "hidden" : "block"}`}>
-        <div className="flex">
-          <div className="chat chat-end">
-            <div className="chat-bubble">
-              <p>Hello! It's nice to meet you!</p>
+          <div className="md:flex hidden">
+            <div className="chat chat-end">
+              <div className="chat-bubble">
+                <p>Hello! It's nice to meet you!</p>
+              </div>
+            </div>
+            <div className="avatar online">
+              <div className="rounded-full hover:ring-4">
+                <Image
+                  className="rounded-full"
+                  src="/images/khavatar.png"
+                  width={50}
+                  height={200}
+                  alt="Khalid Hosein"
+                />
+              </div>
             </div>
           </div>
-          <div className="avatar online">
-            <div className="rounded-full hover:ring-4">
-              <Image
-                className="rounded-full"
-                src="/images/khavatar.png"
-                width={50}
-                height={200}
-                alt="Khalid Hosein"
-              />
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </div>

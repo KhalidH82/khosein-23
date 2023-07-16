@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <main>
-      <div >
+      <div>
         <NavBar />
         <Hero />
         <section id="about" className="pt-[88px]">

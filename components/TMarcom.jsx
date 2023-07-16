@@ -9,7 +9,7 @@ const TMarcom = () => {
         {tmarcom.map((project) =>
           project.featured ? (
             <a href={project.link} key={project.link}>
-              <div className="mockup-window h-[27rem] border border-base-300 shadow-2xl">
+              <div className="mockup-window h-[27rem] bg-base-100 border border-base-100 shadow-2xl">
                 <p className="text-center -mt-5 mb-2">{project.name}</p>
                 <div className="flex justify-center px-4 py-3 border-t border-base-300">
                   <img src={project.image} alt="" className="" />

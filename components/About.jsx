@@ -44,7 +44,7 @@ const About = () => {
           {services.map((service) => (
             <Tilt options={defaultOptions} key={service.title}>
               <div
-                className="card bg-base-100 dark:bg- shadow-xl"
+                className="card bg-base-100 shadow-xl"
                 key={service.title}
               >
                 <figure className="px-10 pt-10">

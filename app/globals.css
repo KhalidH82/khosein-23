@@ -8,6 +8,7 @@ html {
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
+    background: linear-gradient(to bottom, #9DB1DC, #e7eff8);
 }
 h1,h2,h3,h4,h5,h6 {
 

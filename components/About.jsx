@@ -18,7 +18,7 @@ const defaultOptions = {
 
 const About = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       <div className="container px-4 mx-auto py-16">
         <div>
           <p>Introduction</p>

@@ -10,7 +10,7 @@ const Contact = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <div className="container px-4 mx-auto">
+    <div className="container px-4 mx-auto py-16">
       <h2 className="text-center">Contact me</h2>
       <div className="h-full">
         <div></div>

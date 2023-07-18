@@ -28,14 +28,21 @@ const NavBar = () => {
       }`}
     >
       <div className="navbar-start">
+        <a className="logo" href="/" target="_self">
+          <Image
+            src="/images/1.png"
+            width={50}
+            height={50}
+            alt="Khalid Hosein"
+          />
+        </a>
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
-              fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="#4b5588"
             >
               <path
                 strokeLinecap="round"
@@ -47,7 +54,7 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 uppercase font-bold text-base tracking-tight"
+            className="menu menu-sm dropdown-content flex flex-col gap-2 mt-3 z-[1] p-2 shadow bg-ship-cove-600 rounded-box w-52 uppercase font-bold text-base text-white tracking-tight"
           >
             {navLinks.map((link) => (
               <li key={link.id}>
@@ -72,14 +79,6 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <a className="logo" href="/" target="_self">
-          <Image
-            src="/images/1.png"
-            width={50}
-            height={50}
-            alt="Khalid Hosein"
-          />
-        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 uppercase font-bold text-base tracking-tight">

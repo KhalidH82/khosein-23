@@ -13,7 +13,7 @@ const Work = () => {
 
   return (
     <div>
-      <div className="container px-4 mx-auto pb-16">
+      <div className="w-full h-full container px-4 mx-auto py-16">
         <div>
           <p></p>
           <h2>Current Work.</h2>

@@ -200,9 +200,25 @@
         "async": false
       }
     },
-    "(app-client)/./components/NavBar.jsx": {
+    "(app-client)/./components/About.jsx": {
       "*": {
-        "id": "(sc_client)/./components/NavBar.jsx",
+        "id": "(sc_client)/./components/About.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Hero.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/Hero.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Work.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/Work.jsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -224,25 +240,9 @@
         "async": false
       }
     },
-    "(app-client)/./components/About.jsx": {
+    "(app-client)/./components/NavBar.jsx": {
       "*": {
-        "id": "(sc_client)/./components/About.jsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Hero.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Hero.jsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Work.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Work.jsx",
+        "id": "(sc_client)/./components/NavBar.jsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -415,7 +415,7 @@
       "id": "(app-client)/./public/images/cms.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -423,7 +423,7 @@
       "id": "(app-client)/./public/images/content.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -431,7 +431,7 @@
       "id": "(app-client)/./public/images/css.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -439,7 +439,7 @@
       "id": "(app-client)/./public/images/ecomm.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -447,7 +447,7 @@
       "id": "(app-client)/./public/images/figma.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -455,7 +455,7 @@
       "id": "(app-client)/./public/images/git.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -463,7 +463,7 @@
       "id": "(app-client)/./public/images/github.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -471,7 +471,7 @@
       "id": "(app-client)/./public/images/html.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -479,7 +479,7 @@
       "id": "(app-client)/./public/images/javascript.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -487,7 +487,7 @@
       "id": "(app-client)/./public/images/marketing.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -495,7 +495,7 @@
       "id": "(app-client)/./public/images/microservices.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -503,7 +503,7 @@
       "id": "(app-client)/./public/images/next.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -511,7 +511,7 @@
       "id": "(app-client)/./public/images/nodejs.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -519,7 +519,7 @@
       "id": "(app-client)/./public/images/nuxt.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -527,7 +527,7 @@
       "id": "(app-client)/./public/images/reactjs.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -535,7 +535,7 @@
       "id": "(app-client)/./public/images/tailwind.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -543,7 +543,7 @@
       "id": "(app-client)/./public/images/vue.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -551,47 +551,7 @@
       "id": "(app-client)/./public/images/webdev.png",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/khalidhosein/Desktop/khosein-23/components/NavBar.jsx": {
-      "id": "(app-client)/./components/NavBar.jsx",
-      "name": "*",
-      "chunks": [
         "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/client/image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/esm/client/image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/shared/lib/head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/esm/shared/lib/head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -618,17 +578,49 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
+    },
+    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/esm/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/dist/esm/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/khalidhosein/Desktop/khosein-23/components/NavBar.jsx": {
+      "id": "(app-client)/./components/NavBar.jsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/khalidhosein/Desktop/khosein-23/app/layout": {
-      "modules": [
-        "/Users/khalidhosein/Desktop/khosein-23/app/globals.css"
-      ],
-      "files": [
-        "static/css/app/layout.css"
-      ]
-    },
     "/Users/khalidhosein/Desktop/khosein-23/app/page": {
       "modules": [
         "/Users/khalidhosein/Desktop/khosein-23/node_modules/next/font/google/target.css?{\"path\":\"app/fonts.js\",\"import\":\"Khula\",\"arguments\":[{\"weight\":[\"400\",\"600\",\"700\",\"800\"],\"style\":[\"normal\"],\"subsets\":[\"latin\"],\"display\":\"swap\"}],\"variableName\":\"khula\"}",
@@ -637,6 +629,14 @@
       ],
       "files": [
         "static/css/app/page.css"
+      ]
+    },
+    "/Users/khalidhosein/Desktop/khosein-23/app/layout": {
+      "modules": [
+        "/Users/khalidhosein/Desktop/khosein-23/app/globals.css"
+      ],
+      "files": [
+        "static/css/app/layout.css"
       ]
     }
   }

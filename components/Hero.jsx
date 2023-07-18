@@ -14,7 +14,7 @@ const Hero = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section className="hero h-screen">
+    <section className="hero h-full w-full">
       <div className="container px-4 mx-auto">
         <div className="h-full flex flex-col gap-10 lg:gap-0 lg:flex-row items-center">
           <div className="h-full w-full lg:w-1/2">
@@ -29,7 +29,7 @@ const Hero = () => {
               <h2 className={`font-bold animate-character ${khula.className}`}>
                 Full Stack Web Developer
               </h2>
-              <div className="animate-bounce">
+              <div className="animate-bounce hidden xl:block">
                 <a href="#about">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const Hero = () => {
         rootElement={modalRef.current}
         text="Let's Chat!"
         textColor="#fff"
-        color="#707ec2"
+        color="#707ec2" 
       />
       </div>
     </section>

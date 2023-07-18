@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <main>
       <div>
-        <section id="home">
+        <section id="home" className="h-full xl:h-screen">
           <Hero />
         </section>
-        <section id="about" className="pt-[88px] h-screen">
+        <section id="about" className="pt-[88px]">
           <About />
         </section>
         <section id="work">

@@ -18,7 +18,7 @@ const defaultOptions = {
 
 const About = () => {
   return (
-      <div className="container px-4 mx-auto py-16">
+      <div className="w-full h-full container px-4 mx-auto py-16">
         <div>
           <p>Introduction</p>
           <h2>About me.</h2>
@@ -63,7 +63,7 @@ const About = () => {
             </Tilt>
           ))}
         </div>
-        <div className="w-full h-full relative top-28 flex">
+        <div className="w-full h-full mt-10 flex">
         <div className="avatar online">
           <div className="rounded-full hover:ring-4">
             <Image

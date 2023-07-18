@@ -21,7 +21,7 @@ const Work = () => {
         <div className="w-full h-full flex flex-col lg:flex-row gap-10 justify-center items-center py-16">
           {experiences.map((experience) => (
             <div
-              className="card w-full h-[500px] bg-base-100 lg:w-1/2 text-ship-cove-800"
+              className="card w-full h-[500px] bg-base-100 lg:w-1/2"
               key={experience.company_name}
             >
               <div className="card-body">

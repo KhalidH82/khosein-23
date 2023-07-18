@@ -1827,9 +1827,6 @@ html {
 .fixed {
   position: fixed;
 }
-.relative {
-  position: relative;
-}
 .bottom-3 {
   bottom: 0.75rem;
 }
@@ -1841,9 +1838,6 @@ html {
 }
 .top-0 {
   top: 0px;
-}
-.top-28 {
-  top: 7rem;
 }
 .z-50 {
   z-index: 50;
@@ -2064,9 +2058,6 @@ html {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.pb-16 {
-  padding-bottom: 4rem;
-}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -2114,10 +2105,6 @@ html {
   --tw-text-opacity: 1;
   color: rgb(90 102 168 / var(--tw-text-opacity));
 }
-.text-ship-cove-800 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 136 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2163,6 +2150,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     background: linear-gradient(to bottom, #9DB1DC, #e7eff8);
+    color: #4b5588;
 }
 h1,h2,h3,h4,h5,h6 {
 
@@ -2288,10 +2276,6 @@ h6 {
 
 @media (min-width: 640px) {
 
-  .sm\:h-screen {
-    height: 100vh;
-  }
-
   .sm\:items-start {
     align-items: flex-start;
   }
@@ -2303,10 +2287,6 @@ h6 {
     display: flex;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2314,20 +2294,12 @@ h6 {
 
 @media (min-width: 1024px) {
 
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:flex {
     display: flex;
   }
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-screen {
-    height: 100vh;
   }
 
   .lg\:w-1\/2 {

@@ -5,6 +5,12 @@ import Work from "/components/Work";
 import Contact from '../components/Contact';
 import { Metadata } from "next";
 
+export const metadata = {
+  title: "Khalid Hosein",
+  description: "Khalid Hosein Portfolio",
+};
+ 
+
 export default function Home() {
 
   return (

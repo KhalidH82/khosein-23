@@ -1,18 +1,6 @@
-'use client'
-import React, { useState, useEffect, useRef } from "react";
-import { PopupButton } from "react-calendly";
 import { slabo, khula, montserrat } from "../app/fonts";
 
 const Hero = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const modalRef = useRef(null);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
   return (
     <section className="hero h-full w-full">
       <div className="container px-4 mx-auto">
@@ -50,16 +38,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      <div ref={modalRef}></div>
-      </div>
-      <div className="fixed right-3 bottom-3 btn rounded-full bg-ship-cove-600 text-white hover:bg-ship-cove-800 border-none z-50">
-      <PopupButton
-        url="https://calendly.com/khalid-hosein/get-to-know-me"
-        rootElement={modalRef.current}
-        text="Let's Chat!"
-        textColor="#fff"
-        color="#707ec2" 
-      />
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ const NavBar = () => {
   
   return (
     <div
-      className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 ${
+      className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 h-[88px] ${
         scrolled
           ? "bg-ship-cove-600 text-ship-cove-100"
           : "bg-transparent text-ship-cove-600"
@@ -113,13 +113,11 @@ const NavBar = () => {
                 <p>Hello! It's nice to meet you!</p>
               </div>
             </div>
-            <div className="avatar online">
-              <div className="hover:ring-4">
-                <Image
+            <div className="avatar online h-10">
+              <div className="hover:ring-4 relative">
+                <img
                   className="rounded-full"
                   src="/images/khavatar.png"
-                  width={80}
-                  height={200}
                   alt="Khalid Hosein"
                 />
               </div>

@@ -18,7 +18,7 @@ const Work = () => {
         <div className="w-full h-full flex flex-col lg:flex-row gap-10 justify-center items-center">
           {experiences.map((experience) => (
             <div
-              className="card w-full h-full lg:h-[650px] bg-base-100 lg:w-1/2"
+              className="card w-full h-full lg:h-[600px] bg-base-100 lg:w-1/2"
               key={experience.company_name}
             >
               <div className="card-body">

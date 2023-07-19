@@ -2310,6 +2310,10 @@ h6 {
     height: 600px;
   }
 
+  .lg\:h-\[27rem\] {
+    height: 27rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2343,6 +2347,14 @@ h6 {
 
   .xl\:h-\[500px\] {
     height: 500px;
+  }
+
+  .xl\:h-\[27rem\] {
+    height: 27rem;
+  }
+
+  .xl\:h-\[29rem\] {
+    height: 29rem;
   }
 
   .xl\:items-center {

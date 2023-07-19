@@ -18,7 +18,8 @@ const Contact = () => {
           <InlineWidget
             url="https://calendly.com/khalid-hosein/get-to-know-me"
             styles={{
-              height: "1100px", // Adjust the height to prevent content overflow
+              height: "1100px",
+              minHeight: "1100px", // Adjust the height to prevent content overflow
             }}
           />
         </div>

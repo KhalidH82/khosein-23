@@ -7,21 +7,18 @@ import { experiences } from "../app/constants/data";
 const Work = () => {
   const [company, setcompany] = useState(null)
   
-  const handleSwitch  = (x) => {
-    setcompany(x)
+  const handleSwitch  = (agency) => {
+    setcompany(agency)
   }
 
   return (
     <div>
       <div className="w-full h-full container px-4 mx-auto py-16">
-        <div>
-          <p></p>
-          <h2>Current Work.</h2>
-        </div>
-        <div className="w-full h-full flex flex-col lg:flex-row gap-10 justify-center items-center py-16">
+          <h2 className='mb-10'>Current Work.</h2>
+        <div className="w-full h-full flex flex-col lg:flex-row gap-10 justify-center items-center">
           {experiences.map((experience) => (
             <div
-              className="card w-full h-[500px] bg-base-100 lg:w-1/2"
+              className="card w-full h-full lg:h-[650px] bg-base-100 lg:w-1/2"
               key={experience.company_name}
             >
               <div className="card-body">

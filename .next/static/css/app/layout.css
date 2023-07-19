@@ -1868,6 +1868,9 @@ html {
 .mt-5 {
   margin-top: 1.25rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .block {
   display: block;
 }
@@ -2287,6 +2290,14 @@ h6 {
     display: none;
   }
 
+  .lg\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .lg\:h-\[650px\] {
+    height: 650px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2312,6 +2323,10 @@ h6 {
 
   .xl\:h-screen {
     height: 100vh;
+  }
+
+  .xl\:h-\[500px\] {
+    height: 500px;
   }
 
   .xl\:items-center {

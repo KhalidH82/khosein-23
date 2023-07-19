@@ -114,7 +114,7 @@ const NavBar = () => {
               </div>
             </div>
             <div className="avatar online">
-              <div className="rounded-full hover:ring-4">
+              <div className="hover:ring-4">
                 <Image
                   className="rounded-full"
                   src="/images/khavatar.png"

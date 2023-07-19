@@ -11,14 +11,14 @@ const Contact = () => {
   }, []);
   return (
     <div className="container px-4 mx-auto py-16">
-      <h2 className="text-center">Contact me</h2>
+      <h2 className="text-center mb-10">Contact me</h2>
       <div className="h-full">
         <div></div>
         <div>
           <InlineWidget
             url="https://calendly.com/khalid-hosein/get-to-know-me"
             styles={{
-              height: "1000px", // Adjust the height to prevent content overflow
+              height: "1100px", // Adjust the height to prevent content overflow
             }}
           />
         </div>

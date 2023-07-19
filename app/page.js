@@ -9,7 +9,7 @@ export const metadata = {
   title: "Khalid Hosein",
   description: "Khalid Hosein Portfolio",
 };
- 
+
 
 export default function Home() {
 

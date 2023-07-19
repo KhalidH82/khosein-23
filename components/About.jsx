@@ -69,7 +69,7 @@ const About = () => {
             <Image
               className="rounded-full"
               src="/images/khavatar.png"
-              width={50}
+              width={80}
               height={200}
               alt="Khalid Hosein"
             />

@@ -18,20 +18,20 @@ const defaultOptions = {
 
 const About = () => {
   return (
-    <div className="w-full h-full container px-4 mx-auto py-16">
+    <div className="w-full h-full container px-4 mx-auto py-24">
       <div>
-        <p>Introduction</p>
-        <h2>About me.</h2>
-        <p className="text-xl mt-5">
-          Welcome! My name is Khalid, and I am a results-oriented full-stack web
-          developer specializing in creating dynamic marketing applications.
-          With a unique blend of technical expertise and marketing acumen, I
-          bring extensive experience in working with JavaScript and a deep
-          proficiency in frameworks like React/Next.js and Vue/Nuxt.js. I have a
-          strong command of CMS systems such as Contentful, Directus, Strapi,
-          and Nuxt/Content, allowing me to efficiently manage and deliver
-          content-driven projects. My skill set also extends to working in a
-          JAMstack architecture, leveraging the power of JavaScript, APIs,
+        <p className="uppercase">Introduction</p>
+        <h2 className="mb-10">About me.</h2>
+        <p className="text-xl leading-8 mt-5">
+          <span className="text-5xl">Welcome!</span> My name is Khalid, and I am a results-oriented
+          full-stack web developer specializing in creating dynamic marketing
+          applications. With a unique blend of technical expertise and marketing
+          acumen, I bring extensive experience in working with JavaScript and a
+          deep proficiency in frameworks like Vue/Nuxt.js and React/Next.js. I
+          have a strong command of CMS systems such as Contentful, Directus,
+          Strapi, and Nuxt/Content, allowing me to efficiently manage and
+          deliver content-driven projects. My skill set also extends to working
+          in a JAMstack architecture, leveraging the power of JavaScript, APIs,
           pre-built markup, and Tailwind CSS to create high-performing and
           scalable web applications. With a meticulous attention to detail and a
           passion for staying up-to-date with the latest industry trends, I am
@@ -43,7 +43,7 @@ const About = () => {
         {services.map((service) => (
           <Tilt options={defaultOptions} key={service.title}>
             <div
-              className="card custom-card bg-base-100 shadow-xl"
+              className="card custom-card bg-ship-cove-100 shadow-xl"
               key={service.title}
             >
               <figure className="px-10 pt-10">
@@ -62,7 +62,7 @@ const About = () => {
           </Tilt>
         ))}
       </div>
-      <div className="w-full h-full mt-10 flex">
+      {/* <div className="w-full h-full mt-10 flex">
         <div className="avatar online h-20">
           <div className="rounded-full hover:ring-4">
             <img
@@ -74,10 +74,10 @@ const About = () => {
         </div>
         <div className="chat chat-start">
           <div className="chat-bubble">
-            <p>Scroll down to see some of my recent work.</p>
+            <p>Scroll down to see technologies I'm experienced with.</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

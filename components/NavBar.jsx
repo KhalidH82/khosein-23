@@ -21,7 +21,7 @@ const NavBar = () => {
   
   return (
     <div
-      className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 h-[88px] ${
+      className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 h-[64px] ${
         scrolled
           ? "bg-ship-cove-600 text-ship-cove-100"
           : "bg-transparent text-ship-cove-600"
@@ -65,6 +65,13 @@ const NavBar = () => {
                 >
                   {link.title}
                 </a>
+                {link.sublink?.map((sublink) => (
+                  <ul>
+                    <li>
+                      <a href="">{sublink.agency}</a>
+                    </li>
+                  </ul>
+                ))}
               </li>
             ))}
             <li>
@@ -91,6 +98,13 @@ const NavBar = () => {
               >
                 {link.title}
               </a>
+              {link.sublink?.map((sublink) => (
+                <ul>
+                  <li>
+                    <a href="">{sublink.agency}</a>
+                  </li>
+                </ul>
+              ))}
             </li>
           ))}
           <li>

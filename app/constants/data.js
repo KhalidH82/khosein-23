@@ -10,13 +10,18 @@ import {
   nodejs,
   git,
   github,
+  gmail,
+  linkedin,
   figma,
   webdev,
   ecomm,
   microservices,
   marketing,
   cms,
-  content
+  content,
+  contentful,
+  netlify,
+  directus
 
 } from "../../public/images";
 
@@ -27,11 +32,41 @@ const navLinks = [
   },
   {
     id: "work",
-    title: "Current Work",
+    title: "Agency Work",
+    sublink: [
+      {
+        agency: "T2 Marketing Communications",
+
+      },
+      {
+        agency: "Thorium Digital",
+      }
+    ]
   },
   {
     id: "contact",
     title: "Contact",
+  },
+];
+
+const footerLinks = [
+  {
+    id: "google",
+    title: "Google",
+    icon: gmail,
+    link: "mailto:khalid.hosein9@gmail.com",
+  },
+  {
+    id: "linkedin",
+    title: "LinkedIn",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/khalid-hosein/",
+  },
+  {
+    id: "github",
+    title: "Github",
+    icon: github,
+    link: "https://github.com/KhalidH82",
   },
 ];
 
@@ -49,7 +84,7 @@ const services = [
     icon: cms,
   },
   {
-    title: "JAMstack/Microservies",
+    title: "API / Microservices",
     icon: microservices,
   },
   {
@@ -75,17 +110,9 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Next JS",
-    icon: next,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "Vue JS",
@@ -95,33 +122,41 @@ const technologies = [
     name: "Nuxt JS",
     icon: nuxt,
   },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+  // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Next JS",
+      icon: next,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
   {
     name: "Contentful",
-    // icon: contentful,
+    icon: contentful,
   },
   {
     name: "Directus",
-    // icon: directus,
+    icon: directus,
   },
-  {
-    name: "Nuxt/Content",
-    // icon: nuxtcontent,
-  },
+  // {
+  //   name: "Nuxt/Content",
+  //   // icon: nuxtcontent,
+  // },
   {
     name: "Figma",
     icon: figma,
   },
   {
     name: "Netlify",
-    // icon: netlify,
+    icon: netlify,
   },
   {
     name: "Github",
@@ -334,4 +369,4 @@ const tmarcom = [
   },
 ];
 
-export { navLinks, services, technologies, experiences, thorium, tmarcom };
+export { navLinks, footerLinks, services, technologies, experiences, thorium, tmarcom };

@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container px-4 mx-auto">
         <div className="h-full flex flex-col gap-10 lg:gap-0 lg:flex-row items-center">
           <div className="h-full w-full lg:w-1/2">
-            <img src="/images/khavatar.png" alt="" />
+            <img src="/images/khavatar.png" alt="Khalid Hosein" />
           </div>
           <div className="h-full w-full text-left lg:w-1/2 uppercase">
             <h1 className={`font-bold ${slabo.className}`}>

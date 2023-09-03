@@ -93,18 +93,11 @@ const NavBar = () => {
             <li key={link.id}>
               {" "}
               <a
-                href={`#${link.id}`}
+                href={link.link}
                 className="link-underline link-underline-black border-none hover:bg-transparent"
               >
                 {link.title}
               </a>
-              {link.sublink?.map((sublink) => (
-                <ul>
-                  <li>
-                    <a href="">{sublink.agency}</a>
-                  </li>
-                </ul>
-              ))}
             </li>
           ))}
           <li>

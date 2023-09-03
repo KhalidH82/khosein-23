@@ -29,10 +29,12 @@ const navLinks = [
   {
     id: "about",
     title: "About Me",
+    link: '#about'
   },
   {
     id: "work",
-    title: "Agency Work",
+    title: "Agency Experience",
+    link: '/agency-experience',
     sublink: [
       {
         agency: "T2 Marketing Communications",
@@ -46,6 +48,7 @@ const navLinks = [
   {
     id: "contact",
     title: "Contact",
+    link: '#contact',
   },
 ];
 

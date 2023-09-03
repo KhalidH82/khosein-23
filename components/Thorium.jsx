@@ -1,6 +1,4 @@
 import React from 'react'
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { thorium } from "../app/constants/data";
 
 const Thorium = () => {
@@ -26,12 +24,11 @@ const Thorium = () => {
         while refactoring existing code to ensure flexibility, sustainability,
         and reusability across 40+ multi-locale sites.
       </p>
-      <div className="">
-        <Carousel>
+      <div>
           {thorium.map((project) =>
             project.featured ? (
               <a href={project.link} key={project.link}>
-                <div className="mockup-window h-full xl:h-[29rem] border border-base-100 shadow-2xl bg-ship-cove-100">
+                <div className="mockup-window h-full xl:h-[29rem] bg-base-100 border border-base-100 shadow-2xl">
                   <p className="text-center -mt-5 mb-2">{project.name}</p>
                   <div className="flex justify-center px-4 py-3 border-t border-base-300">
                     <img src={project.image} alt="" className="" />
@@ -40,7 +37,6 @@ const Thorium = () => {
               </a>
             ) : null
           )}
-        </Carousel>
       </div>
       <h2 className="my-5">Further Contributions</h2>
       <div className="w-full flex flex-wrap gap-5">

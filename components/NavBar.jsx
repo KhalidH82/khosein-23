@@ -95,21 +95,12 @@ const NavBar = () => {
               <a
                 href={link.link}
                 className="link-underline link-underline-black border-none hover:bg-transparent"
+                target={link.title === 'Resume' ? '_blank' : '_self'}
               >
                 {link.title}
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="/K.Hosein.pdf"
-              alt="Khalid Hosein resume"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-          </li>
         </ul>
       </div>
       <div className="navbar-end gap-3">

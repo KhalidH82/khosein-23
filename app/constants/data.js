@@ -29,26 +29,30 @@ const navLinks = [
   {
     id: "about",
     title: "About Me",
-    link: '#about'
+    link: "#about",
   },
   {
     id: "work",
     title: "Agency Experience",
-    link: '/agency-experience',
+    link: "/agency-experience",
     sublink: [
       {
         agency: "T2 Marketing Communications",
-
       },
       {
         agency: "Thorium Digital",
-      }
-    ]
+      },
+    ],
   },
   {
     id: "contact",
     title: "Contact",
-    link: '#contact',
+    link: "#contact",
+  },
+  {
+    id: "resume",
+    title: "Resume",
+    link: "/K.Hosein.pdf",
   },
 ];
 

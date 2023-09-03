@@ -1,9 +1,9 @@
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Slabo_27px","arguments":[{"weight":["400"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"slabo"} ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Slabo_27px","arguments":[{"weight":["400"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"slabo"} ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* latin-ext */
 @font-face {
-  font-family: '__Slabo_27px_9a22fa';
+  font-family: '__Slabo_27px_b8adb8';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -12,22 +12,22 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Slabo_27px_9a22fa';
+  font-family: '__Slabo_27px_b8adb8';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(/_next/static/media/c22b50e10281616e-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Slabo_27px_Fallback_9a22fa';src: local("Times New Roman");ascent-override: 94.61%;descent-override: 30.28%;line-gap-override: 0.00%;size-adjust: 97.86%
-}.__className_9a22fa {font-family: '__Slabo_27px_9a22fa', '__Slabo_27px_Fallback_9a22fa';font-weight: 400;font-style: normal
+}@font-face {font-family: '__Slabo_27px_Fallback_b8adb8';src: local("Times New Roman");ascent-override: 94.61%;descent-override: 30.28%;line-gap-override: 0.00%;size-adjust: 97.86%
+}.__className_b8adb8 {font-family: '__Slabo_27px_b8adb8', '__Slabo_27px_Fallback_b8adb8';font-weight: 400;font-style: normal
 }
 
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Khula","arguments":[{"weight":["400","600","700","800"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"khula"} ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Khula","arguments":[{"weight":["400","600","700","800"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"khula"} ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* devanagari */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -36,7 +36,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -45,7 +45,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -54,7 +54,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -63,7 +63,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -72,7 +72,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -81,7 +81,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -90,7 +90,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -99,7 +99,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -108,7 +108,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -117,7 +117,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -126,22 +126,22 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Khula_645c85';
+  font-family: '__Khula_3e5819';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
   src: url(/_next/static/media/ce24861cd8c68f64-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Khula_Fallback_645c85';src: local("Arial");ascent-override: 100.36%;descent-override: 60.78%;line-gap-override: 0.00%;size-adjust: 99.64%
-}.__className_645c85 {font-family: '__Khula_645c85', '__Khula_Fallback_645c85';font-style: normal
+}@font-face {font-family: '__Khula_Fallback_3e5819';src: local("Arial");ascent-override: 100.36%;descent-override: 60.78%;line-gap-override: 0.00%;size-adjust: 99.64%
+}.__className_3e5819 {font-family: '__Khula_3e5819', '__Khula_Fallback_3e5819';font-style: normal
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Montserrat_Alternates","arguments":[{"weight":["400","500","600","700","800","900"],"style":["normal","italic"],"subsets":["latin"],"display":"swap"}],"variableName":"montserrat"} ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Montserrat_Alternates","arguments":[{"weight":["400","500","600","700","800","900"],"style":["normal","italic"],"subsets":["latin"],"display":"swap"}],"variableName":"montserrat"} ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
@@ -150,7 +150,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
@@ -159,7 +159,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
@@ -168,7 +168,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
@@ -177,7 +177,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
@@ -186,7 +186,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 500;
   font-display: swap;
@@ -195,7 +195,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 500;
   font-display: swap;
@@ -204,7 +204,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 500;
   font-display: swap;
@@ -213,7 +213,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 500;
   font-display: swap;
@@ -222,7 +222,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 500;
   font-display: swap;
@@ -231,7 +231,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
@@ -240,7 +240,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
@@ -249,7 +249,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
@@ -258,7 +258,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
@@ -267,7 +267,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
@@ -276,7 +276,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
@@ -285,7 +285,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
@@ -294,7 +294,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
@@ -303,7 +303,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
@@ -312,7 +312,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
@@ -321,7 +321,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 800;
   font-display: swap;
@@ -330,7 +330,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 800;
   font-display: swap;
@@ -339,7 +339,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 800;
   font-display: swap;
@@ -348,7 +348,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 800;
   font-display: swap;
@@ -357,7 +357,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 800;
   font-display: swap;
@@ -366,7 +366,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
@@ -375,7 +375,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
@@ -384,7 +384,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
@@ -393,7 +393,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
@@ -402,7 +402,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
@@ -411,7 +411,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -420,7 +420,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -429,7 +429,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -438,7 +438,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -447,7 +447,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -456,7 +456,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -465,7 +465,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -474,7 +474,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -483,7 +483,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -492,7 +492,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -501,7 +501,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -510,7 +510,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -519,7 +519,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -528,7 +528,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -537,7 +537,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -546,7 +546,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -555,7 +555,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -564,7 +564,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -573,7 +573,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -582,7 +582,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -591,7 +591,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -600,7 +600,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -609,7 +609,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -618,7 +618,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -627,7 +627,7 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -636,7 +636,7 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
@@ -645,7 +645,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
@@ -654,7 +654,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
@@ -663,7 +663,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
@@ -672,13 +672,13 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Montserrat_Alternates_216957';
+  font-family: '__Montserrat_Alternates_a03d32';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
   src: url(/_next/static/media/5a7daec4380d6e82-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Montserrat_Alternates_Fallback_216957';src: local("Arial");ascent-override: 83.13%;descent-override: 21.56%;line-gap-override: 0.00%;size-adjust: 116.45%
-}.__className_216957 {font-family: '__Montserrat_Alternates_216957', '__Montserrat_Alternates_Fallback_216957'
+}@font-face {font-family: '__Montserrat_Alternates_Fallback_a03d32';src: local("Arial");ascent-override: 83.13%;descent-override: 21.56%;line-gap-override: 0.00%;size-adjust: 116.45%
+}.__className_a03d32 {font-family: '__Montserrat_Alternates_a03d32', '__Montserrat_Alternates_Fallback_a03d32'
 }
 

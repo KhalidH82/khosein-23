@@ -11,6 +11,17 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/agency-experience/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/agency-experience/layout.js"
+    ],
+    "/agency-experience/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/agency-experience/page.css",
+      "static/chunks/app/agency-experience/page.js"
     ]
   }
 }

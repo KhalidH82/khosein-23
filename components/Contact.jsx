@@ -10,7 +10,7 @@ const Contact = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <div className="container px-4 mx-auto pt-24">
+    <div className="container px-4 mx-auto py-16">
       <p className="uppercase">Get in touch</p>
       <h2 className="mb-10">Contact me.</h2>
       <div className="flex flex-col-reverse gap-20 lg:flex-row items-center">

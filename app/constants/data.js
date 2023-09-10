@@ -47,7 +47,7 @@ const navLinks = [
   {
     id: "contact",
     title: "Contact",
-    link: "#contact",
+    link: "/#contact",
   },
   {
     id: "resume",

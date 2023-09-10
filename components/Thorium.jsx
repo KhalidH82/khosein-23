@@ -1,5 +1,6 @@
 import React from 'react'
 import { thorium } from "../app/constants/data";
+import Carousel from '/components/Carousel.js'
 
 const Thorium = () => {
   return (
@@ -24,19 +25,8 @@ const Thorium = () => {
         while refactoring existing code to ensure flexibility, sustainability,
         and reusability across 40+ multi-locale sites.
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12">
-        {thorium.map((project) =>
-          project.featured ? (
-            <a href={project.link} key={project.link}>
-              <div className="mockup-window h-full xl:h-[29rem] bg-ship-cove-100 border border-base-100 shadow-2xl">
-                <p className="text-center -mt-5 mb-2">{project.name}</p>
-                <div className="flex justify-center px-4 py-3 border-t border-base-300">
-                  <img src={project.image} alt="" className="" />
-                </div>
-              </div>
-            </a>
-          ) : null
-        )}
+      <div className="h-full w-full">
+      <Carousel />
       </div>
       <h2 className="my-5">Further Contributions</h2>
       <div className="w-full flex flex-wrap gap-5">

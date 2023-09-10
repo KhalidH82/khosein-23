@@ -89,3 +89,14 @@ h6 {
 .custom-card {
   box-shadow: 0 0 50px 5px #707ec2;
 }
+
+.carousel-status {
+  display: none;
+}
+
+.carousel .control-next.control-arrow {
+    right: 20px !important;
+}
+.carousel .control-prev.control-arrow {
+    left: 20px !important;
+}

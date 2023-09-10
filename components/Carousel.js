@@ -7,6 +7,7 @@ export default function ResponsiveCarousel() {
   return (
     <div>
       <Carousel
+        showIndicators
         showArrows={true}
         infiniteLoop={true}
         dynamicHeight={false}

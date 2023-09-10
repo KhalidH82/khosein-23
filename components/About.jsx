@@ -18,7 +18,7 @@ const defaultOptions = {
 
 const About = () => {
   return (
-    <div className="w-full h-full container px-4 mx-auto py-24">
+    <div className="container px-4 mx-auto py-24 flex flex-col gap-12">
       <div>
         <p className="uppercase">Introduction</p>
         <h2 className="mb-10">About me.</h2>
@@ -39,7 +39,7 @@ const About = () => {
           businesses thrive in the digital landscape.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-32">
+      <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-12">
         {services.map((service) => (
           <Tilt options={defaultOptions} key={service.title}>
             <div
@@ -62,22 +62,6 @@ const About = () => {
           </Tilt>
         ))}
       </div>
-      {/* <div className="w-full h-full mt-10 flex">
-        <div className="avatar online h-20">
-          <div className="rounded-full hover:ring-4">
-            <img
-              className="rounded-full"
-              src="/images/khavatar.png"
-              alt="Khalid Hosein"
-            />
-          </div>
-        </div>
-        <div className="chat chat-start">
-          <div className="chat-bubble">
-            <p>Scroll down to see technologies I'm experienced with.</p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

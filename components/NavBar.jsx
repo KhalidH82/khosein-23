@@ -62,28 +62,12 @@ const NavBar = () => {
                 <a
                   href={`#${link.id}`}
                   className="link-underline link-underline-black border-none hover:bg-transparent"
+                  target={link.title === "Resume" ? "_blank" : "_self"}
                 >
                   {link.title}
                 </a>
-                {link.sublink?.map((sublink) => (
-                  <ul>
-                    <li>
-                      <a href="">{sublink.agency}</a>
-                    </li>
-                  </ul>
-                ))}
               </li>
             ))}
-            <li>
-              <a
-                href="/K.Hosein.pdf"
-                alt="Khalid Hosein resume"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -95,7 +79,7 @@ const NavBar = () => {
               <a
                 href={link.link}
                 className="link-underline link-underline-black border-none hover:bg-transparent"
-                target={link.title === 'Resume' ? '_blank' : '_self'}
+                target={link.title === "Resume" ? "_blank" : "_self"}
               >
                 {link.title}
               </a>
@@ -111,7 +95,7 @@ const NavBar = () => {
                 <p>Hello! It's nice to meet you!</p>
               </div>
             </div>
-            <div className="avatar online h-10">
+            <div className="avatar online h-10 mt-2">
               <div className="hover:ring-4 relative">
                 <img
                   className="rounded-full"

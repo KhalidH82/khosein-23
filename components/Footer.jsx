@@ -1,7 +1,5 @@
 import React from "react";
 import { footerLinks } from '../app/constants/data'
-
-console.log(footerLinks)
 const Footer = () => {
   return (
     <footer className="w-full h-[64px] bg-ship-cove-600 text-ship-cove-100">

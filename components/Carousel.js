@@ -8,9 +8,9 @@ export default function ResponsiveCarousel({ projects }) {
   const CustomPrevArrow = (props) => (
     <button
       onClick={props.onClick}
-      style={{ position: "absolute", left: 0, top: "50%", zIndex: 2 }}
+      className="custom-btn-left"
     >
-      <img src="/images/arrow-left.svg" className="w-6 h-6 md:h-12 md:w-12 object-contain px-5" />
+      <img src="/images/arrow-left.svg" className="w-6 h-6 sm:h-12 sm:w-12 object-contain px-5" />
     </button>
   );
 
@@ -18,11 +18,11 @@ export default function ResponsiveCarousel({ projects }) {
   const CustomNextArrow = (props) => (
     <button
       onClick={props.onClick}
-      style={{ position: "absolute", right: 0, top: "50%", zIndex: 2 }}
+      className="custom-btn-right"
     >
       <img
         src="/images/arrow-right.svg"
-        className="w-6 h-6 md:h-12 md:w-12 object-contain px-5"
+        className="w-6 h-6 sm:h-12 sm:w-12 object-contain px-5"
       />
     </button>
   );

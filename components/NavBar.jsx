@@ -29,56 +29,7 @@ const NavBar = () => {
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80"
-          >
-            {navLinks.map((link) =>
-              link.sublink ? (
-                <li tabIndex={0}>
-                  <details>
-                    <summary className="uppercase font-extrabold text-ship-cove-600">
-                      {link.title}
-                    </summary>
-                    <ul className="p-2">
-                      {link.sublink.map((agency) => (
-                        <li>
-                          <a
-                            href={agency.link}
-                            className="uppercase font-extrabold text-ship-cove-600"
-                          >
-                            {agency.agency}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </details>
-                </li>
-              ) : (
-                <li key={link.id}>
-                  {" "}
-                  <a
-                    href={`#${link.id}`}
-                    className="link-underline link-underline-black border-none hover:bg-transparent uppercase font-extrabold text-ship-cove-600"
-                    target={link.title === "Resume" ? "_blank" : "_self"}
-                  >
-                    {link.title}
-                  </a>
-                </li>
-              )
-            )}
-          </ul>
-        </div>
-        <div className="w-full flex">
-        <a className="logo" href="/" target="_self">
-          <Image
-            src="/images/1.png"
-            width={50}
-            height={50}
-            alt="Khalid Hosein"
-          />
-        </a>
-           <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -94,23 +45,68 @@ const NavBar = () => {
               />
             </svg>
           </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80"
+          >
+            {navLinks.map((link) =>
+              link.sublink ? (
+                <li tabIndex={0} className={prompt.className}>
+                  <details>
+                    <summary className="uppercase text-ship-cove-600">
+                      {link.title}
+                    </summary>
+                    <ul className="p-2">
+                      {link.sublink.map((agency) => (
+                        <li>
+                          <a
+                            href={agency.link}
+                            className="uppercase text-ship-cove-600"
+                          >
+                            {agency.agency}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ) : (
+                <li key={link.id} className={prompt.className}>
+                  {" "}
+                  <a
+                    href={`#${link.id}`}
+                    className="link-underline link-underline-black border-none hover:bg-transparent uppercase text-ship-cove-600"
+                    target={link.title === "Resume" ? "_blank" : "_self"}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              )
+            )}
+          </ul>
         </div>
+        <a className="logo" href="/" target="_self">
+          <Image
+            src="/images/1.png"
+            width={50}
+            height={50}
+            alt="Khalid Hosein"
+          />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {navLinks.map((link) =>
             link.sublink ? (
-              <li tabIndex={0}>
+              <li tabIndex={0} className={prompt.className}>
                 <details>
-                  <summary className={`uppercase ${josefin.className}`}>
-                    {link.title}
-                  </summary>
+                  <summary className="uppercase">{link.title}</summary>
                   <ul className="p-2 bg-ship-cove-100">
                     {link.sublink.map((agency) => (
                       <li>
                         <a
                           href={agency.link}
-                          className={`uppercase text-ship-cove-600 ${josefin.className}`}
+                          className="uppercase text-ship-cove-600"
                         >
                           {agency.agency}
                         </a>
@@ -120,11 +116,11 @@ const NavBar = () => {
                 </details>
               </li>
             ) : (
-              <li key={link.id}>
+              <li key={link.id} className={prompt.className}>
                 {" "}
                 <a
                   href={`#${link.id}`}
-                  className={`link-underline link-underline-black border-none hover:bg-transparent uppercase ${josefin.className}`}
+                  className="link-underline link-underline-black border-none hover:bg-transparent uppercase"
                   target={link.title === "Resume" ? "_blank" : "_self"}
                 >
                   {link.title}
@@ -137,7 +133,7 @@ const NavBar = () => {
       <div className="navbar-end">
         <div className={`${scrolled ? "hidden" : "block"}`}>
           <div className="md:flex hidden">
-            <div className="chat chat-end mt-2">
+            <div className="chat chat-end">
               <div className="chat-bubble">
                 <p>Hello! It's nice to meet you!</p>
               </div>

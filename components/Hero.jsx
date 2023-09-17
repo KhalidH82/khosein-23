@@ -12,7 +12,7 @@ const Hero = () => {
               Hi, I'm{" "}
               <span className="text-ship-cove-700 font-extrabold">Khalid</span>
             </h1>
-            <div className="flex flex-col lg:flex-row sm:items-start xl:items-center gap-5">
+            <div className="flex flex-col lg:flex-row sm:items-start xl:items-center">
               <h2 className={`font-bold animate-character ${prompt.className}`}>
                 Full Stack Web Developer
               </h2>

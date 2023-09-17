@@ -57,7 +57,7 @@ const About = () => {
               </figure>
               <div className="card-body items-center text-center">
                 <div className="card-actions">
-                  <h2 className="card-title">{service.title}</h2>
+                  <h2 className={`card-title ${prompt.className}`}>{service.title}</h2>
                 </div>
               </div>
             </div>

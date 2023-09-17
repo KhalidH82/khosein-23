@@ -18,7 +18,7 @@ const TMarcom = ({ projects }) => {
           {tmarcomExperience.date}
         </span>
       </div>
-      <p className={`py-3 mt-10 text-2xl ${josefin.className}`}>
+      <p className={`py-3 mt-10 text-xl ${josefin.className}`}>
         {tmarcomExperience.description}
       </p>
       <div className="py-8 w-full flex flex-col md:flex-row items-center">

@@ -25,7 +25,7 @@ const About = () => {
         <div>
           <p className={`uppercase ${josefin.className}`}>Introduction</p>
           <h2 className={`mb-10 font-bold ${prompt.className}`}>About me.</h2>
-          <p className={`text-2xl leading-8 mt-5 ${josefin.className}`}>
+          <p className={`text-xl mt-5 ${josefin.className}`}>
             Welcome! My name is Khalid, and I am a results-oriented full-stack
             web developer specializing in creating dynamic marketing
             applications. With a unique blend of technical expertise and

@@ -32,7 +32,7 @@ const Contact = () => {
         </div>
         <div className="w-full lg:w-1/2">
         <AnimatedElement animationType="fadeInRight">
-          <p className={`text-2xl leading-8 mt-5 ${josefin.className}`}>
+          <p className={`text-xl leading-8 mt-5 ${josefin.className}`}>
             I'm excited to hear from you. Whether you have a project in mind, a
             question about web development, or just want to chat about the
             latest tech trends, I'm all ears! Feel free to reach out and let's

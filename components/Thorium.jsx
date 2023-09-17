@@ -2,7 +2,7 @@ import React from 'react'
 import { thorium } from "../app/constants/data";
 import Carousel from '/components/Carousel.js'
 
-const Thorium = () => {
+const Thorium = ({ projects }) => {
   return (
     <div className="w-full h-full mt-10">
       <div className="text-left">
@@ -26,7 +26,7 @@ const Thorium = () => {
         and reusability across 40+ multi-locale sites.
       </p>
       <div className="h-full w-full">
-      <Carousel />
+      <Carousel projects={projects} />
       </div>
       <h2 className="my-5">Further Contributions</h2>
       <div className="w-full flex flex-wrap gap-5">

@@ -1,9 +1,9 @@
 'use client'
 import { Carousel } from "react-responsive-carousel";
-import { thorium } from "../app/constants/data";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export default function ResponsiveCarousel() {
+export default function ResponsiveCarousel({ projects }) {
+  console.log(projects)
   return (
     <div>
       <Carousel
@@ -12,7 +12,7 @@ export default function ResponsiveCarousel() {
         infiniteLoop={true}
         dynamicHeight={false}
       >
-        {thorium
+        {projects
           .filter((project) => project.featured === true) // Filter projects with the 'featured' key set to true
           .map((project) => (
             <a href={project.link} key={project.link}>

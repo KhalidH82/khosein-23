@@ -45,7 +45,7 @@ const About = () => {
         {services.map((service) => (
           <Tilt options={defaultOptions} key={service.title}>
             <div
-              className="card custom-card bg-ship-cove-100 shadow-xl"
+              className="card custom-card bg-ship-cove-100"
               key={service.title}
             >
               <figure className="px-10 pt-10">
@@ -57,7 +57,7 @@ const About = () => {
               </figure>
               <div className="card-body items-center text-center">
                 <div className="card-actions">
-                  <h2 className={`card-title ${prompt.className}`}>{service.title}</h2>
+                  <h2 className={`card-title uppercase ${prompt.className}`}>{service.title}</h2>
                 </div>
               </div>
             </div>

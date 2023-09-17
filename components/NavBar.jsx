@@ -23,8 +23,8 @@ const NavBar = () => {
     <div
       className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 h-[64px] ${
         scrolled
-          ? "bg-ship-cove-600 text-ship-cove-100"
-          : "bg-transparent text-ship-cove-600"
+          ? "bg-ship-cove-500 text-ship-cove-300"
+          : "bg-transparent text-ship-cove-500"
       }`}
     >
       <div className="navbar-start">

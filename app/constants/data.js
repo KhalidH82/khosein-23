@@ -28,7 +28,7 @@ const navLinks = [
   {
     id: "about",
     title: "About Me",
-    link: "/#about",
+    link: "/",
   },
   {
     id: "work",
@@ -48,7 +48,7 @@ const navLinks = [
   {
     id: "contact",
     title: "Contact",
-    link: "/#contact",
+    link: "/",
   },
   {
     id: "resume",

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -18,7 +18,6 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
   return (
     <div
       className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 h-[64px] ${
@@ -28,6 +27,48 @@ const NavBar = () => {
       }`}
     >
       <div className="navbar-start">
+        <div className="dropdown">
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80"
+          >
+            {navLinks.map((link) =>
+              link.sublink ? (
+                <li tabIndex={0}>
+                  <details>
+                    <summary className="uppercase font-extrabold text-ship-cove-600">
+                      {link.title}
+                    </summary>
+                    <ul className="p-2">
+                      {link.sublink.map((agency) => (
+                        <li>
+                          <a
+                            href={agency.link}
+                            className="uppercase font-extrabold text-ship-cove-600"
+                          >
+                            {agency.agency}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ) : (
+                <li key={link.id}>
+                  {" "}
+                  <a
+                    href={`#${link.id}`}
+                    className="link-underline link-underline-black border-none hover:bg-transparent uppercase font-extrabold text-ship-cove-600"
+                    target={link.title === "Resume" ? "_blank" : "_self"}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              )
+            )}
+          </ul>
+        </div>
+        <div className="w-full flex">
         <a className="logo" href="/" target="_self">
           <Image
             src="/images/1.png"
@@ -36,13 +77,13 @@ const NavBar = () => {
             alt="Khalid Hosein"
           />
         </a>
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
+              fill="none"
               viewBox="0 0 24 24"
-              stroke="#4b5588"
+              stroke="currentColor"
             >
               <path
                 strokeLinecap="round"
@@ -52,45 +93,50 @@ const NavBar = () => {
               />
             </svg>
           </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content flex flex-col gap-2 mt-3 z-[1] p-2 shadow bg-ship-cove-600 rounded-box w-52 uppercase font-bold text-base text-white tracking-tight"
-          >
-            {navLinks.map((link) => (
+        </div>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          {navLinks.map((link) =>
+            link.sublink ? (
+              <li tabIndex={0}>
+                <details>
+                  <summary className="uppercase font-extrabold">
+                    {link.title}
+                  </summary>
+                  <ul className="p-2 bg-ship-cove-100">
+                    {link.sublink.map((agency) => (
+                      <li>
+                        <a
+                          href={agency.link}
+                          className="uppercase font-extrabold text-ship-cove-600"
+                        >
+                          {agency.agency}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+            ) : (
               <li key={link.id}>
                 {" "}
                 <a
                   href={`#${link.id}`}
-                  className="link-underline link-underline-black border-none hover:bg-transparent"
+                  className="link-underline link-underline-black border-none hover:bg-transparent uppercase font-extrabold"
                   target={link.title === "Resume" ? "_blank" : "_self"}
                 >
                   {link.title}
                 </a>
               </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 uppercase font-bold text-base tracking-tight">
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              {" "}
-              <a
-                href={link.link}
-                className="link-underline link-underline-black border-none hover:bg-transparent"
-                target={link.title === "Resume" ? "_blank" : "_self"}
-              >
-                {link.title}
-              </a>
-            </li>
-          ))}
+            )
+          )}
         </ul>
       </div>
-      <div className="navbar-end gap-3">
+      <div className="navbar-end">
         <div className={`${scrolled ? "hidden" : "block"}`}>
           <div className="md:flex hidden">
-            <div className="chat chat-end">
+            <div className="chat chat-end mt-2">
               <div className="chat-bubble">
                 <p>Hello! It's nice to meet you!</p>
               </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { thorium} from "../constants/data";
+import { thorium } from "../constants/data";
 import Thorium from "@/components/Thorium";
 
 export const metadata = {

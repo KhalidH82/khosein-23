@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Tilt } from "react-tilt";
 import { services } from "../app/constants/data";
+import { prompt, josefin } from "../app/fonts";
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
@@ -20,23 +21,24 @@ const About = () => {
   return (
     <div className="container px-4 mx-auto py-24 flex flex-col gap-12">
       <div>
-        <p className="uppercase">Introduction</p>
-        <h2 className="mb-10">About me.</h2>
-        <p className="text-xl leading-8 mt-5">
-          <span className="text-5xl">Welcome!</span> My name is Khalid, and I am a results-oriented
-          full-stack web developer specializing in creating dynamic marketing
-          applications. With a unique blend of technical expertise and marketing
-          acumen, I bring extensive experience in working with JavaScript and a
-          deep proficiency in frameworks like Vue/Nuxt.js and React/Next.js. I
-          have a strong command of CMS systems such as Contentful, Directus,
-          Strapi, and Nuxt/Content, allowing me to efficiently manage and
-          deliver content-driven projects. My skill set also extends to working
-          in a JAMstack architecture, leveraging the power of JavaScript, APIs,
-          pre-built markup, and Tailwind CSS to create high-performing and
-          scalable web applications. With a meticulous attention to detail and a
-          passion for staying up-to-date with the latest industry trends, I am
-          dedicated to providing seamless and innovative solutions that help
-          businesses thrive in the digital landscape.
+        <p className={`uppercase ${josefin.className}`}>Introduction</p>
+        <h2 className={`mb-10 font-bold ${prompt.className}`}>About me.</h2>
+        <p className={`text-2xl leading-8 mt-5 ${josefin.className}`}>
+          Welcome! My name is Khalid, and I am
+          a results-oriented full-stack web developer specializing in creating
+          dynamic marketing applications. With a unique blend of technical
+          expertise and marketing acumen, I bring extensive experience in
+          working with JavaScript and a deep proficiency in frameworks like
+          Vue/Nuxt.js and React/Next.js. I have a strong command of CMS systems
+          such as Contentful, Directus, Strapi, and Nuxt/Content, allowing me to
+          efficiently manage and deliver content-driven projects. My skill set
+          also extends to working in a JAMstack architecture, leveraging the
+          power of JavaScript, APIs, pre-built markup, and Tailwind CSS to
+          create high-performing and scalable web applications. With a
+          meticulous attention to detail and a passion for staying up-to-date
+          with the latest industry trends, I am dedicated to providing seamless
+          and innovative solutions that help businesses thrive in the digital
+          landscape.
         </p>
       </div>
       <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-12">

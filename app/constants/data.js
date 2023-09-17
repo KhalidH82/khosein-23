@@ -21,8 +21,7 @@ import {
   content,
   contentful,
   netlify,
-  directus
-
+  directus,
 } from "../../public/images";
 
 const navLinks = [
@@ -132,21 +131,21 @@ const technologies = [
     icon: nuxt,
   },
   // {
-    //   name: "TypeScript",
-    //   icon: typescript,
-    // },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Next JS",
-      icon: next,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Next JS",
+    icon: next,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
   {
     name: "Contentful",
     icon: contentful,
@@ -173,45 +172,46 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: "Full Stack Web Developer / Content Engineer",
-    company_name: "T2 Marketing Communications",
-    icon: "",
-    iconBg: "",
-    date: "June 2020 - September 2020 / August 2023 - Present",
-    points: [],
-    technologies: [
-      "Vue/Nuxt JS",
-      "Directus",
-      "Nuxt Content",
-      "Tailwind CSS",
-      "DaisyUI",
-      "Netlify",
-      "Algolia",
-      "SnipCart",
-      "Nunjucks",
-      "Eleventy",
-      "Jotform",
-      "Postmark",
-      "Zapier",
-      "Klaviyo",
-    ],
-    productivity: [
-        "Slack",
-        "SmartSheet",
-        "Notion",
-        "GitHub",
-    ]
-  },
-  {
-    title: "Full Stack Web Developer",
-    company_name: "Thorium Digital",
-    icon: "",
-    iconBg: "",
-    date: "January 2022 - Present",
-    points: [],
-    technologies: [
+const tmarcomExperience = {
+  title: "Full Stack Web Developer / Content Engineer",
+  company_name: "T2 Marketing Communications",
+  company_link: "http://t2marcom.com/",
+  date: "June 2020 - September 2020 / August 2022 - Present",
+  description:
+    "As a full stack web developer at an content marketing agency, I specialize in crafting cutting-edge marketing websites for global industrial technology firms. My role revolves around designing and constructing SEO-optimized, content-driven websites that seamlessly integrate with various CMS platforms like Nuxt Content and Directus. Leveraging the power of Vue/Nuxt 3, Tailwind, Node.js, and the efficiency of Netlify, I architect headless solutions that empower both internal and external stakeholders to effortlessly manage content throughout their digital platforms. Collaborating within a dynamic cross-functional team comprising content creators, email marketers, and designers, I thrive on bringing innovation and precision to every project, ultimately elevating our clients' digital presence.",
+  icon: "",
+  iconBg: "",
+  points: [],
+  technologies: [
+    "Vue/Nuxt JS",
+    "Directus",
+    "Nuxt Content",
+    "Tailwind CSS",
+    "DaisyUI",
+    "Netlify",
+    "Algolia",
+    "SnipCart",
+    "Nunjucks",
+    "Eleventy",
+    "Jotform",
+    "Postmark",
+    "Zapier",
+    "Klaviyo",
+  ],
+  productivity: ["Slack", "SmartSheet", "Notion", "GitHub"],
+};
+
+const thoriumExperience = {
+  title: "Full Stack Web Developer",
+  company_name: "Thorium Digital",
+  company_link: "https://www.thoriumdigital.com/",
+  date: "January 2022 - July 2023",
+  description:
+    "As a web developer at Thorium Digital, I take pride in developing and building user-friendly multi-locale web applications that harness the power of cutting-edge technologies. With a diverse skill set, I utilize HTML, CSS, and JavaScript to create seamless and dynamic user interfaces. My proficiency in jQuery, React/Next.js, and Node/Express enables me to craft interactive and engaging web experiences. I have hands-on experience with PHP/Laravel, Angular, TypeScript, and Tailwind CSS, ensuring the development of scalable and performant applications. At Thorium Digital, I have been actively involved in a variety of responsibilities. From content updates to building new UI features, I work diligently to enhance mobile-responsive layouts and templates, all while refactoring existing code to ensure flexibility, sustainability, and reusability across 40+ multi-locale sites.",
+  icon: "",
+  iconBg: "",
+  points: [],
+  technologies: [
     "React/Next JS",
     "Angular",
     "PHP",
@@ -229,16 +229,15 @@ const experiences = [
     "Bower",
     "Nunjucks",
     "Eleventy",
-    ],
-    productivity: [
-        "Microsoft Teams",
-        "Jira",
-        "Bitbucket",
-        "SourceTree",
-        "GitHub",
-    ]
-  },
-];
+  ],
+  productivity: [
+    "Microsoft Teams",
+    "Jira",
+    "Bitbucket",
+    "SourceTree",
+    "GitHub",
+  ],
+};
 
 const thorium = [
   {
@@ -378,4 +377,13 @@ const tmarcom = [
   },
 ];
 
-export { navLinks, footerLinks, services, technologies, experiences, thorium, tmarcom };
+export {
+  navLinks,
+  footerLinks,
+  services,
+  technologies,
+  thoriumExperience,
+  tmarcomExperience,
+  thorium,
+  tmarcom,
+};

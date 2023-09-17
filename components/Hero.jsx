@@ -1,5 +1,4 @@
-import { slabo, khula, montserrat } from "../app/fonts";
-
+import { prompt } from '../app/fonts'
 const Hero = () => {
   return (
     <section className="hero h-full w-full">
@@ -9,12 +8,12 @@ const Hero = () => {
             <img src="/images/khavatar.png" alt="Khalid Hosein" />
           </div>
           <div className="h-full w-full text-left lg:w-1/2 uppercase">
-            <h1 className={`font-bold ${slabo.className}`}>
+            <h1 className={`font-bold ${prompt.className}`}>
               Hi, I'm{" "}
               <span className="text-ship-cove-700 font-extrabold">Khalid</span>
             </h1>
             <div className="flex flex-col lg:flex-row sm:items-start xl:items-center gap-5">
-              <h2 className={`font-bold animate-character ${khula.className}`}>
+              <h2 className={`font-bold animate-character ${prompt.className}`}>
                 Full Stack Web Developer
               </h2>
               <div className="animate-bounce hidden xl:block">

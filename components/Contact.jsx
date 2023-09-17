@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { InlineWidget } from "react-calendly";
+import { prompt, josefin } from "../app/fonts";
 
 const Contact = () => {
   useEffect(() => {
@@ -11,8 +12,8 @@ const Contact = () => {
   }, []);
   return (
     <div className="container px-4 mx-auto py-16">
-      <p className="uppercase">Get in touch</p>
-      <h2 className="mb-10">Let's Connect.</h2>
+      <p className={`uppercase ${josefin.className}`}>Get in Touch</p>
+      <h2 className={`mb-10 font-bold ${prompt.className}`}>Let's Connect.</h2>
       <div className="flex flex-col-reverse gap-20 lg:flex-row items-center">
         <div className="w-full lg:w-1/2">
           <InlineWidget
@@ -24,7 +25,7 @@ const Contact = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <p className="text-xl leading-8">
+          <p className={`text-2xl leading-8 mt-5 ${josefin.className}`}>
             I'm excited to hear from you. Whether you have a project in mind, a
             question about web development, or just want to chat about the
             latest tech trends, I'm all ears! Feel free to reach out and let's

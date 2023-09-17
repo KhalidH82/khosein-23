@@ -8,9 +8,11 @@ const Thorium = ({ projects }) => {
     <div className="w-full h-full mt-10">
       <div className="text-left">
         <p className={`uppercase ${josefin.className}`}>Agency</p>
+        <a href={thoriumExperience.company_link}>
         <h2 className={`font-bold ${prompt.className}`}>
           {thoriumExperience.company_name}.
         </h2>
+        </a>
         <span className={`uppercase ${josefin.className}`}>
           {thoriumExperience.date}
         </span>

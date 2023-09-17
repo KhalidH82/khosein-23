@@ -90,13 +90,24 @@ h6 {
   box-shadow: 0 0 50px 5px #707ec2;
 }
 
+.carousel.carousel-slider {
+  width: 75% !important;
+  margin: 0 auto !important;
+  overflow: visible !important;
+  @media (max-width: 425px) {
+    width: 85% !important;
+  }
+}
+
 .carousel-status {
   display: none;
 }
 
-.carousel .control-next.control-arrow {
-    right: 20px !important;
+.carousel .control-next.control-arrow:before {
+    border-right: 8px solid #707ec2;
 }
-.carousel .control-prev.control-arrow {
-    left: 20px !important;
+
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #707ec2;
 }

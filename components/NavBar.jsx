@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { navLinks } from "../app/constants/data";
+import { prompt, josefin } from "../app/fonts";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -101,7 +102,7 @@ const NavBar = () => {
             link.sublink ? (
               <li tabIndex={0}>
                 <details>
-                  <summary className="uppercase font-extrabold">
+                  <summary className={`uppercase ${josefin.className}`}>
                     {link.title}
                   </summary>
                   <ul className="p-2 bg-ship-cove-100">
@@ -109,7 +110,7 @@ const NavBar = () => {
                       <li>
                         <a
                           href={agency.link}
-                          className="uppercase font-extrabold text-ship-cove-600"
+                          className={`uppercase text-ship-cove-600 ${josefin.className}`}
                         >
                           {agency.agency}
                         </a>
@@ -123,7 +124,7 @@ const NavBar = () => {
                 {" "}
                 <a
                   href={`#${link.id}`}
-                  className="link-underline link-underline-black border-none hover:bg-transparent uppercase font-extrabold"
+                  className={`link-underline link-underline-black border-none hover:bg-transparent uppercase ${josefin.className}`}
                   target={link.title === "Resume" ? "_blank" : "_self"}
                 >
                   {link.title}

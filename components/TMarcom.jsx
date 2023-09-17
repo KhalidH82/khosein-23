@@ -8,9 +8,11 @@ const TMarcom = ({ projects }) => {
     <div className="w-full h-full mt-10">
       <div className="text-right">
         <p className={`uppercase ${josefin.className}`}>Agency</p>
+        <a href={tmarcomExperience.company_link}>
         <h2 className={`font-bold ${prompt.className}`}>
           {tmarcomExperience.company_name}.
         </h2>
+        </a>
         <span className={`uppercase ${josefin.className}`}>
           {tmarcomExperience.date}
         </span>

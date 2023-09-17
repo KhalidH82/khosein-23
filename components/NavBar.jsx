@@ -74,7 +74,7 @@ const NavBar = () => {
                 <li key={link.id} className={prompt.className}>
                   {" "}
                   <a
-                    href={`#${link.id}`}
+                    href={`${link.link}`}
                     className="link-underline link-underline-black border-none hover:bg-transparent uppercase text-ship-cove-600"
                     target={link.title === "Resume" ? "_blank" : "_self"}
                   >
@@ -119,7 +119,7 @@ const NavBar = () => {
               <li key={link.id} className={prompt.className}>
                 {" "}
                 <a
-                  href={`#${link.id}`}
+                  href={`${link.link}`}
                   className="link-underline link-underline-black border-none hover:bg-transparent uppercase"
                   target={link.title === "Resume" ? "_blank" : "_self"}
                 >

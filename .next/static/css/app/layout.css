@@ -2355,6 +2355,12 @@ details.collapse summary::-webkit-details-marker {
 .h-full {
   height: 100%;
 }
+.h-12 {
+  height: 3rem;
+}
+.h-4 {
+  height: 1rem;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -2378,6 +2384,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-full {
   width: 100%;
+}
+.w-12 {
+  width: 3rem;
 }
 @keyframes bounce {
 
@@ -2435,6 +2444,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .rounded-full {
   border-radius: 9999px;

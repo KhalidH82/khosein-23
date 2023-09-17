@@ -28,6 +28,14 @@ const NavBar = () => {
       }`}
     >
       <div className="navbar-start">
+          <a className="logo" href="/" target="_self">
+            <Image
+              src="/images/1.png"
+              width={50}
+              height={50}
+              alt="Khalid Hosein"
+            />
+          </a>
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -85,14 +93,14 @@ const NavBar = () => {
             )}
           </ul>
         </div>
-        <a className="logo" href="/" target="_self">
+        {/* <a className="logo" href="/" target="_self">
           <Image
             src="/images/1.png"
             width={50}
             height={50}
             alt="Khalid Hosein"
           />
-        </a>
+        </a> */}
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

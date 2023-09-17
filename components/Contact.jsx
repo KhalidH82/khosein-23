@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import AnimatedElement from "../components/AnimatedElement";
 import { InlineWidget } from "react-calendly";
 import { prompt, josefin } from "../app/fonts";
 
@@ -12,10 +13,14 @@ const Contact = () => {
   }, []);
   return (
     <div className="container px-4 mx-auto py-16">
+     <AnimatedElement animationType="fadeInUp">
       <p className={`uppercase ${josefin.className}`}>Get in Touch</p>
-      <h2 className={`mb-10 font-bold ${prompt.className}`}>Let's Connect.</h2>
+      <h2 className={`mb-5 font-bold ${prompt.className}`}>Let's Connect.</h2>
+     </AnimatedElement>
       <div className="flex flex-col-reverse gap-20 lg:flex-row items-center">
+      
         <div className="w-full lg:w-1/2">
+        <AnimatedElement animationType="fadeInLeft">
           <InlineWidget
             url="https://calendly.com/khalid-hosein/get-to-know-me"
             styles={{
@@ -23,8 +28,10 @@ const Contact = () => {
               minHeight: "1200px", // Adjust the height to prevent content overflow
             }}
           />
+        </AnimatedElement>
         </div>
         <div className="w-full lg:w-1/2">
+        <AnimatedElement animationType="fadeInRight">
           <p className={`text-2xl leading-8 mt-5 ${josefin.className}`}>
             I'm excited to hear from you. Whether you have a project in mind, a
             question about web development, or just want to chat about the
@@ -34,6 +41,7 @@ const Contact = () => {
             a message using the contact form or through the provided social
             links. Looking forward to connecting with you!
           </p>
+        </AnimatedElement>
         </div>
       </div>
     </div>

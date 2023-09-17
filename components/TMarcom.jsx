@@ -7,7 +7,7 @@ import { Technologies } from "/components/Technologies";
 const TMarcom = ({ projects }) => {
   return (
     <div className="w-full h-full mt-10">
-      <div className="text-right">
+      <div className="text-left">
         <p className={`uppercase ${josefin.className}`}>Agency</p>
         <a href={tmarcomExperience.company_link}>
           <h2 className={`font-bold ${prompt.className}`}>

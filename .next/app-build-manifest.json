@@ -11,6 +11,18 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/tmarcom/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tmarcom/page.css",
+      "static/chunks/app/tmarcom/page.js"
+    ],
+    "/thorium/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/thorium/page.css",
+      "static/chunks/app/thorium/page.js"
     ]
   }
 }

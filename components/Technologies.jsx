@@ -11,7 +11,7 @@ const Technologies = () => {
   };
 
   return (
-    <div className="w-full h-full container px-4 mx-auto pt-16 pb-8">
+    <div className="w-full h-full container px-4 mx-auto py-14">
       <div className="mb-10 text-right">
         <AnimatedElement animationType="fadeInUp">
           <p className={`uppercase ${josefin.className}`}>Experience</p>

@@ -12,7 +12,7 @@ const Contact = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <div className="container px-4 mx-auto pt-16 pb-8">
+    <div className="container px-4 mx-auto py-14">
       <AnimatedElement animationType="fadeInUp">
         <p className={`uppercase text-right ${josefin.className}`}>
           Get in Touch
@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="w-full lg:w-1/2">
           <AnimatedElement animationType="fadeInRight">
           <div className="flex">
-            <div className="avatar online h-20 mt-2">
+            <div className="avatar online h-10 lg:h-20 mt-2">
               <div className="hover:ring-4 relative">
                 <img
                   className="rounded-full"
@@ -47,7 +47,7 @@ const Contact = () => {
             </div>
             <div className="chat chat-start">
               <div className="chat-bubble bg-ship-cove-500">
-                <p className={`text-xl leading-8 p-10 ${josefin.className}`}>
+                <p className={`text-xl leading-8 p-1 ${josefin.className}`}>
                   I'm excited to hear from you. Whether you have a project in
                   mind, a question about web development, or just want to chat
                   about the latest tech trends, I'm all ears! Feel free to reach

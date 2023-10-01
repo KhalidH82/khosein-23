@@ -20,7 +20,7 @@ const defaultOptions = {
 
 const About = () => {
   return (
-    <div className="container px-4 mx-auto py-8 flex flex-col gap-12">
+    <div className="container px-4 mx-auto py-14 flex flex-col gap-12">
       <AnimatedElement animationType="fadeInUp">
         <div>
           <p className={`uppercase ${josefin.className}`}>Introduction</p>

@@ -2648,6 +2648,9 @@ details.collapse summary::-webkit-details-marker {
 .p-10 {
   padding: 2.5rem;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2691,6 +2694,14 @@ details.collapse summary::-webkit-details-marker {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -3017,6 +3028,10 @@ h6 {
 
   .lg\:h-\[600px\] {
     height: 600px;
+  }
+
+  .lg\:h-20 {
+    height: 5rem;
   }
 
   .lg\:w-1\/2 {

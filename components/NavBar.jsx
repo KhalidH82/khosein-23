@@ -23,7 +23,7 @@ const NavBar = () => {
     <div
       className={`navbar fixed top-0 left-0 w-full transition-colors duration-100 ease-in-out z-50 ${
         scrolled
-          ? "bg-ship-cove-500 text-ship-cove-300"
+          ? "bg-ship-cove-500 text-ship-cove-100"
           : "bg-transparent text-ship-cove-500"
       }`}
     >
@@ -143,12 +143,16 @@ const NavBar = () => {
           <div className={`${scrolled ? "hidden" : "block"}`}>
             <div className="md:flex hidden justify-end">
               <div className="chat chat-end">
-                <div className="chat-bubble">
-                  <p>Hello! It's nice to meet you!</p>
+                <div className="chat-bubble bg-ship-cove-500">
+                  <p
+                    className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
+                  >
+                    Hello! It's nice to meet you!
+                  </p>
                 </div>
               </div>
-              <div className="avatar online h-10 mt-2">
-                <div className="hover:ring-4 relative">
+              <div className="avatar online h-10">
+                <div className="hover:ring-4">
                   <img
                     className="rounded-full"
                     src="/images/khavatar.png"

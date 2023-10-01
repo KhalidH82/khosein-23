@@ -2703,6 +2703,18 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -3010,6 +3022,11 @@ h6 {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
   }
 }
 @media (min-width: 1024px) {

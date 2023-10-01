@@ -10,7 +10,7 @@ export const metadata = {
 
 const ThoriumDigital = () => {
   return (
-    <div className="container px-4 mx-auto py-16">
+    <div className="container px-4 mx-auto py-32">
       <Thorium projects={thorium} />
     </div>
   );

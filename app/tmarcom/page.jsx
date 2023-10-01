@@ -10,7 +10,7 @@ export const metadata = {
 
 const T2Marcom = () => {
   return (
-    <div className='container px-4 mx-auto py-48'>
+    <div className="container px-4 mx-auto py-32">
       <TMarcom projects={tmarcom} />
     </div>
   );

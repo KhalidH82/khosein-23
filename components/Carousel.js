@@ -33,6 +33,7 @@ export default function ResponsiveCarousel({ projects }) {
         showIndicators
         showArrows={true}
         infiniteLoop={true}
+        showThumbs={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && <CustomPrevArrow onClick={onClickHandler} />
         }

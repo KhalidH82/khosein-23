@@ -14,8 +14,8 @@ const Contact = () => {
   return (
     <div className="container px-4 mx-auto py-16">
      <AnimatedElement animationType="fadeInUp">
-      <p className={`uppercase ${josefin.className}`}>Get in Touch</p>
-      <h2 className={`mb-5 font-bold ${prompt.className}`}>Let's Connect.</h2>
+      <p className={`uppercase text-right ${josefin.className}`}>Get in Touch</p>
+      <h2 className={`mb-5 font-bold text-right ${prompt.className}`}>Let's Connect.</h2>
      </AnimatedElement>
       <div className="flex flex-col-reverse gap-20 lg:flex-row items-center">
       

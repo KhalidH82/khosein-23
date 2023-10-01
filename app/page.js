@@ -20,11 +20,11 @@ export default function Home() {
         <section id="home">
           <Hero />
         </section>
-        <section id="about">
-          <About />
-        </section>
         <section id="technologies">
           <Technologies />
+        </section>
+        <section id="about">
+          <About />
         </section>
         <section id="contact">
           <Contact />

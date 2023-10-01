@@ -12,7 +12,7 @@ const Contact = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <div className="container px-4 mx-auto py-16">
+    <div className="container px-4 mx-auto pt-16 pb-8">
      <AnimatedElement animationType="fadeInUp">
       <p className={`uppercase text-right ${josefin.className}`}>Get in Touch</p>
       <h2 className={`mb-5 font-bold text-right ${prompt.className}`}>Let's Connect.</h2>

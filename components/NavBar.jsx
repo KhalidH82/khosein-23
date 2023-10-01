@@ -21,14 +21,14 @@ const NavBar = () => {
   }, []);
   return (
     <div
-      className={`navbar fixed top-0 left-0 w-full py-2 transition-colors duration-100 ease-in-out z-50 h-[64px] ${
+      className={`navbar fixed top-0 left-0 w-full transition-colors duration-100 ease-in-out z-50 ${
         scrolled
           ? "bg-ship-cove-500 text-ship-cove-300"
           : "bg-transparent text-ship-cove-500"
       }`}
     >
-      <div className="container px-4 mx-auto">
-        <div className="navbar-start">
+      <div className="container px-4 py-2 mx-auto">
+        <div className="navbar-start flex">
           <a className="logo" href="/" target="_self">
             <Image
               src="/images/1.png"

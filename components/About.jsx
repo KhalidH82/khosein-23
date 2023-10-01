@@ -20,7 +20,7 @@ const defaultOptions = {
 
 const About = () => {
   return (
-    <div className="container px-4 mx-auto py-16 flex flex-col gap-12">
+    <div className="container px-4 mx-auto py-8 flex flex-col gap-12">
       <AnimatedElement animationType="fadeInUp">
         <div>
           <p className={`uppercase ${josefin.className}`}>Introduction</p>
@@ -43,7 +43,7 @@ const About = () => {
             digital landscape.
           </p>
         </div>
-        <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-12">
+        <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-[5rem]">
           {services.map((service) => (
             <Tilt options={defaultOptions} key={service.title}>
               <div

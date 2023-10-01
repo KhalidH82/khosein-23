@@ -1209,6 +1209,19 @@ html {
   -webkit-mask-position: center;
           mask-position: center;
 }
+.chat-start {
+  place-items: start;
+  grid-template-columns: auto 1fr;
+}
+.chat-start .chat-header {
+  grid-column-start: 2;
+}
+.chat-start .chat-footer {
+  grid-column-start: 2;
+}
+.chat-start .chat-image {
+  grid-column-start: 1;
+}
 .chat-start .chat-bubble {
   grid-column-start: 2;
   border-bottom-left-radius: 0px;
@@ -2453,6 +2466,9 @@ details.collapse summary::-webkit-details-marker {
 .h-full {
   height: 100%;
 }
+.h-20 {
+  height: 5rem;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -2488,6 +2504,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-center {
   align-items: center;
@@ -2568,6 +2587,10 @@ details.collapse summary::-webkit-details-marker {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-ship-cove-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 126 194 / var(--tw-bg-opacity));
+}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2588,6 +2611,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-3 {
   padding: 0.75rem;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .px-1 {
   padding-left: 0.25rem;

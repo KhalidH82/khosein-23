@@ -1,6 +1,6 @@
 {
   "/page": "app/page.js",
-  "/thorium/page": "app/thorium/page.js",
   "/clients/page": "app/clients/page.js",
-  "/tmarcom/page": "app/tmarcom/page.js"
+  "/tmarcom/page": "app/tmarcom/page.js",
+  "/thorium/page": "app/thorium/page.js"
 }

@@ -49,7 +49,7 @@ const Clients = ({ client }) => {
                   <div className="chat chat-start">
                     <div className="chat-bubble bg-ship-cove-500">
                       <p
-                        className={`text-xl leading-8 p-2 ${josefin.className}`}
+                        className={`text-base leading-1 p-2 ${josefin.className}`}
                       >
                         {testimonial}
                       </p>

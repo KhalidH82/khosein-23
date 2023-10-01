@@ -27,7 +27,8 @@ const NavBar = () => {
           : "bg-transparent text-ship-cove-500"
       }`}
     >
-      <div className="navbar-start">
+      <div className="container px-4 mx-auto">
+        <div className="navbar-start">
           <a className="logo" href="/" target="_self">
             <Image
               src="/images/1.png"
@@ -36,35 +37,80 @@ const NavBar = () => {
               alt="Khalid Hosein"
             />
           </a>
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div className="dropdown">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80"
-          >
+              {navLinks.map((link) =>
+                link.sublink ? (
+                  <li tabIndex={0} className={prompt.className}>
+                    <details>
+                      <summary className="uppercase text-ship-cove-600">
+                        {link.title}
+                      </summary>
+                      <ul className="p-2">
+                        {link.sublink.map((agency) => (
+                          <li>
+                            <a
+                              href={agency.link}
+                              className="uppercase text-ship-cove-600"
+                            >
+                              {agency.agency}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  </li>
+                ) : (
+                  <li key={link.id} className={prompt.className}>
+                    {" "}
+                    <a
+                      href={`${link.link}`}
+                      className="link-underline link-underline-black border-none hover:bg-transparent uppercase text-ship-cove-600"
+                      target={link.title === "Resume" ? "_blank" : "_self"}
+                    >
+                      {link.title}
+                    </a>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+          {/* <a className="logo" href="/" target="_self">
+          <Image
+            src="/images/1.png"
+            width={50}
+            height={50}
+            alt="Khalid Hosein"
+          />
+        </a> */}
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
             {navLinks.map((link) =>
               link.sublink ? (
                 <li tabIndex={0} className={prompt.className}>
                   <details>
-                    <summary className="uppercase text-ship-cove-600">
-                      {link.title}
-                    </summary>
-                    <ul className="p-2">
+                    <summary className="uppercase">{link.title}</summary>
+                    <ul className="p-2 bg-ship-cove-100">
                       {link.sublink.map((agency) => (
                         <li>
                           <a
@@ -83,7 +129,7 @@ const NavBar = () => {
                   {" "}
                   <a
                     href={`${link.link}`}
-                    className="link-underline link-underline-black border-none hover:bg-transparent uppercase text-ship-cove-600"
+                    className="link-underline link-underline-black border-none hover:bg-transparent uppercase"
                     target={link.title === "Resume" ? "_blank" : "_self"}
                   >
                     {link.title}
@@ -93,66 +139,22 @@ const NavBar = () => {
             )}
           </ul>
         </div>
-        {/* <a className="logo" href="/" target="_self">
-          <Image
-            src="/images/1.png"
-            width={50}
-            height={50}
-            alt="Khalid Hosein"
-          />
-        </a> */}
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {navLinks.map((link) =>
-            link.sublink ? (
-              <li tabIndex={0} className={prompt.className}>
-                <details>
-                  <summary className="uppercase">{link.title}</summary>
-                  <ul className="p-2 bg-ship-cove-100">
-                    {link.sublink.map((agency) => (
-                      <li>
-                        <a
-                          href={agency.link}
-                          className="uppercase text-ship-cove-600"
-                        >
-                          {agency.agency}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              </li>
-            ) : (
-              <li key={link.id} className={prompt.className}>
-                {" "}
-                <a
-                  href={`${link.link}`}
-                  className="link-underline link-underline-black border-none hover:bg-transparent uppercase"
-                  target={link.title === "Resume" ? "_blank" : "_self"}
-                >
-                  {link.title}
-                </a>
-              </li>
-            )
-          )}
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <div className={`${scrolled ? "hidden" : "block"}`}>
-          <div className="md:flex hidden">
-            <div className="chat chat-end">
-              <div className="chat-bubble">
-                <p>Hello! It's nice to meet you!</p>
+        <div className="navbar-end">
+          <div className={`${scrolled ? "hidden" : "block"}`}>
+            <div className="md:flex hidden justify-end">
+              <div className="chat chat-end">
+                <div className="chat-bubble">
+                  <p>Hello! It's nice to meet you!</p>
+                </div>
               </div>
-            </div>
-            <div className="avatar online h-10 mt-2">
-              <div className="hover:ring-4 relative">
-                <img
-                  className="rounded-full"
-                  src="/images/khavatar.png"
-                  alt="Khalid Hosein"
-                />
+              <div className="avatar online h-10 mt-2">
+                <div className="hover:ring-4 relative">
+                  <img
+                    className="rounded-full"
+                    src="/images/khavatar.png"
+                    alt="Khalid Hosein"
+                  />
+                </div>
               </div>
             </div>
           </div>

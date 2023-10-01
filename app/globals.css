@@ -91,11 +91,11 @@ h6 {
 }
 
 .carousel.carousel-slider {
-  width: 85% !important;
   margin: 0 auto !important;
+  width: 85% !important;
   overflow: visible !important;
-  @media (max-width: 425px) {
-    width: 100% !important;
+  @media (max-width: 1024px) {
+    /* width: 100% !important; */
   }
 }
 
@@ -117,8 +117,8 @@ h6 {
   top: 50% !important;
   left: -70px !important;
   z-index: 2;
-  @media (max-width: 600px) {
-    left: -40px !important;
+  @media (max-width: 768px) {
+     display: none !important;
   }
 }
 .custom-btn-right {
@@ -126,7 +126,7 @@ h6 {
   top: 50% !important;
   right: -70px !important;
   z-index: 2;
-  @media (max-width: 600px) {
-    right: -40px !important;
+  @media (max-width: 768px) {
+    display: none !important;
   }
 }

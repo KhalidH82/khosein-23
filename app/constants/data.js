@@ -84,11 +84,11 @@ const services = [
     icon: webdev,
   },
   {
-    title: "Content Engineer",
+    title: "Content Engineer / CMS",
     icon: content,
   },
   {
-    title: "CMS",
+    title: "Design",
     icon: cms,
   },
   {
@@ -96,7 +96,7 @@ const services = [
     icon: microservices,
   },
   {
-    title: "Marketing",
+    title: "Marketing / SEO",
     icon: marketing,
   },
   {

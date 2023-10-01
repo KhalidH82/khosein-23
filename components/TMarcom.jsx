@@ -6,7 +6,7 @@ import { Technologies } from "/components/Technologies";
 
 const TMarcom = ({ projects }) => {
   return (
-    <div className="w-full h-full mt-10">
+    <div className="w-full h-full">
       <div className="text-left">
         <p className={`uppercase ${josefin.className}`}>Agency</p>
         <a href={tmarcomExperience.company_link}>
@@ -21,61 +21,61 @@ const TMarcom = ({ projects }) => {
       <p className={`py-3 mt-10 text-xl ${josefin.className}`}>
         {tmarcomExperience.description}
       </p>
-      <div className="py-8 w-full flex flex-col md:flex-row items-center">
-        <div className="w-full md:w-1/2">
-          <div className="">
-            <p className={`text-xl mb-5 ${prompt.className}`}>Contributions</p>
-          </div>
-          <div className="">
-            {projects.map((project) =>
-              project.featured === false ? (
-                <a href={project.link} key={project.link} target="_blank" className="flex items-center gap-1">
+
+      <div className="h-full w-full mt-10">
+        <div className="h-full w-full flex flex-col gap-10 xl:grid xl:grid-cols-3 xl:gap-20">
+          <div className="col-span1">
+            <div className="mb-1">
+              <h2 className={`font-bold ${prompt.className}`}>Contributions</h2>
+            </div>
+            <div>
+              {projects.map((project) => (
+                <a
+                  href={project.link}
+                  key={project.link}
+                  target="_blank"
+                  className="flex items-center gap-1"
+                >
                   <p className={`text-lg ${josefin.className}`}>
                     {project.name}
                   </p>
-                  <img
-                    src="/images/arrow-right.svg"
-                    className="h-4"
-                  />
+                  <img src="/images/arrow-right.svg" className="h-4" />
                 </a>
-              ) : null
-            )}
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 flex flex-col gap-3">
-          <div
-            tabIndex={1}
-            className="collapse collapse-arrow border border-ship-cove-300 bg-ship-cove-200 mt-5"
-          >
-            <div className="collapse-title">
-              <p className={`text-xl ${prompt.className}`}>Technologies</p>
+              ))}
             </div>
-            <div className="collapse-content">
+          </div>
+
+          <div className="col-span1">
+            <div className="mb-1">
+              <h2 className={`font-bold ${prompt.className}`}>Technologies</h2>
+            </div>
+            <div className="grid xl:grid-cols-2">
               {tmarcomExperience.technologies.map((tech) => (
-                <p className={`text-base ${josefin.className}`}>{tech}</p>
+                <p className={`text-lg ${josefin.className}`}>{tech}</p>
               ))}
             </div>
           </div>
-          <div
-            tabIndex={2}
-            className="collapse collapse-arrow border border-ship-cove-300 bg-ship-cove-200"
-          >
-            <div className="collapse-title">
-              <p className={`text-xl ${prompt.className}`}>Productivity</p>
+
+          <div className="col-span1">
+            <div className="mb-1">
+              <h2 className={`font-bold ${prompt.className}`}>Productivity</h2>
             </div>
-            <div className="collapse-content">
+            <div>
               {tmarcomExperience.productivity.map((tool) => (
-                <p className={`text-base ${josefin.className}`}>{tool}</p>
+                <p className={`text-lg ${josefin.className}`}>{tool}</p>
               ))}
             </div>
           </div>
         </div>
-      </div>
-      <div className="h-full w-full">
-        <h2 className={`font-bold my-8 ${prompt.className}`}>
-          Feature Projects
-        </h2>
-        <Carousel projects={projects} />
+
+        <div className="h-full w-full mt-16">
+          <h2 className={`font-bold mb-8  text-center ${prompt.className}`}>
+            Feature Projects
+          </h2>
+          <div className="w-full flex justify-center">
+            <Carousel projects={projects} />
+          </div>
+        </div>
       </div>
     </div>
   );

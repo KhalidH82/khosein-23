@@ -20,7 +20,7 @@ const Hero = () => {
             />
           </div>
           <div className="h-full w-full text-left lg:w-1/2 uppercase">
-              <h1 className={`font-bold ${prompt.className}`}>
+              <h1 className={`font-bold leading-none mb-5 ${prompt.className}`}>
                 Hi, I'm{" "}
                 <span className="text-ship-cove-700 font-extrabold">
                   Khalid
@@ -28,7 +28,7 @@ const Hero = () => {
               </h1>
               <div className="flex flex-col lg:flex-row sm:items-start xl:items-center">
                 <h2
-                  className={`font-bold animate-character ${prompt.className}`}
+                  className={`font-bold leading-none animate-character ${prompt.className}`}
                 >
                   Full Stack Web Developer
                 </h2>

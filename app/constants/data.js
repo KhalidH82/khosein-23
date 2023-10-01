@@ -46,6 +46,11 @@ const navLinks = [
     ],
   },
   {
+    id: "clients",
+    title: "Clients",
+    link: "/clients",
+  },
+  {
     id: "contact",
     title: "Contact",
     link: "/#contact",
@@ -377,6 +382,17 @@ const tmarcom = [
   },
 ];
 
+const clients = [
+  {
+    name: 'Mastermind Construction SXM',
+    date: 'September 2023',
+    description:`I had the privilege of collaborating with a valued client, a prominent construction business based in Saint Martin, FWI., as a web developer on an existing WordPress website. My role encompassed customizing and expanding the site's layout to enhance its visual appeal and functionality. From crafting engaging content to guiding the overall direction of the project, I was deeply involved in every aspect of the website's evolution. It was a rewarding experience, and I'm proud to have played a pivotal role in bringing my client's digital vision to life.`,
+    link: 'https://mastermindsxm.com/',
+    icon: "/images/clients/mastermind.png",
+    testimonials : ['test']
+  }
+]
+
 export {
   navLinks,
   footerLinks,
@@ -386,4 +402,5 @@ export {
   tmarcomExperience,
   thorium,
   tmarcom,
+  clients,
 };

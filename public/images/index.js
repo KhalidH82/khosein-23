@@ -2,6 +2,7 @@ import css from "../images/css.png";
 import figma from "../images/figma.png";
 import git from "../images/git.png";
 import github from "../images/github.svg";
+import githubmarquee from "../images/github.png";
 import gmail from "../images/gmail.svg";
 import linkedin from "../images/linkedin.svg";
 import html from "../images/html.png";
@@ -24,6 +25,7 @@ import netlify from "../images/netlify.png";
 
 export {
   github,
+  githubmarquee,
   css,
   figma,
   git,

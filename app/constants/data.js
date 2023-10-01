@@ -10,6 +10,7 @@ import {
   nodejs,
   git,
   github,
+  githubmarquee,
   gmail,
   linkedin,
   figma,
@@ -173,7 +174,7 @@ const technologies = [
   },
   {
     name: "Github",
-    icon: github,
+    icon: githubmarquee,
   },
 ];
 

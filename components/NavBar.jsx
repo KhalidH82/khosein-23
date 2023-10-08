@@ -2,13 +2,17 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Cookies from "js-cookie";
 import { navLinks } from "../app/constants/data";
 import { prompt, josefin } from "../app/fonts";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
-
+  const hasVisited = Cookies.get("visited");
   useEffect(() => {
+    if (!hasVisited) {
+      Cookies.set("visited", true, { expires: 7 }); // Expires in 7 days
+    }
     const handleScroll = () => {
       setScrolled(window.scrollY > 0);
     };
@@ -144,11 +148,19 @@ const NavBar = () => {
             <div className="md:flex hidden justify-end">
               <div className="chat chat-end">
                 <div className="chat-bubble bg-ship-cove-500">
-                  <p
-                    className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
-                  >
-                    Hello! It's nice to meet you!
-                  </p>
+                  {hasVisited ? (
+                    <p
+                      className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
+                    >
+                      Welcome Back!
+                    </p>
+                  ) : (
+                    <p
+                      className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
+                    >
+                      Hello! It's nice to meet you!
+                    </p>
+                  )}
                 </div>
               </div>
               <div className="avatar online h-10">

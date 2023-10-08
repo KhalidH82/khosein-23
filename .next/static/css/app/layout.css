@@ -986,9 +986,6 @@ html {
     max-width: 1536px;
   }
 }
-.artboard {
-  width: 100%;
-}
 .avatar {
   position: relative;
   display: inline-flex;
@@ -1884,48 +1881,6 @@ html {
   opacity: 0.3;
   box-shadow: 1.4em 0, 2.8em 0, 4.2em 0;
 }
-.mockup-phone {
-  display: inline-block;
-  border: 4px solid #444;
-  border-radius: 50px;
-  background-color: #000;
-  padding: 10px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.mockup-phone .camera {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  background: #000;
-  height: 25px;
-  width: 150px;
-  margin: 0 auto;
-  border-bottom-left-radius: 17px;
-  border-bottom-right-radius: 17px;
-  z-index: 11;
-}
-.mockup-phone .camera:before {
-  content: "";
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  width: 50px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: #0c0b0e;
-  transform: translate(-50%, -50%);
-}
-.mockup-phone .camera:after {
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 70%;
-  width: 8px;
-  height: 8px;
-  border-radius: 5px;
-  background-color: #0f0b25;
-}
 .mockup-phone .display {
   overflow: hidden;
   border-radius: 40px;
@@ -1986,84 +1941,12 @@ html {
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
 }
-.artboard-demo {
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.artboard.phone {
-  width: 320px;
-}
-.artboard.phone-1 {
-  width: 320px;
-  height: 568px;
-}
-.artboard.phone-1.horizontal,
-      .artboard.phone-1.artboard-horizontal {
-  width: 568px;
-  height: 320px;
-}
-.artboard.phone-2 {
-  width: 375px;
-  height: 667px;
-}
-.artboard.phone-2.horizontal,
-      .artboard.phone-2.artboard-horizontal {
-  width: 667px;
-  height: 375px;
-}
-.artboard.phone-3 {
-  width: 414px;
-  height: 736px;
-}
-.artboard.phone-3.horizontal,
-      .artboard.phone-3.artboard-horizontal {
-  width: 736px;
-  height: 414px;
-}
-.artboard.phone-4 {
-  width: 375px;
-  height: 812px;
-}
-.artboard.phone-4.horizontal,
-      .artboard.phone-4.artboard-horizontal {
-  width: 812px;
-  height: 375px;
-}
-.artboard.phone-5 {
-  width: 414px;
-  height: 896px;
-}
-.artboard.phone-5.horizontal,
-      .artboard.phone-5.artboard-horizontal {
-  width: 896px;
-  height: 414px;
-}
-.artboard.phone-6 {
-  width: 320px;
-  height: 1024px;
-}
-.artboard.phone-6.horizontal,
-      .artboard.phone-6.artboard-horizontal {
-  width: 1024px;
-  height: 320px;
-}
 .menu-horizontal {
   display: inline-flex;
   flex-direction: row;
 }
 .menu-horizontal > li:not(.menu-title) > details > ul {
   position: absolute;
-}
-.artboard-demo {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b3) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--bc) / var(--tw-text-opacity));
-  border-radius: var(--rounded-box, 1rem);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 .avatar.online:before {
   content: "";
@@ -2213,20 +2096,8 @@ html {
 .top-0 {
   top: 0px;
 }
-.top-5 {
-  top: 1.25rem;
-}
-.top-10 {
-  top: 2.5rem;
-}
-.top-2 {
-  top: 0.5rem;
-}
 .top-3 {
   top: 0.75rem;
-}
-.top-4 {
-  top: 1rem;
 }
 .z-50 {
   z-index: 50;
@@ -2258,9 +2129,6 @@ html {
 }
 .mt-10 {
   margin-top: 2.5rem;
-}
-.mt-12 {
-  margin-top: 3rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -2355,9 +2223,6 @@ html {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
 }
@@ -2394,14 +2259,8 @@ html {
 .gap-2 {
   gap: 0.5rem;
 }
-.gap-20 {
-  gap: 5rem;
-}
 .gap-5 {
   gap: 1.25rem;
-}
-.gap-3 {
-  gap: 0.75rem;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -2460,18 +2319,11 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .p-2 {
   padding: 0.5rem;
 }
 .p-3 {
   padding: 0.75rem;
-}
-.p-1 {
-  padding: 0.25rem;
 }
 .p-5 {
   padding: 1.25rem;
@@ -2519,18 +2371,6 @@ html {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
-}
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -2812,12 +2652,12 @@ h6 {
     width: 50%;
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {

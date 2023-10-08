@@ -25,6 +25,7 @@ const Technologies = () => {
                   src={tech.icon.src}
                   alt={tech.name}
                   className="h-28 w-28 object-contain px-5"
+                  key={tech.name}
                 />
               ))}
             </Marquee>

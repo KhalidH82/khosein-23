@@ -50,7 +50,7 @@ const TMarcom = ({ projects }) => {
             <div className="mb-1">
               <h2 className={`font-bold ${prompt.className}`}>Technologies</h2>
             </div>
-            <div className="grid xl:grid-cols-2">
+            <div className="grid lg:grid-cols-2">
               {tmarcomExperience.technologies.map((tech) => (
                 <p className={`text-lg ${josefin.className}`}>{tech}</p>
               ))}

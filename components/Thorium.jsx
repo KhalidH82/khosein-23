@@ -23,7 +23,7 @@ const Thorium = ({ projects }) => {
       </p>
 
       <div className="h-full w-full mt-10">
-        <div className="h-full w-full flex flex-col gap-10 xl:grid xl:grid-cols-3 xl:gap-20">
+        <div className="h-full w-full flex flex-col gap-10 lg:grid lg:grid-cols-3 lg:gap-20">
           <div className="col-span1">
             <div className="mb-1">
               <h2 className={`font-bold ${prompt.className}`}>Contributions</h2>
@@ -49,7 +49,7 @@ const Thorium = ({ projects }) => {
             <div className="mb-1">
               <h2 className={`font-bold ${prompt.className}`}>Technologies</h2>
             </div>
-            <div className="grid xl:grid-cols-2">
+            <div className="grid lg:grid-cols-2">
               {thoriumExperience.technologies.map((tech) => (
                 <p className={`text-lg ${josefin.className}`}>{tech}</p>
               ))}

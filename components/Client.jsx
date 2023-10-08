@@ -5,7 +5,7 @@ import { prompt, josefin } from "../app/fonts";
 
 const Clients = ({ client }) => {
   return (
-    <div className="h-screen py-24">
+    <div className="py-24">
       {client.map((c) => (
         <>
           <p className={`uppercase text-right mb-5 ${josefin.className}`}>

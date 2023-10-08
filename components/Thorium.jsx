@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { thoriumExperience } from "../app/constants/data";
 import Carousel from '/components/Carousel.js'
 import { prompt, josefin } from "../app/fonts";
@@ -8,11 +9,11 @@ const Thorium = ({ projects }) => {
     <div className="w-full h-full">
       <div className="text-left">
         <p className={`uppercase ${josefin.className}`}>Agency</p>
-        <a href={thoriumExperience.company_link}>
+        <Link href={thoriumExperience.company_link}>
           <h2 className={`font-bold ${prompt.className}`}>
             {thoriumExperience.company_name}.
           </h2>
-        </a>
+        </Link>
         <span className={`uppercase ${josefin.className}`}>
           {thoriumExperience.date}
         </span>
@@ -29,7 +30,7 @@ const Thorium = ({ projects }) => {
             </div>
             <div>
               {projects.map((project) => (
-                <a
+                <Link
                   href={project.link}
                   key={project.link}
                   target="_blank"
@@ -39,7 +40,7 @@ const Thorium = ({ projects }) => {
                     {project.name}
                   </p>
                   <img src="/images/arrow-right.svg" className="h-4" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>

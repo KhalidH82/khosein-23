@@ -1,17 +1,19 @@
 import React from "react";
+import Link from "next/link";
 import { footerLinks } from '../app/constants/data'
+
 const Footer = () => {
   return (
     <footer className="w-full h-[64px] text-ship-cove-300">
       <div className="h-full w-full flex justify-center items-center gap-5">
         {footerLinks.map((link) => (
-          <a href={link.link}>
+          <Link href={link.link}>
             <img
               src={link.icon.src}
               alt={"Khalid Hosein" + link.title}
               className="h-8 w-8"
             />
-          </a>
+          </Link>
         ))}
       </div>
     </footer>

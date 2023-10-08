@@ -34,14 +34,14 @@ const NavBar = () => {
     >
       <div className="container px-4 py-2 mx-auto">
         <div className="navbar-start flex">
-          <a className="logo" href="/" target="_self">
+          <Link className="logo" href="/" target="_self">
             <Image
               src="/images/1.png"
               width={50}
               height={50}
               alt="Khalid Hosein"
             />
-          </a>
+          </Link>
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg

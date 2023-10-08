@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { prompt } from "../app/fonts";
@@ -29,7 +30,7 @@ export default function ResponsiveCarousel({ projects }) {
         {projects
           .filter((project) => project.featured === true) // Filter projects with the 'featured' key set to true
           .map((project) => (
-            <a href={project.link} key={project.link}>
+            <Link href={project.link} key={project.link}>
               <div className="mockup-window bg-ship-cove-100 border border-base-100 shadow-2xl">
                 <p className={`text-center -mt-5 mb-2 uppercase ${prompt.className}`}>{project.name}</p>
                 <div className="flex justify-center px-4 py-3 border-t border-base-300">
@@ -40,7 +41,7 @@ export default function ResponsiveCarousel({ projects }) {
                   />
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
     </div>
   );

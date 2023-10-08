@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { tmarcomExperience } from "../app/constants/data";
 import Carousel from "/components/Carousel.js";
 import { prompt, josefin } from "../app/fonts";
@@ -9,11 +10,11 @@ const TMarcom = ({ projects }) => {
     <div className="w-full h-full">
       <div className="text-left">
         <p className={`uppercase ${josefin.className}`}>Agency</p>
-        <a href={tmarcomExperience.company_link}>
+        <Link href={tmarcomExperience.company_link}>
           <h2 className={`font-bold ${prompt.className}`}>
             {tmarcomExperience.company_name}.
           </h2>
-        </a>
+        </Link>
         <span className={`uppercase ${josefin.className}`}>
           {tmarcomExperience.date}
         </span>
@@ -30,7 +31,7 @@ const TMarcom = ({ projects }) => {
             </div>
             <div>
               {projects.map((project) => (
-                <a
+                <Link
                   href={project.link}
                   key={project.link}
                   target="_blank"
@@ -40,7 +41,7 @@ const TMarcom = ({ projects }) => {
                     {project.name}
                   </p>
                   <img src="/images/arrow-right.svg" className="h-4" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>

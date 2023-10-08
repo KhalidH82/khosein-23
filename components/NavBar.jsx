@@ -60,7 +60,7 @@ const NavBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80 relative -left-5"
             >
               {navLinks.map((link) =>
                 link.sublink ? (
@@ -98,14 +98,6 @@ const NavBar = () => {
               )}
             </ul>
           </div>
-          {/* <a className="logo" href="/" target="_self">
-          <Image
-            src="/images/1.png"
-            width={50}
-            height={50}
-            alt="Khalid Hosein"
-          />
-        </a> */}
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

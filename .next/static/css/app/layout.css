@@ -2099,6 +2099,15 @@ html {
 .top-3 {
   top: 0.75rem;
 }
+.left-5 {
+  left: 1.25rem;
+}
+.right-5 {
+  right: 1.25rem;
+}
+.-left-5 {
+  left: -1.25rem;
+}
 .z-50 {
   z-index: 50;
 }

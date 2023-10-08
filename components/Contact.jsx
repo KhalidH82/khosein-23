@@ -21,7 +21,7 @@ const Contact = () => {
           Let's Connect.
         </h2>
       </AnimatedElement>
-      <div className="flex flex-col-reverse gap-20 lg:flex-row items-center">
+      <div className="flex flex-col-reverse gap-5 lg:gap-20 lg:flex-row items-center">
         <div className="w-full lg:w-1/2">
           <AnimatedElement animationType="fadeInLeft">
             <InlineWidget
@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
         <div className="w-full lg:w-1/2">
           <AnimatedElement animationType="fadeInRight">
-          <div className="flex">
+          <div className="flex items-end">
             <div className="avatar online h-10 lg:h-20 mt-2">
               <div className="hover:ring-4 relative">
                 <img
@@ -47,7 +47,7 @@ const Contact = () => {
             </div>
             <div className="chat chat-start">
               <div className="chat-bubble bg-ship-cove-500">
-                <p className={`text-xl leading-1 px-1 py-12 text-ship-cove-100 ${josefin.className}`}>
+                <p className={`text-xl leading-1 px-1 py-3 text-ship-cove-100 ${josefin.className}`}>
                   I'm excited to hear from you. Whether you have a project in
                   mind, a question about web development, or just want to chat
                   about the latest tech trends, I'm all ears! Feel free to reach

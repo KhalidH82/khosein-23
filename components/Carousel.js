@@ -1,25 +1,22 @@
-'use client'
+"use client";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { prompt } from '../app/fonts'
+import { prompt } from "../app/fonts";
 
 export default function ResponsiveCarousel({ projects }) {
   // Customized arrow component for the previous slide
   const CustomPrevArrow = (props) => (
-    <button
-      onClick={props.onClick}
-      className="custom-btn-left"
-    >
-      <img src="/images/arrow-left.svg" className="w-6 h-6 sm:h-12 sm:w-12 object-contain px-5" />
+    <button onClick={props.onClick} className="custom-btn-left">
+      <img
+        src="/images/arrow-left.svg"
+        className="w-6 h-6 sm:h-12 sm:w-12 object-contain px-5"
+      />
     </button>
   );
 
   // Customized arrow component for the next slide
   const CustomNextArrow = (props) => (
-    <button
-      onClick={props.onClick}
-      className="custom-btn-right"
-    >
+    <button onClick={props.onClick} className="custom-btn-right">
       <img
         src="/images/arrow-right.svg"
         className="w-6 h-6 sm:h-12 sm:w-12 object-contain px-5"
@@ -28,19 +25,7 @@ export default function ResponsiveCarousel({ projects }) {
   );
 
   return (
-    <div>
-      <Carousel
-        showIndicators
-        showArrows={true}
-        infiniteLoop={true}
-        showThumbs={false}
-        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && <CustomPrevArrow onClick={onClickHandler} />
-        }
-        renderArrowNext={(onClickHandler, hasNext, label) =>
-          hasNext && <CustomNextArrow onClick={onClickHandler} />
-        }
-      >
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {projects
           .filter((project) => project.featured === true) // Filter projects with the 'featured' key set to true
           .map((project) => (
@@ -57,7 +42,6 @@ export default function ResponsiveCarousel({ projects }) {
               </div>
             </a>
           ))}
-      </Carousel>
     </div>
   );
 }

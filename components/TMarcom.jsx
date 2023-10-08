@@ -23,7 +23,7 @@ const TMarcom = ({ projects }) => {
       </p>
 
       <div className="h-full w-full mt-10">
-        <div className="h-full w-full flex flex-col gap-10 xl:grid xl:grid-cols-3 xl:gap-20">
+        <div className="h-full w-full flex flex-col gap-10 lg:grid lg:grid-cols-3 lg:gap-20">
           <div className="col-span1">
             <div className="mb-1">
               <h2 className={`font-bold ${prompt.className}`}>Contributions</h2>

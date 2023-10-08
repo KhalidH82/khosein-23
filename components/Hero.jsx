@@ -8,7 +8,7 @@ import "../public/animate.min.css";
 const Hero = () => {
   return (
     <section className="hero h-full w-full">
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 py-10 mx-auto">
         <div className="h-full flex flex-col gap-10 lg:gap-0 lg:flex-row items-center">
           <div className="h-full w-full lg:w-1/2">
             <Image

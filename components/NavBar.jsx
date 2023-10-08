@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+import a from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Cookies from "js-cookie";
@@ -34,14 +34,14 @@ const NavBar = () => {
     >
       <div className="container px-4 py-2 mx-auto">
         <div className="navbar-start flex">
-          <Link className="logo" href="/" target="_self">
+          <a className="logo" href="/" target="_self">
             <Image
               src="/images/1.png"
               width={50}
               height={50}
               alt="Khalid Hosein"
             />
-          </Link>
+          </a>
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -65,11 +65,7 @@ const NavBar = () => {
             >
               {navLinks.map((link) =>
                 link.sublink ? (
-                  <li
-                    tabIndex={0}
-                    className={prompt.className}
-                    key={link.title}
-                  >
+                  <li tabIndex={0} className={prompt.className} key={link.title}>
                     <details>
                       <summary className="uppercase text-ship-cove-600">
                         {link.title}
@@ -77,12 +73,12 @@ const NavBar = () => {
                       <ul className="p-2">
                         {link.sublink.map((agency) => (
                           <li>
-                            <Link
+                            <a
                               href={agency.link}
                               className="uppercase text-ship-cove-600"
                             >
                               {agency.agency}
-                            </Link>
+                            </a>
                           </li>
                         ))}
                       </ul>
@@ -91,13 +87,13 @@ const NavBar = () => {
                 ) : (
                   <li key={link.id} className={prompt.className}>
                     {" "}
-                    <Link
+                    <a
                       href={`${link.link}`}
                       className="link-underline link-underline-black border-none hover:bg-transparent uppercase text-ship-cove-600"
                       target={link.title === "Resume" ? "_blank" : "_self"}
                     >
                       {link.title}
-                    </Link>
+                    </a>
                   </li>
                 )
               )}
@@ -108,18 +104,18 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">
             {navLinks.map((link) =>
               link.sublink ? (
-                <li tabIndex={0} className={prompt.className} key={link.id}>
+                <li tabIndex={0} className={prompt.className}>
                   <details>
                     <summary className="uppercase">{link.title}</summary>
                     <ul className="p-2 bg-ship-cove-100">
                       {link.sublink.map((agency) => (
                         <li>
-                          <Link
+                          <a
                             href={agency.link}
                             className="uppercase text-ship-cove-600"
                           >
                             {agency.agency}
-                          </Link>
+                          </a>
                         </li>
                       ))}
                     </ul>
@@ -128,13 +124,13 @@ const NavBar = () => {
               ) : (
                 <li key={link.id} className={prompt.className}>
                   {" "}
-                  <Link
+                  <a
                     href={`${link.link}`}
                     className="link-underline link-underline-black border-none hover:bg-transparent uppercase"
                     target={link.title === "Resume" ? "_blank" : "_self"}
                   >
                     {link.title}
-                  </Link>
+                  </a>
                 </li>
               )
             )}

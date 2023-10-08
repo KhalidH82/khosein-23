@@ -10,7 +10,7 @@ const Thorium = ({ projects }) => {
       <div className="text-left">
         <p className={`uppercase ${josefin.className}`}>Agency</p>
         <Link href={thoriumExperience.company_link}>
-          <h2 className={`font-bold ${prompt.className}`}>
+          <h2 className={`font-bold leading-none ${prompt.className}`}>
             {thoriumExperience.company_name}.
           </h2>
         </Link>

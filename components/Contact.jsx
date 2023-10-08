@@ -21,7 +21,7 @@ const Contact = () => {
           Let's Connect.
         </h2>
       </AnimatedElement>
-      <div className="flex flex-col-reverse gap-5 lg:gap-20 lg:flex-row items-center">
+      <div className="flex flex-col-reverse gap-5 lg:flex-row items-center">
         <div className="w-full lg:w-1/2">
           <AnimatedElement animationType="fadeInLeft">
             <InlineWidget

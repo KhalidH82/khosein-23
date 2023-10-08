@@ -1,3 +1,7 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/thorium/page": "app/thorium/page.js",
+  "/clients/page": "app/clients/page.js",
+  "/tmarcom/page": "app/tmarcom/page.js"
 }

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Cookies from "js-cookie";
@@ -72,12 +73,12 @@ const NavBar = () => {
                       <ul className="p-2">
                         {link.sublink.map((agency) => (
                           <li>
-                            <a
+                            <Link
                               href={agency.link}
                               className="uppercase text-ship-cove-600"
                             >
                               {agency.agency}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -86,13 +87,13 @@ const NavBar = () => {
                 ) : (
                   <li key={link.id} className={prompt.className}>
                     {" "}
-                    <a
+                    <Link
                       href={`${link.link}`}
                       className="link-underline link-underline-black border-none hover:bg-transparent uppercase text-ship-cove-600"
                       target={link.title === "Resume" ? "_blank" : "_self"}
                     >
                       {link.title}
-                    </a>
+                    </Link>
                   </li>
                 )
               )}
@@ -109,12 +110,12 @@ const NavBar = () => {
                     <ul className="p-2 bg-ship-cove-100">
                       {link.sublink.map((agency) => (
                         <li>
-                          <a
+                          <Link
                             href={agency.link}
                             className="uppercase text-ship-cove-600"
                           >
                             {agency.agency}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -123,13 +124,13 @@ const NavBar = () => {
               ) : (
                 <li key={link.id} className={prompt.className}>
                   {" "}
-                  <a
+                  <Link
                     href={`${link.link}`}
                     className="link-underline link-underline-black border-none hover:bg-transparent uppercase"
                     target={link.title === "Resume" ? "_blank" : "_self"}
                   >
                     {link.title}
-                  </a>
+                  </Link>
                 </li>
               )
             )}

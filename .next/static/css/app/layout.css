@@ -2120,18 +2120,6 @@ html {
 .text-right {
   text-align: right;
 }
-. {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-. {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -2246,7 +2234,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-top: 12px;
   margin-bottom: 3px;
 }
 @media (max-width: 1440px) {
@@ -2368,26 +2355,6 @@ h6 {
 
 p {
   font-size: 1rem;
-}
-@media (max-width: 1440px) {
-  p {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 1024px) {
-  p {
-    font-size: 0.85rem;
-  }
-}
-@media (max-width: 768px) {
-  p {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 485px) {
-  p {
-    font-size: 0.75rem;
-  }
 }
 
 .animate-character {

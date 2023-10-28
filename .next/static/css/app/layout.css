@@ -1926,6 +1926,9 @@ html {
 .h-full {
   height: 100%;
 }
+.h-40 {
+  height: 10rem;
+}
 .w-16 {
   width: 4rem;
 }
@@ -1950,8 +1953,20 @@ html {
 .w-full {
   width: 100%;
 }
+.w-1\/2 {
+  width: 50%;
+}
+.w-auto {
+  width: auto;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 .flex-col {
   flex-direction: column;
@@ -2119,6 +2134,10 @@ html {
 }
 .text-right {
   text-align: right;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .font-bold {
   font-weight: 700;
@@ -2433,6 +2452,12 @@ p {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.hover\:ring-2:hover {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 @media (min-width: 640px) {
 
   .sm\:h-12 {
@@ -2466,12 +2491,24 @@ p {
     height: 7rem;
   }
 
+  .md\:h-20 {
+    height: 5rem;
+  }
+
   .md\:w-28 {
     width: 7rem;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-center {

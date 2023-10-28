@@ -23,6 +23,12 @@
       "static/chunks/main-app.js",
       "static/css/app/tmarcom/page.css",
       "static/chunks/app/tmarcom/page.js"
+    ],
+    "/clients/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/clients/page.css",
+      "static/chunks/app/clients/page.js"
     ]
   }
 }

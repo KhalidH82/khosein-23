@@ -38,8 +38,8 @@ const Clients = ({ client }) => {
             </div>
             <div className="mt-5">
               {c.testimonials.map((testimonial) => (
-                <div className="flex">
-                  <div className="avatar online h-20 mt-2">
+                <div className="flex flex-col md:flex-row">
+                  <div className="avatar online w-20 h-full md:h-20 mt-2">
                     <div className="hover:ring-4 relative">
                       <img
                         className="rounded-full"
@@ -51,7 +51,7 @@ const Clients = ({ client }) => {
                   <div className="chat chat-start">
                     <div className="chat-bubble bg-ship-cove-500">
                       <p
-                        className={` leading-1 p-2 text-ship-cove-100 ${josefin.className}`}
+                        className={`text-base leading-1 p-2 text-ship-cove-100 ${josefin.className}`}
                       >
                         {testimonial}
                       </p>

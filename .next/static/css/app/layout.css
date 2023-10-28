@@ -1,306 +1,6 @@
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Prompt","arguments":[{"weight":["400","500","600","700","800"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"prompt"} ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* thai */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/b4233f3b6619d75d-s.woff2) format('woff2');
-  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/6e99940b73a95228-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/2d51cd5e580ca87f-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/b2e6e08dc7feb185-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* thai */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/9ed35b43eb18562f-s.woff2) format('woff2');
-  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/d119fe4fef1851c3-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/bd1ca476ddd4b9dc-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/ccd138fe5ab609e7-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* thai */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/_next/static/media/821cf16db20cea20-s.woff2) format('woff2');
-  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/_next/static/media/c3d104dea3fb0748-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/_next/static/media/2506db90047e6371-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/_next/static/media/e1bd1485cbb82d15-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* thai */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/_next/static/media/4faed8d9b0e4b407-s.woff2) format('woff2');
-  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/_next/static/media/3fb648beadc809f8-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/_next/static/media/e7d2dc8de0e5d392-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/_next/static/media/c7be417d571ead1f-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* thai */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/_next/static/media/a50dacf0d22cbb95-s.woff2) format('woff2');
-  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/_next/static/media/c05f0b8a30e77167-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/_next/static/media/5a874db80c9d7b55-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Prompt_f69970';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/_next/static/media/0a9a5b84bcabbf4e-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Prompt_Fallback_f69970';src: local("Arial");ascent-override: 95.84%;descent-override: 37.11%;line-gap-override: 0.00%;size-adjust: 113.73%
-}.__className_f69970 {font-family: '__Prompt_f69970', '__Prompt_Fallback_f69970';font-style: normal
-}
-
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Josefin_Sans","arguments":[{"weight":["400","500","600","700"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"josefin"} ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* vietnamese */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Josefin_Sans_9ce8bf';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Josefin_Sans_Fallback_9ce8bf';src: local("Arial");ascent-override: 72.92%;descent-override: 24.31%;line-gap-override: 0.00%;size-adjust: 102.85%
-}.__className_9ce8bf {font-family: '__Josefin_Sans_9ce8bf', '__Josefin_Sans_Fallback_9ce8bf';font-style: normal
-}
-
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./app/globals.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./app/globals.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 *//*
@@ -2235,6 +1935,15 @@ html {
 .h-full {
   height: 100%;
 }
+.h-56 {
+  height: 14rem;
+}
+.h-36 {
+  height: 9rem;
+}
+.h-40 {
+  height: 10rem;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -2262,6 +1971,18 @@ html {
 .w-full {
   width: 100%;
 }
+.w-1\/2 {
+  width: 50%;
+}
+.w-3\/4 {
+  width: 75%;
+}
+.w-5\/6 {
+  width: 83.333333%;
+}
+.w-20 {
+  width: 5rem;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -2273,6 +1994,9 @@ html {
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-end {
   align-items: flex-end;
@@ -2303,6 +2027,9 @@ html {
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -2361,6 +2088,10 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -2414,11 +2145,15 @@ html {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
-.pt-5 {
-  padding-top: 1.25rem;
+.pl-4 {
+  padding-left: 1rem;
 }
 .text-left {
   text-align: left;
@@ -2493,20 +2228,6 @@ html {
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-inner {
-  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-ship-cove-900 {
-  --tw-shadow-color: #41496e;
-  --tw-shadow: var(--tw-shadow-colored);
-}
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2532,53 +2253,188 @@ html {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 html {
   scroll-behavior: smooth;
 }
-body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    background: linear-gradient(to bottom, #9DB1DC, #e7eff8);
-    color: #4b5588;
-}
-h1,h2,h3,h4,h5,h6 {
 
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(to bottom, #9DB1DC, #e7eff8);
+  color: #4b5588;
 }
+
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 485px) {
+  h1 {
+    font-size: 1.6rem;
+  }
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+@media (max-width: 1440px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 485px) {
+  h2 {
+    font-size: 1.4rem;
+  }
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
+}
+@media (max-width: 1440px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 485px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 h4 {
-  font-size: 2.0rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 1440px) {
+  h4 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 485px) {
+  h4 {
+    font-size: 1rem;
+  }
 }
 
 h5 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
+}
+@media (max-width: 1440px) {
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  h5 {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 485px) {
+  h5 {
+    font-size: 0.85rem;
+  }
 }
 
 h6 {
-  font-size: 1.50rem;
+  font-size: 1.1rem;
+}
+@media (max-width: 1440px) {
+  h6 {
+    font-size: 1.05rem;
+  }
+}
+@media (max-width: 1024px) {
+  h6 {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 768px) {
+  h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 485px) {
+  h6 {
+    font-size: 0.8rem;
+  }
 }
 
-.animate-character
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #d4e1f1 0%,
-    #9db1dc 29%,
-    #707ec2 67%,
-    #4b5588 100%
-  );
+p {
+  font-size: 1rem;
+}
+@media (max-width: 1440px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1024px) {
+  p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 485px) {
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+.animate-character {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #d4e1f1 0%, #9db1dc 29%, #707ec2 67%, #4b5588 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -2596,11 +2452,9 @@ h6 {
     background-position: 200% center;
   }
 }
-
 .link-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent),
-  linear-gradient(#fff, #fff);
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
   background-size: 0 3px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -2608,8 +2462,7 @@ h6 {
 }
 
 .link-underline-black {
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#9db1dc, #707ec2)
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#9db1dc, #707ec2);
 }
 
 .link-underline:hover {
@@ -2672,12 +2525,48 @@ h6 {
 
 @media (min-width: 768px) {
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-56 {
+    height: 14rem;
+  }
+
+  .md\:h-28 {
+    height: 7rem;
+  }
+
+  .md\:w-28 {
+    width: 7rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 }
 
@@ -2742,14 +2631,6 @@ h6 {
     display: block;
   }
 
-  .xl\:grid {
-    display: grid;
-  }
-
-  .xl\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2757,9 +2638,304 @@ h6 {
   .xl\:items-center {
     align-items: center;
   }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[12].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Prompt","arguments":[{"weight":["400","500","600","700","800"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"prompt"} ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* thai */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/b4233f3b6619d75d-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/6e99940b73a95228-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/2d51cd5e580ca87f-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/b2e6e08dc7feb185-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/9ed35b43eb18562f-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/d119fe4fef1851c3-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/bd1ca476ddd4b9dc-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/ccd138fe5ab609e7-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/821cf16db20cea20-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/c3d104dea3fb0748-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/2506db90047e6371-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/e1bd1485cbb82d15-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/4faed8d9b0e4b407-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/3fb648beadc809f8-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/e7d2dc8de0e5d392-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/c7be417d571ead1f-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/_next/static/media/a50dacf0d22cbb95-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/_next/static/media/c05f0b8a30e77167-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/_next/static/media/5a874db80c9d7b55-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Prompt_f69970';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/_next/static/media/0a9a5b84bcabbf4e-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Prompt_Fallback_f69970';src: local("Arial");ascent-override: 95.84%;descent-override: 37.11%;line-gap-override: 0.00%;size-adjust: 113.73%
+}.__className_f69970 {font-family: '__Prompt_f69970', '__Prompt_Fallback_f69970';font-style: normal
+}
 
-  .xl\:gap-20 {
-    gap: 5rem;
-  }
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[12].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/fonts.js","import":"Josefin_Sans","arguments":[{"weight":["400","500","600","700"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"josefin"} ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* vietnamese */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Josefin_Sans_9ce8bf';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Josefin_Sans_Fallback_9ce8bf';src: local("Arial");ascent-override: 72.92%;descent-override: 24.31%;line-gap-override: 0.00%;size-adjust: 102.85%
+}.__className_9ce8bf {font-family: '__Josefin_Sans_9ce8bf', '__Josefin_Sans_Fallback_9ce8bf';font-style: normal
 }
 

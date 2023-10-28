@@ -14,7 +14,7 @@ const Work = () => {
   return (
     <div>
       <div className="w-full h-full container px-4 mx-auto py-16">
-          <h2 className='mb-10'>Current Work.</h2>
+          <h2 className='mb-5'>Current Work.</h2>
         <div className="w-full h-full flex flex-col lg:flex-row gap-10 justify-center items-center">
           {experiences.map((experience) => (
             <div

@@ -11,11 +11,11 @@ const Technologies = () => {
   };
 
   return (
-    <div className="w-full h-full container px-4 mx-auto py-14">
-      <div className="mb-10 text-right">
+    <div className="w-full h-full container px-4 mx-auto py-5">
+      <div className="mb-5 text-right">
         <AnimatedElement animationType="fadeInUp">
           <p className={`uppercase ${josefin.className}`}>Experience</p>
-          <h2 className={`mb-10 font-bold ${prompt.className}`}>
+          <h2 className={`mb-5 font-bold ${prompt.className}`}>
             Technologies.
           </h2>
           <div className="mx-auto">
@@ -24,7 +24,7 @@ const Technologies = () => {
                 <img
                   src={tech.icon.src}
                   alt={tech.name}
-                  className="h-28 w-28 object-contain px-5"
+                  className="w-20 h-20 md:h-28 md:w-28 object-contain px-5"
                   key={tech.name}
                 />
               ))}

@@ -20,11 +20,11 @@ const defaultOptions = {
 
 const About = () => {
   return (
-    <div className="container px-4 mx-auto py-14 flex flex-col gap-12">
+    <div className="container px-4 mx-auto py-5 flex flex-col gap-12">
       <AnimatedElement animationType="fadeInUp">
         <div>
           <p className={`uppercase ${josefin.className}`}>Introduction</p>
-          <h2 className={`mb-10 font-bold ${prompt.className}`}>About me.</h2>
+          <h2 className={`mb-5 font-bold ${prompt.className}`}>About me.</h2>
           <p className={`text-xl mt-5 ${josefin.className}`}>
             Welcome! My name is Khalid, and I am a results-oriented full-stack
             web developer specializing in creating dynamic marketing
@@ -43,9 +43,10 @@ const About = () => {
             digital landscape.
           </p>
         </div>
-        <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-[5rem]">
+        <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-16 mt-[5rem]">
           {services.map((service) => (
-            <Tilt options={defaultOptions} key={service.title}>
+            <>
+            <Tilt options={defaultOptions} key={service.title} className="hidden md:block">
               <div
                 className="card custom-card bg-ship-cove-100"
                 key={service.title}
@@ -66,6 +67,26 @@ const About = () => {
                 </div>
               </div>
             </Tilt>
+             <div
+                className="card custom-card bg-ship-cove-100 block md:hidden"
+                key={service.title}
+              >
+                <figure className="px-10 pt-10">
+                  <img
+                    src={service.icon.src}
+                    alt=""
+                    className="rounded-xl w-16 h-16"
+                  />
+                </figure>
+                <div className="card-body items-center text-center">
+                  <div className="card-actions">
+                    <h2 className={`card-title uppercase ${prompt.className}`}>
+                      {service.title}
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </>
           ))}
         </div>
       </AnimatedElement>

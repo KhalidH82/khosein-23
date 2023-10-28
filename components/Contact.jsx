@@ -12,7 +12,7 @@ const Contact = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <div className="container px-4 mx-auto py-14">
+    <div className="container px-4 mx-auto py-5">
       <AnimatedElement animationType="fadeInUp">
         <p className={`uppercase text-right ${josefin.className}`}>
           Get in Touch

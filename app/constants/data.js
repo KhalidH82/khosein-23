@@ -340,24 +340,27 @@ const thorium = [
 
 const tmarcom = [
   {
+    name: "MENNEKES",
+    link: "https://www.mennekes.com/",
+    image: "/images/t2/mennekes.png",
+    featured: true,
+  },
+  {
     name: "World Water Works",
     link: "https://www.worldwaterworks.com/",
     image: "/images/t2/www.png",
-    mobileImage: "/images/t2/www-mobile.png",
     featured: true,
   },
   {
     name: "HandyTube",
     link: "https://www.handytube.com/",
     image: "/images/t2/handytube.png",
-    mobileImage: "/images/t2/handytube-mobile.png",
     featured: true,
   },
   {
     name: "168 Manufacturing",
     link: "https://168mfg.com/",
     image: "/images/t2/168.png",
-    mobileImage: "/images/t2/168-mobile.png",
     featured: true,
   },
   {

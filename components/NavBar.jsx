@@ -65,7 +65,7 @@ const NavBar = () => {
             >
               {navLinks.map((link) =>
                 link.sublink ? (
-                  <li tabIndex={0} className={prompt.className} key={link.title}>
+                  <li tabIndex={0} className={prompt.className} key={link.id}>
                     <details>
                       <summary className="uppercase text-ship-cove-600">
                         {link.title}
@@ -104,7 +104,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">
             {navLinks.map((link) =>
               link.sublink ? (
-                <li tabIndex={0} className={prompt.className}>
+                <li tabIndex={0} className={prompt.className} key={link.id}>
                   <details>
                     <summary className="uppercase">{link.title}</summary>
                     <ul className="p-2 bg-ship-cove-100">
@@ -144,12 +144,14 @@ const NavBar = () => {
                   {hasVisited ? (
                     <p
                       className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
+                      suppressHydrationWarning
                     >
                       Welcome Back!
                     </p>
                   ) : (
                     <p
                       className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
+                      suppressHydrationWarning
                     >
                       Hello! It's nice to meet you!
                     </p>

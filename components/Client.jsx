@@ -32,7 +32,7 @@ const Clients = ({ client }) => {
               </div>
             </a>
             <div className="mt-5">
-              <p className={`text-xl leading-1 ${josefin.className}`}>
+              <p className={`leading-1 ${josefin.className}`}>
                 {c.description}
               </p>
             </div>
@@ -51,7 +51,7 @@ const Clients = ({ client }) => {
                   <div className="chat chat-start">
                     <div className="chat-bubble bg-ship-cove-500">
                       <p
-                        className={`text-base leading-1 p-2 text-ship-cove-100 ${josefin.className}`}
+                        className={` leading-1 p-2 text-ship-cove-100 ${josefin.className}`}
                       >
                         {testimonial}
                       </p>

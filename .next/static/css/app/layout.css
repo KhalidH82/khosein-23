@@ -1860,9 +1860,6 @@ html {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1871,9 +1868,6 @@ html {
 }
 .mb-8 {
   margin-bottom: 2rem;
-}
-.mt-10 {
-  margin-top: 2.5rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -1914,9 +1908,6 @@ html {
 .h-24 {
   height: 6rem;
 }
-.h-28 {
-  height: 7rem;
-}
 .h-4 {
   height: 1rem;
 }
@@ -1935,26 +1926,14 @@ html {
 .h-full {
   height: 100%;
 }
-.h-56 {
-  height: 14rem;
-}
-.h-36 {
-  height: 9rem;
-}
-.h-40 {
-  height: 10rem;
-}
-.w-10 {
-  width: 2.5rem;
-}
 .w-16 {
   width: 4rem;
 }
+.w-20 {
+  width: 5rem;
+}
 .w-24 {
   width: 6rem;
-}
-.w-28 {
-  width: 7rem;
 }
 .w-5 {
   width: 1.25rem;
@@ -1970,18 +1949,6 @@ html {
 }
 .w-full {
   width: 100%;
-}
-.w-1\/2 {
-  width: 50%;
-}
-.w-3\/4 {
-  width: 75%;
-}
-.w-5\/6 {
-  width: 83.333333%;
-}
-.w-20 {
-  width: 5rem;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2018,9 +1985,6 @@ html {
 }
 .gap-12 {
   gap: 3rem;
-}
-.gap-16 {
-  gap: 4rem;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -2117,14 +2081,6 @@ html {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -2149,11 +2105,11 @@ html {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.pt-10 {
-  padding-top: 2.5rem;
-}
 .pl-4 {
   padding-left: 1rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-left {
   text-align: left;
@@ -2164,15 +2120,15 @@ html {
 .text-right {
   text-align: right;
 }
-.text-base {
+. {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.text-lg {
+. {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-xl {
+.{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
@@ -2290,6 +2246,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-top: 12px;
+  margin-bottom: 3px;
 }
 @media (max-width: 1440px) {
   h2 {
@@ -2537,10 +2495,6 @@ p {
     display: none;
   }
 
-  .md\:h-56 {
-    height: 14rem;
-  }
-
   .md\:h-28 {
     height: 7rem;
   }
@@ -2551,10 +2505,6 @@ p {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:items-center {
@@ -2626,10 +2576,6 @@ p {
 }
 
 @media (min-width: 1280px) {
-
-  .xl\:block {
-    display: block;
-  }
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));

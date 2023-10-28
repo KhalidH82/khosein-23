@@ -47,7 +47,7 @@ const Contact = () => {
             </div>
             <div className="chat chat-start">
               <div className="chat-bubble bg-ship-cove-500">
-                <p className={`text-xl leading-1 px-1 py-3 text-ship-cove-100 ${josefin.className}`}>
+                <p className={`leading-1 px-1 py-3 text-ship-cove-100 ${josefin.className}`}>
                   I'm excited to hear from you. Whether you have a project in
                   mind, a question about web development, or just want to chat
                   about the latest tech trends, I'm all ears! Feel free to reach

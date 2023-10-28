@@ -47,7 +47,7 @@ const Work = () => {
                     </div>
                   ))}
                 </div>
-                <div className="card-actions justify-end mt-10">
+                <div className="card-actions justify-end mt-5">
                   <button
                     className="btn bg-gradient-to-b from-ship-cove-400 to-ship-cove-600 text-white border-none"
                     onClick={() => handleSwitch(experience.company_name)}

@@ -21,7 +21,7 @@ const NavBar = () => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      // window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
@@ -143,14 +143,14 @@ const NavBar = () => {
                 <div className="chat-bubble bg-ship-cove-500">
                   {hasVisited ? (
                     <p
-                      className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
+                      className={` leading-1 text-ship-cove-100 ${josefin.className}`}
                       suppressHydrationWarning
                     >
                       Welcome Back!
                     </p>
                   ) : (
                     <p
-                      className={`text-base leading-1 text-ship-cove-100 ${josefin.className}`}
+                      className={` leading-1 text-ship-cove-100 ${josefin.className}`}
                       suppressHydrationWarning
                     >
                       Hello! It's nice to meet you!

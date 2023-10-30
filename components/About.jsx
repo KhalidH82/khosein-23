@@ -45,12 +45,28 @@ const About = () => {
         </div>
         <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-16 mt-[5rem]">
           {services.map((service) => (
-            <>
-            <Tilt options={defaultOptions} key={service.title} className="hidden md:block">
-              <div
-                className="card custom-card bg-ship-cove-100"
-                key={service.title}
-              >
+            <div key={service.title}>
+              <Tilt options={defaultOptions} className="hidden md:block">
+                <div className="card custom-card bg-ship-cove-100">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src={service.icon.src}
+                      alt=""
+                      className="rounded-xl w-16 h-16"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center">
+                    <div className="card-actions">
+                      <h2
+                        className={`card-title uppercase ${prompt.className}`}
+                      >
+                        {service.title}
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </Tilt>
+              <div className="card custom-card bg-ship-cove-100 block md:hidden">
                 <figure className="px-10 pt-10">
                   <img
                     src={service.icon.src}
@@ -66,27 +82,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </Tilt>
-             <div
-                className="card custom-card bg-ship-cove-100 block md:hidden"
-                key={service.title}
-              >
-                <figure className="px-10 pt-10">
-                  <img
-                    src={service.icon.src}
-                    alt=""
-                    className="rounded-xl w-16 h-16"
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <div className="card-actions">
-                    <h2 className={`card-title uppercase ${prompt.className}`}>
-                      {service.title}
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </>
+            </div>
           ))}
         </div>
       </AnimatedElement>

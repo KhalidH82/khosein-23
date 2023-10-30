@@ -65,18 +65,14 @@ const NavBar = () => {
             >
               {navLinks.map((link) =>
                 link.sublink ? (
-                  <li
-                    tabIndex={0}
-                    className={prompt.className}
-                    key={link.title}
-                  >
+                  <li key={link.id} tabIndex={0} className={prompt.className}>
                     <details>
                       <summary className="uppercase text-ship-cove-600">
                         {link.title}
                       </summary>
                       <ul className="p-2">
                         {link.sublink.map((agency) => (
-                          <li>
+                          <li key={agency.link}>
                             <a
                               href={agency.link}
                               className="uppercase text-ship-cove-600"
@@ -89,7 +85,7 @@ const NavBar = () => {
                     </details>
                   </li>
                 ) : (
-                  <li className={prompt.className} key={link.title}>
+                  <li key={link.id} className={prompt.className}>
                     {" "}
                     <a
                       href={`${link.link}`}
@@ -108,12 +104,12 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">
             {navLinks.map((link) =>
               link.sublink ? (
-                <li tabIndex={0} className={prompt.className} key={link.title}>
+                <li key={link.id} tabIndex={0} className={prompt.className}>
                   <details>
                     <summary className="uppercase">{link.title}</summary>
                     <ul className="p-2 bg-ship-cove-100">
                       {link.sublink.map((agency) => (
-                        <li>
+                        <li key={agency.link}>
                           <a
                             href={agency.link}
                             className="uppercase text-ship-cove-600"
@@ -126,7 +122,7 @@ const NavBar = () => {
                   </details>
                 </li>
               ) : (
-                <li className={prompt.className} key={link.id}>
+                <li key={link.id} className={prompt.className}>
                   {" "}
                   <a
                     href={`${link.link}`}

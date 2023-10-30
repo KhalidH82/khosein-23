@@ -40,7 +40,7 @@ const Contact = () => {
               <div className="hover:ring-4 relative">
                 <img
                   className="rounded-full"
-                  src="/images/khavatar.png"
+                  src="/images/khavatar.webp"
                   alt="Khalid Hosein"
                 />
               </div>

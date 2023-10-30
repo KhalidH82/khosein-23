@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="h-full flex flex-col gap-8 lg:gap-0 lg:flex-row items-start md:items-center">
           <div className="h-full w-full lg:w-1/2">
             <img
-              src="/images/khavatar.png"
+              src="/images/khavatar.webp"
               alt="Khalid Hosein"
               className="object-cover w-full"
 

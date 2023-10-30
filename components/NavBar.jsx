@@ -162,7 +162,7 @@ const NavBar = () => {
                 <div className="hover:ring-4">
                   <img
                     className="rounded-full"
-                    src="/images/khavatar.png"
+                    src="/images/khavatar.webp"
                     alt="Khalid Hosein"
                   />
                 </div>

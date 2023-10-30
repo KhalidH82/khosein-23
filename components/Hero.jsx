@@ -18,7 +18,7 @@ const Hero = () => {
 
             />
           </div>
-          <div className="h-full w-full text-left lg:w-1/2 uppercase pl-4 md:pl-0">
+          <div className="h-full w-full text-left lg:w-1/2 uppercase">
               <h1 className={`font-bold leading-none mb-2 ${prompt.className}`}>
                 Hi, I'm{" "}
                 <span className="text-ship-cove-700 font-extrabold">

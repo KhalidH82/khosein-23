@@ -1,5 +1,6 @@
 {
-  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/tmarcom/page": "app/tmarcom/page.js",
+  "/clients/page": "app/clients/page.js",
+  "/nzr-digital/page": "app/nzr-digital/page.js"
 }

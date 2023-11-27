@@ -24,6 +24,7 @@ const NavBar = () => {
       // window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div
       className={`navbar fixed top-0 left-0 w-full transition-colors duration-100 ease-in-out z-50 ${

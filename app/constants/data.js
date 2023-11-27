@@ -57,6 +57,17 @@ const navLinks = [
     link: "/#contact",
   },
   {
+    id: "nzr-digital",
+    title: "NZR Digital",
+    link: "/nzr-digital",
+    // sublink: [
+    //   {
+    //     agency: "T2 Marketing Communications",
+    //     link: "",
+    //   },
+    // ],
+  },
+  {
     id: "resume",
     title: "Resume",
     link: "/K_Hosein24.pdf",
@@ -392,14 +403,16 @@ const tmarcom = [
 
 const clients = [
   {
-    name: 'Mastermind Construction SXM',
-    date: 'September 2023',
-    description:`I had the privilege of collaborating with a valued client, a prominent construction business based in Saint Martin, FWI., as a web developer on an existing WordPress website. My role encompassed customizing and expanding the site's layout to enhance its visual appeal and functionality. From crafting engaging content to guiding the overall direction of the project, I was deeply involved in every aspect of the website's evolution. It was a rewarding experience, and I'm proud to have played a pivotal role in bringing my client's digital vision to life.`,
-    link: 'https://mastermindsxm.com/',
+    name: "Mastermind Construction SXM",
+    date: "September 2023",
+    description: `I had the privilege of collaborating with a valued client, a prominent construction business based in Saint Martin, FWI., as a web developer on an existing WordPress website. My role encompassed customizing and expanding the site's layout to enhance its visual appeal and functionality. From crafting engaging content to guiding the overall direction of the project, I was deeply involved in every aspect of the website's evolution. It was a rewarding experience, and I'm proud to have played a pivotal role in bringing my client's digital vision to life.`,
+    link: "https://mastermindsxm.com/",
     icon: "/images/clients/mastermind.png",
-    testimonials : ["What can I say? Or better yet, what can't I say? It was a pleasure working with Khalid. Our previous website developer left us with an unfished product, and we didn't know what to do. Thankfully, Khalid was able to take on our project and give us a finished product that me and my team and I were proud of! He listened, advised, and executed. He was also EXTREMELY patient with us and the many changes and tweaks we needed for our finished piece. It was good to work with someone that gave us expert advice on what our website needed and what would make our website appealing to clients. We will DEFINITELY trust Khalid with additional projects in the future. -Hydie - MastermindSXM"]
-  }
-]
+    testimonials: [
+      "What can I say? Or better yet, what can't I say? It was a pleasure working with Khalid. Our previous website developer left us with an unfished product, and we didn't know what to do. Thankfully, Khalid was able to take on our project and give us a finished product that me and my team and I were proud of! He listened, advised, and executed. He was also EXTREMELY patient with us and the many changes and tweaks we needed for our finished piece. It was good to work with someone that gave us expert advice on what our website needed and what would make our website appealing to clients. We will DEFINITELY trust Khalid with additional projects in the future. -Hydie - MastermindSXM",
+    ],
+  },
+];
 
 export {
   navLinks,

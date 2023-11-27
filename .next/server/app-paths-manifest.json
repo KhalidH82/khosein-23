@@ -1,6 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/tmarcom/page": "app/tmarcom/page.js",
-  "/clients/page": "app/clients/page.js",
   "/nzr-digital/page": "app/nzr-digital/page.js"
 }

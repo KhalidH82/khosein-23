@@ -95,8 +95,8 @@ const ClientForm = () => {
   };
 
   return (
-    <form name="nzrDigital" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="nzrDigital" />
+    <form name="nzr" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="nzr" />
       <div>
         <label className="label">Client Name:</label>
         <input

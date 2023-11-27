@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { prompt, josefin } from "../../app/fonts";
-import { calcLength } from "framer-motion";
+import ClientForm from '../../components/ClientForm'
 
 const page = () => {
   const [selectedItem, setSelectedItem] = useState(0);
@@ -69,7 +69,7 @@ const page = () => {
         </a>
       </div>
       <div>
-        <p className={`my-16 ${prompt.className}`}>
+        <p className={`mt-16 mb-8 ${prompt.className}`}>
           I’m excited to work with you and express my enthusiasm for the
           opportunity to collaborate on the development of your company's online
           presence. As a seasoned freelance web developer, I bring a wealth of
@@ -77,7 +77,9 @@ const page = () => {
           solutions that align with your unique business objectives.
         </p>
         <div>
-          <h2 className={`font-bold leading-none mt-8 mb-3 ${prompt.className}`}>
+          <h2
+            className={`font-bold leading-none mt-8 mb-3 ${prompt.className}`}
+          >
             Our Services
           </h2>
           <p className={`mb-8 ${prompt.className}`}>
@@ -117,7 +119,9 @@ const page = () => {
         </div>
 
         <div>
-          <h2 className={`font-bold leading-none mt-8 mb-3 ${prompt.className}`}>
+          <h2
+            className={`font-bold leading-none mt-8 mb-3 ${prompt.className}`}
+          >
             Our Approach
           </h2>
           <p className={`mb-8 ${prompt.className}`}>
@@ -136,7 +140,9 @@ const page = () => {
         </div>
 
         <div>
-          <h2 className={`font-bold leading-none mt-8 mb-3 ${prompt.className}`}>
+          <h2
+            className={`font-bold leading-none mt-8 mb-3 ${prompt.className}`}
+          >
             Initial Requirements
           </h2>
           <p className={`mb-8 ${prompt.className}`}>
@@ -149,6 +155,9 @@ const page = () => {
             play a pivotal role in shaping a website that not only meets but
             exceeds your expectations.
           </p>
+        </div>
+        <div>
+          <ClientForm />
         </div>
       </div>
     </div>

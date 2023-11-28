@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const ClientForm = () => {
+  const router = useRouter()
   const [clientInfo, setClientInfo] = useState({
     firstName: "",
     lastName: "",
@@ -107,7 +109,7 @@ const ClientForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate("/"))
+      .then(() => router.push("/"))
       .catch((error) => alert(error));
   };
 

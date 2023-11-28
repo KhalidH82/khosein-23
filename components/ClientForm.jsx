@@ -65,7 +65,6 @@ const ClientForm = () => {
       "Travel Agency",
       "Video Production",
     ],
-    // ... Add more business types for other industries
   };
 
   const handleIndustryChange = (event) => {
@@ -214,9 +213,9 @@ const ClientForm = () => {
           <textarea
             name="services"
             class="textarea  h-24 w-full bg-white"
-            placeholder="What services does your business offer?"
+            placeholder="What services does your business offer to your clients?"
             value={clientInfo.servicesOffered}
-            onChange={() => handleChange("servicesOffered", e.target.value)}
+            onChange={(e) => handleChange("servicesOffered", e.target.value)}
           ></textarea>
         </div>
 
@@ -226,10 +225,10 @@ const ClientForm = () => {
           </label>
           <textarea
             name="features"
-            class="textarea  h-24 w-full bg-white"
+            class="textarea h-24 w-full bg-white"
             placeholder=""
             value={clientInfo.specificFeatures}
-            onChange={() => handleChange("specificFeatures", e.target.value)}
+            onChange={(e) => handleChange("specificFeatures", e.target.value)}
           ></textarea>
         </div>
 
@@ -243,7 +242,7 @@ const ClientForm = () => {
             class="textarea h-24 w-full bg-white"
             placeholder=""
             value={clientInfo.admiredWebsites}
-            onChange={() => handleChange("admiredWebsites", e.target.value)}
+            onChange={(e) => handleChange("admiredWebsites", e.target.value)}
           ></textarea>
         </div>
 
@@ -256,7 +255,7 @@ const ClientForm = () => {
             class="textarea h-24 w-full bg-white"
             placeholder=""
             value={clientInfo.otherRequirements}
-            onChange={() => handleChange("otherRequirements", e.target.value)}
+            onChange={(e) => handleChange("otherRequirements", e.target.value)}
           ></textarea>
         </div>
 

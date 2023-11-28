@@ -93,7 +93,7 @@ const page = () => {
           {services.map((item, index) => (
             <div
               key={item.name}
-              className={`collapse collapse-arrow join-item border border-base-300 ${
+              className={`collapse collapse-arrow join-item ${
                 index === selectedItem ? "open" : ""
               }`}
             >

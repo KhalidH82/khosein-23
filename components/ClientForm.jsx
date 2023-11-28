@@ -151,7 +151,7 @@ const ClientForm = () => {
         name="nzrDigital"
         method="POST"
         data-netlify="true"
-        enctype="multipart/form-data"
+        encType="multipart/form-data"
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="nzrDigital" />
@@ -226,7 +226,7 @@ const ClientForm = () => {
           </div>
 
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
-            <div>
+            {/* <div>
               <label className="label">Company Logo</label>
               <input
                 name="company-logo"
@@ -236,7 +236,7 @@ const ClientForm = () => {
                 className="file-input file- w-full max-w-xs bg-ship-cove-100"
                 onChange={(e) => handleChange("companyLogo", e.target.value)}
               />
-            </div>
+            </div> */}
             <div>
               <label className="label">Company/Brand Colors</label>
               <div className="flex gap-2 items-center">
@@ -274,7 +274,7 @@ const ClientForm = () => {
             <label className="label">Services Offered</label>
             <textarea
               name="services"
-              class="textarea  h-24 w-full bg-ship-cove-100"
+              className="textarea  h-24 w-full bg-ship-cove-100"
               placeholder="What services does your business offer to your clients?"
               value={clientInfo.servicesOffered}
               onChange={(e) => handleChange("servicesOffered", e.target.value)}
@@ -287,7 +287,7 @@ const ClientForm = () => {
             </label>
             <textarea
               name="features"
-              class="textarea h-24 w-full bg-ship-cove-100"
+              className="textarea h-24 w-full bg-ship-cove-100"
               placeholder=""
               value={clientInfo.specificFeatures}
               onChange={(e) => handleChange("specificFeatures", e.target.value)}
@@ -303,7 +303,7 @@ const ClientForm = () => {
             </label>
             <textarea
               name="competitors"
-              class="textarea h-24 w-full bg-ship-cove-100"
+              className="textarea h-24 w-full bg-ship-cove-100"
               placeholder=""
               value={clientInfo.admiredWebsites}
               onChange={(e) => handleChange("admiredWebsites", e.target.value)}
@@ -316,7 +316,7 @@ const ClientForm = () => {
             </label>
             <textarea
               name="requirements"
-              class="textarea h-24 w-full bg-ship-cove-100"
+              className="textarea h-24 w-full bg-ship-cove-100"
               placeholder=""
               value={clientInfo.otherRequirements}
               onChange={(e) =>

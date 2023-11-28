@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import AnimatedElement from "../components/AnimatedElement";
 import { prompt, josefin } from "../app/fonts";
 
 const Clients = ({ client }) => {

@@ -11,6 +11,18 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/nzr-digital/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/nzr-digital/page.css",
+      "static/chunks/app/nzr-digital/page.js"
+    ],
+    "/nzr-digital/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/nzr-digital/layout.css",
+      "static/chunks/app/nzr-digital/layout.js"
     ]
   }
 }

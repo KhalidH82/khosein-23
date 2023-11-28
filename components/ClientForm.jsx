@@ -96,9 +96,30 @@ const ClientForm = () => {
     });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/"))
+      .catch((error) => alert(error));
+  };
+
+
   return (
     <div className="form-bg p-10 w-full h-full">
-      <form name="nzrDigital" method="POST" data-netlify="true">
+      <form
+        name="nzrDigital"
+        method="POST"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
         <input type="hidden" name="form-name" value="nzrDigital" />
 
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
@@ -177,6 +198,7 @@ const ClientForm = () => {
                 name="company-logo"
                 type="file"
                 value={clientInfo.companyLogo}
+                accept=".jpg,.png,.jpeg"
                 className="file-input file- w-full max-w-xs bg-ship-cove-100"
                 onChange={(e) => handleChange("companyLogo", e.target.value)}
               />

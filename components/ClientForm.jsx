@@ -142,7 +142,6 @@ const ClientForm = () => {
   return (
     <div className="form-bg p-10 w-full h-full">
       <form
-        ref={form}
         name="nzrDigital"
         method="POST"
         data-netlify="true"

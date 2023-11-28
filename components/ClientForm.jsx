@@ -2,6 +2,8 @@
 import React, { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 
+import { prompt, josefin } from "../app/fonts";
+
 import emailjs from "@emailjs/browser";
 
 const ClientForm = () => {
@@ -336,15 +338,43 @@ const ClientForm = () => {
         open modal
       </button> */}
       <dialog id="my_modal_3" className="modal">
-        <div className="modal-box">
+        <div className="modal-box bg-ship-cove-500">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={() => router.push('/')}>
               ✕
             </button>
           </form>
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">Press ESC key or click on ✕ button to close</p>
+          <div className="w-full flex items-end">
+            <div className="avatar online h-24">
+              <div className="hover:ring-4">
+                <img
+                  className="rounded-full"
+                  src="/images/khavatar.webp"
+                  alt="Khalid Hosein"
+                />
+              </div>
+            </div>
+            <div className="chat chat-start w-full">
+              <div className="chat-bubble bg-ship-cove-500 w-full">
+                <p
+                  className={` leading-1 text-ship-cove-100 text-lg ${josefin.className}`}
+                  suppressHydrationWarning
+                >
+                  Thank you, {clientInfo.firstName}! We've received your form
+                  submission regarding your website project for{" "}
+                  {clientInfo.companyName}. Our team will review the details and
+                  get back to you soon to discuss the next steps. Looking
+                  forward to collaborating with you on this exciting project!
+                </p>
+                <p
+                  className={` leading-1 text-ship-cove-100 text-lg ${josefin.className}`}
+                >
+                  Best regards, Khalid
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </dialog>
     </div>

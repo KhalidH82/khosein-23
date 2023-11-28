@@ -121,10 +121,10 @@ const ClientForm = () => {
   const sendEmail = () => {
     emailjs
       .sendForm(
-        "service_cq8cq8i",
-        "template_e3zbhd8",
+        process.env.EMAIL_JS_SERVICE_ID,
+        process.env.EMAIL_JS_TEMPLATE_ID,
         "#form",
-        "Svyf7mGq9YpQcQa1u"
+        process.env.EMAIL_JS_PUBLIC_KEY
       )
       .then(
         (result) => {

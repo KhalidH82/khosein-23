@@ -140,6 +140,10 @@ const ClientForm = () => {
       );
   };
 
+  const handleSuccess = () => {
+    router.push("/");
+  };
+
   return (
     <div className="form-bg p-10 w-full h-full">
       <form
@@ -341,7 +345,10 @@ const ClientForm = () => {
         <div className="modal-box bg-ship-cove-500">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={() => router.push('/')}>
+            <button
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              onClick={handleSuccess}
+            >
               ✕
             </button>
           </form>

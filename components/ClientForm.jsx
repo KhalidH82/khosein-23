@@ -99,8 +99,8 @@ const ClientForm = () => {
 
   return (
     <div className="w-full h-full ">
-      <form name="nzr" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="nzr" />
+      <form name="nzrDigital" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="nzrDigital" />
 
         <div className="grid grid-cols-2 gap-5">
           <div>
@@ -130,6 +130,7 @@ const ClientForm = () => {
           <div>
             <label className="label">Email</label>
             <input
+              name="email"
               type="email"
               value={clientInfo.primaryContactEmail}
               onChange={(e) =>
@@ -142,6 +143,7 @@ const ClientForm = () => {
           <div>
             <label className="label">Phone</label>
             <input
+              name="phone"
               type="tel"
               value={clientInfo.primaryContactPhone}
               onChange={(e) =>
@@ -156,6 +158,7 @@ const ClientForm = () => {
           <div>
             <label className="label">Company Name</label>
             <input
+              name="company-name"
               type="text"
               value={clientInfo.companyName}
               onChange={(e) => handleChange("companyName", e.target.value)}
@@ -167,6 +170,7 @@ const ClientForm = () => {
             <div>
               <label className="label">Company Logo</label>
               <input
+                name="company-logo"
                 type="file"
                 value={clientInfo.companyLogo}
                 className="file-input file- w-full max-w-xs bg-white"
@@ -178,6 +182,7 @@ const ClientForm = () => {
               <div className="flex gap-2 items-center">
                 <div className="w-1/2">
                   <input
+                    name="primary-color"
                     type="color"
                     value={clientInfo.primaryColor}
                     className="w-full"
@@ -189,6 +194,7 @@ const ClientForm = () => {
                 </div>
                 <div className="w-1/2">
                   <input
+                    name="secondary-color"
                     type="color"
                     value={clientInfo.secondaryColor}
                     className="w-full"
@@ -206,6 +212,7 @@ const ClientForm = () => {
         <div>
           <label className="label">Services Offered</label>
           <textarea
+            name="services"
             class="textarea  h-24 w-full bg-white"
             placeholder="What services does your business offer?"
             value={clientInfo.servicesOffered}
@@ -218,6 +225,7 @@ const ClientForm = () => {
             Any specific features or functionalities required on the website?
           </label>
           <textarea
+            name="features"
             class="textarea  h-24 w-full bg-white"
             placeholder=""
             value={clientInfo.specificFeatures}
@@ -231,6 +239,7 @@ const ClientForm = () => {
             admires and wants to take inspiration from?
           </label>
           <textarea
+            name="competitors"
             class="textarea h-24 w-full bg-white"
             placeholder=""
             value={clientInfo.admiredWebsites}
@@ -243,6 +252,7 @@ const ClientForm = () => {
             Any other specific requirements or preferences for the website?
           </label>
           <textarea
+            name="requirements"
             class="textarea h-24 w-full bg-white"
             placeholder=""
             value={clientInfo.otherRequirements}

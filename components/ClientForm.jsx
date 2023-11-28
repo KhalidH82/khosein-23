@@ -119,8 +119,7 @@ const ClientForm = () => {
       
   };
 
-   const sendEmail = (e, formData) => {
-     e.preventDefault();
+   const sendEmail = (formData) => {
 
      emailjs
        .sendForm(

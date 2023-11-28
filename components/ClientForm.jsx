@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const ClientForm = () => {
-  const router = useRouter()
+  const router = useRouter();
   const [clientInfo, setClientInfo] = useState({
     firstName: "",
     lastName: "",
@@ -106,13 +106,11 @@ const ClientForm = () => {
 
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => router.push("/"))
       .catch((error) => alert(error));
   };
-
 
   return (
     <div className="form-bg p-10 w-full h-full">
@@ -120,6 +118,7 @@ const ClientForm = () => {
         name="nzrDigital"
         method="POST"
         data-netlify="true"
+        enctype="multipart/form-data"
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="nzrDigital" />

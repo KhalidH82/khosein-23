@@ -2640,18 +2640,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-ship-cove-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(157 177 220 / var(--tw-bg-opacity));
-}
-.bg-ship-cove-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 246 251 / var(--tw-bg-opacity));
-}
-.bg-ship-cove-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 204 232 / var(--tw-bg-opacity));
-}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2671,6 +2659,9 @@ details.collapse summary::-webkit-details-marker {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -2679,9 +2670,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-5 {
   padding: 1.25rem;
-}
-.p-10 {
-  padding: 2.5rem;
 }
 .px-1 {
   padding-left: 0.25rem;

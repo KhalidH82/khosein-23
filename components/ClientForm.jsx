@@ -6,6 +6,7 @@ const ClientForm = () => {
     firstName: "",
     lastName: "",
     primaryContactEmail: "",
+    primaryContactPhone: "",
     companyName: "",
     companyLogo: "",
     companyType: "",
@@ -142,9 +143,9 @@ const ClientForm = () => {
             <label className="label">Phone</label>
             <input
               type="tel"
-              value={clientInfo.primaryContactEmail}
+              value={clientInfo.primaryContactPhone}
               onChange={(e) =>
-                handleChange("primaryContactEmail", e.target.value)
+                handleChange("primaryContactPhone", e.target.value)
               }
               className="input w-full bg-white"
             />

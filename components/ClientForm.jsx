@@ -106,16 +106,17 @@ const ClientForm = () => {
 
     const myForm = event.target;
     const formData = new FormData(myForm);
+    sendEmail();
 
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => router.push("/"))
+      .then(() => {
+        sendEmail();
+      })
       .catch((error) => alert(error));
-
-    sendEmail();
   };
 
   const sendEmail = () => {
@@ -128,6 +129,7 @@ const ClientForm = () => {
       )
       .then(
         (result) => {
+          router.push("/");
           console.log(result.text);
         },
         (error) => {

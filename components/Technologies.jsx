@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import Marquee from "react-fast-marquee";
-import AnimatedElement from "../components/AnimatedElement";
 import { prompt, josefin } from "../app/fonts";
 import { technologies } from "../app/constants/data";
 
@@ -13,7 +12,6 @@ const Technologies = () => {
   return (
     <div className="w-full h-full container px-4 mx-auto py-5">
       <div className="mb-5 text-right">
-        <AnimatedElement animationType="fadeInUp">
           <p className={`uppercase ${josefin.className}`}>Experience</p>
           <h2 className={`mb-5 font-bold ${prompt.className}`}>
             Technologies.
@@ -30,7 +28,6 @@ const Technologies = () => {
               ))}
             </Marquee>
           </div>
-        </AnimatedElement>
       </div>
     </div>
   );

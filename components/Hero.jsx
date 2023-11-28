@@ -1,9 +1,7 @@
 "use client";
 import Head from "next/head";
 import Image from "next/image";
-import AnimatedElement from "../components/AnimatedElement";
 import { prompt } from "../app/fonts";
-import "../public/animate.min.css";
 
 const Hero = () => {
   return (

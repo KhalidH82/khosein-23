@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import AnimatedElement from "../components/AnimatedElement";
 import { Tilt } from "react-tilt";
 import { services } from "../app/constants/data";
 import { prompt, josefin } from "../app/fonts";
@@ -21,7 +20,6 @@ const defaultOptions = {
 const About = () => {
   return (
     <div className="container px-4 mx-auto py-5 flex flex-col gap-12">
-      <AnimatedElement animationType="fadeInUp">
         <div>
           <p className={`uppercase ${josefin.className}`}>Introduction</p>
           <h2 className={`mb-5 font-bold ${prompt.className}`}>About me.</h2>
@@ -85,7 +83,6 @@ const About = () => {
             </div>
           ))}
         </div>
-      </AnimatedElement>
     </div>
   );
 };

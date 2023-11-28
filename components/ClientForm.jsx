@@ -11,8 +11,8 @@ const ClientForm = () => {
     companyLogo: "",
     companyType: "",
     servicesOffered: "",
-    primaryColor: "#fff",
-    secondaryColor: "#000",
+    primaryColor: "#ffffff",
+    secondaryColor: "#ffffff",
     typeOfUsers: [],
     contactInformation: "",
     siteDomain: "",
@@ -97,7 +97,7 @@ const ClientForm = () => {
   };
 
   return (
-    <div className="w-full h-full ">
+    <div className="form-bg p-10 w-full h-full">
       <form name="nzrDigital" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="nzrDigital" />
 
@@ -109,7 +109,7 @@ const ClientForm = () => {
               type="text"
               value={clientInfo.firstName}
               onChange={(e) => handleChange("firstName", e.target.value)}
-              className="input w-full bg-white"
+              className="input w-full bg-ship-cove-100"
               required
             />
           </div>
@@ -121,7 +121,7 @@ const ClientForm = () => {
               type="text"
               value={clientInfo.lastName}
               onChange={(e) => handleChange("lastName", e.target.value)}
-              className="input w-full bg-white"
+              className="input w-full bg-ship-cove-100"
               required
             />
           </div>
@@ -137,7 +137,7 @@ const ClientForm = () => {
               onChange={(e) =>
                 handleChange("primaryContactEmail", e.target.value)
               }
-              className="input w-full bg-white"
+              className="input w-full bg-ship-cove-100"
               required
             />
           </div>
@@ -151,7 +151,7 @@ const ClientForm = () => {
               onChange={(e) =>
                 handleChange("primaryContactPhone", e.target.value)
               }
-              className="input w-full bg-white"
+              className="input w-full bg-ship-cove-100"
               required
             />
           </div>
@@ -165,7 +165,7 @@ const ClientForm = () => {
               type="text"
               value={clientInfo.companyName}
               onChange={(e) => handleChange("companyName", e.target.value)}
-              className="input w-full bg-white"
+              className="input w-full bg-ship-cove-100"
               required
             />
           </div>
@@ -177,7 +177,7 @@ const ClientForm = () => {
                 name="company-logo"
                 type="file"
                 value={clientInfo.companyLogo}
-                className="file-input file- w-full max-w-xs bg-white"
+                className="file-input file- w-full max-w-xs bg-ship-cove-100"
                 onChange={(e) => handleChange("companyLogo", e.target.value)}
               />
             </div>
@@ -213,62 +213,70 @@ const ClientForm = () => {
           </div>
         </div>
 
-        <div>
-          <label className="label">Services Offered</label>
-          <textarea
-            name="services"
-            class="textarea  h-24 w-full bg-white"
-            placeholder="What services does your business offer to your clients?"
-            value={clientInfo.servicesOffered}
-            onChange={(e) => handleChange("servicesOffered", e.target.value)}
-          ></textarea>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
+          <div>
+            <label className="label">Services Offered</label>
+            <textarea
+              name="services"
+              class="textarea  h-24 w-full bg-ship-cove-100"
+              placeholder="What services does your business offer to your clients?"
+              value={clientInfo.servicesOffered}
+              onChange={(e) => handleChange("servicesOffered", e.target.value)}
+            ></textarea>
+          </div>
+
+          <div>
+            <label className="label">
+              Any specific features or functionalities required on the website?
+            </label>
+            <textarea
+              name="features"
+              class="textarea h-24 w-full bg-ship-cove-100"
+              placeholder=""
+              value={clientInfo.specificFeatures}
+              onChange={(e) => handleChange("specificFeatures", e.target.value)}
+            ></textarea>
+          </div>
         </div>
 
-        <div>
-          <label className="label">
-            Any specific features or functionalities required on the website?
-          </label>
-          <textarea
-            name="features"
-            class="textarea h-24 w-full bg-white"
-            placeholder=""
-            value={clientInfo.specificFeatures}
-            onChange={(e) => handleChange("specificFeatures", e.target.value)}
-          ></textarea>
-        </div>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
+          <div>
+            <label className="label">
+              Are there any specific competitors or websites that we can take
+              inspiration from?
+            </label>
+            <textarea
+              name="competitors"
+              class="textarea h-24 w-full bg-ship-cove-100"
+              placeholder=""
+              value={clientInfo.admiredWebsites}
+              onChange={(e) => handleChange("admiredWebsites", e.target.value)}
+            ></textarea>
+          </div>
 
-        <div>
-          <label className="label">
-            Are there any specific competitors or websites that we can take inspiration from?
-          </label>
-          <textarea
-            name="competitors"
-            class="textarea h-24 w-full bg-white"
-            placeholder=""
-            value={clientInfo.admiredWebsites}
-            onChange={(e) => handleChange("admiredWebsites", e.target.value)}
-          ></textarea>
+          <div>
+            <label className="label">
+              Any other specific requirements or preferences for the website?
+            </label>
+            <textarea
+              name="requirements"
+              class="textarea h-24 w-full bg-ship-cove-100"
+              placeholder=""
+              value={clientInfo.otherRequirements}
+              onChange={(e) =>
+                handleChange("otherRequirements", e.target.value)
+              }
+            ></textarea>
+          </div>
         </div>
-
-        <div>
-          <label className="label">
-            Any other specific requirements or preferences for the website?
-          </label>
-          <textarea
-            name="requirements"
-            class="textarea h-24 w-full bg-white"
-            placeholder=""
-            value={clientInfo.otherRequirements}
-            onChange={(e) => handleChange("otherRequirements", e.target.value)}
-          ></textarea>
+        <div className="w-full flex justify-center">
+          <button
+            type="submit"
+            className="btn border-none bg-ship-cove-500 text-white w-36 mt-5"
+          >
+            Submit
+          </button>
         </div>
-
-        <button
-          type="submit"
-          className="btn border-none bg-ship-cove-500 text-white w-36 mt-10"
-        >
-          Submit
-        </button>
       </form>
     </div>
   );

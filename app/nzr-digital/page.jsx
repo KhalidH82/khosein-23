@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { prompt, josefin } from "../../app/fonts";
+
 import ClientForm from '../../components/ClientForm'
+
+import { prompt, josefin } from "../../app/fonts";
 
 const page = () => {
   const [selectedItem, setSelectedItem] = useState(0);
@@ -14,50 +16,57 @@ const page = () => {
   const services = [
     {
       name: "1",
-      title: "Website/Template Design:",
+      title: "Website/Template Design",
       content:
         "Your website is often the first interaction a potential customer has with your business. We specialize in creating visually stunning and user-friendly websites that not only capture attention but also provide an intuitive and seamless user experience. Whether you're looking for a custom design or prefer to start with a pre-made template, our goal is to ensure your online presence reflects the unique identity and values of your business.",
+      icon: "/images/webdev.png",
     },
     {
       name: "2",
       title: "Content Creation",
       content:
         "Compelling and relevant content is the heartbeat of any successful online presence. Our content creation services aim to tell your brand story effectively. From engaging website copy to captivating blog posts, we ensure that every piece of content resonates with your target audience, driving connection and conversions.",
+      icon: "/images/content.png",
     },
     {
       name: "3",
       title: "Content Management Systems (CMS/Wordpress/Shopify)",
       content:
         "Managing and updating your website content should be a hassle-free experience. We specialize in implementing Content Management Systems (CMS) like WordPress and Shopify, empowering you to take control of your content without the need for technical expertise. Easily update text, images, and more, keeping your website fresh and up-to-date.",
+      icon: "/images/cms.png",
     },
     {
       name: "4",
       title: "SEO (Search Engine Optimization)",
       content:
         "Being visible on search engines is crucial for attracting organic traffic. Our SEO services are tailored to improve your website's search engine ranking, making it easier for potential customers to find you. We employ proven strategies to optimize your content, meta tags, and other elements, ensuring your business stands out in search results",
+      icon: "/images/webdev.png",
     },
     {
       name: "5",
       title: "E-commerce",
       content:
         "For businesses looking to establish or enhance their online storefront, we offer seamless e-commerce solutions. From user-friendly product catalogs to secure payment gateways, our goal is to create a smooth and secure shopping experience for your customers, ultimately boosting your online sales.",
+      icon: "/images/ecomm.png",
     },
     {
       name: "6",
       title: "Email and Social Media Marketing",
       content:
         "Harness the power of targeted marketing with our email and social media services. We create and execute effective campaigns to engage your audience, drive conversions, and build a strong online community. From crafting compelling email newsletters to managing social media profiles, we help you stay connected with your audience.",
+      icon: "/images/marketing.png",
     },
     {
       name: "7",
       title: "Technical Requirements and Direction",
       content:
         "Navigating the technical aspects of web development can be complex. Leave it to us to handle the intricacies of technical requirements and direction. From choosing the right hosting solution to ensuring optimal website performance and security, we provide the technical expertise needed to keep your online presence running smoothly.",
+      icon: "/images/microservices.png",
     },
   ];
 
   return (
-    <div className="container px-4 md:px-6 lg:px-8 xl:px-12 mx-auto py-16">
+    <div className="container px-4 md:px-6 lg:px-8 xl:px-12 mx-auto py-10">
       <div className="w-full flex justify-center">
         <a className="logo" href="/" target="_self">
           <Image
@@ -104,15 +113,16 @@ const page = () => {
                 onClick={() => handleAccordionClick(index)}
               />
               <div
-                className="collapse-title text-xl font-medium bg-ship-cove-800 text-white"
+                className="collapse-title text-xl font-medium bg-ship-cove-900 text-white flex items-center justify-between"
                 onClick={() => handleAccordionClick(index)}
               >
                 <h3 className={`uppercase ${josefin.className}`}>
                   {item.title}
                 </h3>
+                <Image src={item.icon} width={50} height={50} alt="" />
               </div>
               <div className="collapse-content bg-ship-cove-100">
-                <p className={`pt-4 ${prompt.className}`}>{item.content}</p>
+                <p className={`py-10 ${prompt.className}`}>{item.content}</p>
               </div>
             </div>
           ))}

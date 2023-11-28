@@ -1,11 +1,5 @@
 {
   "pages": {
-    "/nzr-digital/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/nzr-digital/layout.css",
-      "static/chunks/app/nzr-digital/layout.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -18,11 +12,11 @@
       "static/css/app/nzr-digital/page.css",
       "static/chunks/app/nzr-digital/page.js"
     ],
-    "/page": [
+    "/nzr-digital/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/nzr-digital/layout.css",
+      "static/chunks/app/nzr-digital/layout.js"
     ]
   }
 }

@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
+import emailjs from "@emailjs/browser";
+
 const ClientForm = () => {
   const router = useRouter();
   const [clientInfo, setClientInfo] = useState({
@@ -104,6 +106,8 @@ const ClientForm = () => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
+    sendEmail(formData)
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -111,11 +115,34 @@ const ClientForm = () => {
     })
       .then(() => router.push("/"))
       .catch((error) => alert(error));
+
+      
   };
+
+   const sendEmail = (e, formData) => {
+     e.preventDefault();
+
+     emailjs
+       .sendForm(
+         "service_ycf5syi",
+         "template_e3zbhd8",
+         formData,
+         "Svyf7mGq9YpQcQa1u"
+       )
+       .then(
+         (result) => {
+           console.log(result.text);
+         },
+         (error) => {
+           console.log(error.text);
+         }
+       );
+   };
 
   return (
     <div className="form-bg p-10 w-full h-full">
       <form
+        ref={form}
         name="nzrDigital"
         method="POST"
         data-netlify="true"

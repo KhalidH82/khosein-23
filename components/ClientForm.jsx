@@ -101,7 +101,7 @@ const ClientForm = () => {
       <form name="nzrDigital" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="nzrDigital" />
 
-        <div className="grid grid-cols-2 gap-5">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
           <div>
             <label className="label">First Name</label>
             <input
@@ -110,6 +110,7 @@ const ClientForm = () => {
               value={clientInfo.firstName}
               onChange={(e) => handleChange("firstName", e.target.value)}
               className="input w-full bg-white"
+              required
             />
           </div>
 
@@ -121,11 +122,12 @@ const ClientForm = () => {
               value={clientInfo.lastName}
               onChange={(e) => handleChange("lastName", e.target.value)}
               className="input w-full bg-white"
+              required
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-5">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
           <div>
             <label className="label">Email</label>
             <input
@@ -136,6 +138,7 @@ const ClientForm = () => {
                 handleChange("primaryContactEmail", e.target.value)
               }
               className="input w-full bg-white"
+              required
             />
           </div>
 
@@ -149,11 +152,12 @@ const ClientForm = () => {
                 handleChange("primaryContactPhone", e.target.value)
               }
               className="input w-full bg-white"
+              required
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-5">
+        <div className="flex flex-col xl:grid xl:grid-cols-2 gap-5">
           <div>
             <label className="label">Company Name</label>
             <input
@@ -162,10 +166,11 @@ const ClientForm = () => {
               value={clientInfo.companyName}
               onChange={(e) => handleChange("companyName", e.target.value)}
               className="input w-full bg-white"
+              required
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-5">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
             <div>
               <label className="label">Company Logo</label>
               <input
@@ -234,8 +239,7 @@ const ClientForm = () => {
 
         <div>
           <label className="label">
-            Are there any specific competitors or websites that the client
-            admires and wants to take inspiration from?
+            Are there any specific competitors or websites that we can take inspiration from?
           </label>
           <textarea
             name="competitors"
@@ -259,7 +263,10 @@ const ClientForm = () => {
           ></textarea>
         </div>
 
-        <button type="submit" className="btn bg-ship-cove-500 text-white w-36">
+        <button
+          type="submit"
+          className="btn border-none bg-ship-cove-500 text-white w-36 mt-10"
+        >
           Submit
         </button>
       </form>

@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 
 import emailjs from "@emailjs/browser";
 
 const ClientForm = () => {
+  const form = useRef(null);
   const router = useRouter();
   const [clientInfo, setClientInfo] = useState({
     firstName: "",
@@ -106,8 +107,6 @@ const ClientForm = () => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
-    sendEmail(formData)
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -116,31 +115,31 @@ const ClientForm = () => {
       .then(() => router.push("/"))
       .catch((error) => alert(error));
 
-      
+    sendEmail();
   };
 
-   const sendEmail = (formData) => {
-
-     emailjs
-       .sendForm(
-         "service_ycf5syi",
-         "template_e3zbhd8",
-         formData,
-         "Svyf7mGq9YpQcQa1u"
-       )
-       .then(
-         (result) => {
-           console.log(result.text);
-         },
-         (error) => {
-           console.log(error.text);
-         }
-       );
-   };
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        "service_cq8cq8i",
+        "template_e3zbhd8",
+        "#form",
+        "Svyf7mGq9YpQcQa1u"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className="form-bg p-10 w-full h-full">
       <form
+        id="form"
         name="nzrDigital"
         method="POST"
         data-netlify="true"

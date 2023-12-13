@@ -2798,9 +2798,6 @@ details.collapse summary::-webkit-details-marker {
 .h-full {
   height: 100%;
 }
-.h-36 {
-  height: 9rem;
-}
 .w-1\/2 {
   width: 50%;
 }
@@ -2894,9 +2891,6 @@ details.collapse summary::-webkit-details-marker {
 .border-t {
   border-top-width: 1px;
 }
-.border-solid {
-  border-style: solid;
-}
 .border-none {
   border-style: none;
 }
@@ -2931,19 +2925,8 @@ details.collapse summary::-webkit-details-marker {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-ship-cove-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 136 / var(--tw-bg-opacity));
-}
-.bg-ship-cove-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(90 102 168 / var(--tw-bg-opacity));
-}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-.bg-none {
-  background-image: none;
 }
 .from-ship-cove-400 {
   --tw-gradient-from: #9db1dc var(--tw-gradient-from-position);

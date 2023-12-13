@@ -70,7 +70,7 @@ const navLinks = [
   {
     id: "resume",
     title: "Resume",
-    link: "/K_Hosein24.pdf",
+    link: "/KHosein24.pdf",
   },
 ];
 

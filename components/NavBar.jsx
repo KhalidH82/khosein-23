@@ -9,10 +9,9 @@ import { prompt, josefin } from "../app/fonts";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const hasVisited = useState(Cookies.get("visited"));
+  const hasVisited = Cookies.get("visited");
   useEffect(() => {
-    console.log(hasVisited[0]);
-    if (!hasVisited[0]) {
+    if (!hasVisited) {
       Cookies.set("visited", true, { expires: 7 }); // Expires in 7 days
     }
     const handleScroll = () => {
@@ -143,7 +142,7 @@ const NavBar = () => {
             <div className="md:flex hidden justify-end">
               <div className="chat chat-end">
                 <div className="chat-bubble bg-ship-cove-500">
-                  {hasVisited[0] ? (
+                  {hasVisited ? (
                     <p
                       className={` leading-1 text-ship-cove-100 ${josefin.className}`}
                       suppressHydrationWarning

@@ -56,17 +56,11 @@ const navLinks = [
     title: "Contact",
     link: "/#contact",
   },
-  {
-    id: "nzr-digital",
-    title: "NZR Digital",
-    link: "/nzr-digital",
-    // sublink: [
-    //   {
-    //     agency: "T2 Marketing Communications",
-    //     link: "",
-    //   },
-    // ],
-  },
+  // {
+  //   id: "nzr-digital",
+  //   title: "NZR Digital",
+  //   link: "/nzr-digital",
+  // },
   {
     id: "resume",
     title: "Resume",
